@@ -315,7 +315,7 @@ public static class CoreRules11Terrain
         );
     }
 
-    public static bool MovementDestinationAllowsTerrain(
+        public static bool MovementDestinationAllowsTerrain(
         SquadController movingUnit,
         TerrainFeature terrain)
     {
@@ -334,8 +334,16 @@ public static class CoreRules11Terrain
         if (movingUnit == null)
             return false;
 
+        movingUnit = movingUnit.JoinedActionController();
+
         if (CoreRules11FlightRegistry.IsTakingToSkies(
                 movingUnit))
+        {
+            return true;
+        }
+
+        if (category == CoreTerrainCategory11.Dense &&
+            WarboardV48CoreRules.DenseSectionIsLow(terrain))
         {
             return true;
         }

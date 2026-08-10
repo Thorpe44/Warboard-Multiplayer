@@ -118,7 +118,7 @@ public class InteractiveCasualtyChoice
     }
 }
 
-public class InteractiveAttackController
+public partial class InteractiveAttackController
 {
     private readonly GameController game;
     private readonly SquadController attacker;
@@ -528,15 +528,16 @@ public class InteractiveAttackController
         }
     }
 
-    public bool HasMeaningfulDecision
+        public bool HasMeaningfulDecision
     {
         get
         {
             return
+                V48LethalDecisionPending ||
+                V48PrecisionDecisionPending ||
                 CanUsePartingTheVeil ||
                 CanUseMacabreResilience ||
-                (IsReviewStage &&
-                 CanCommandReroll);
+                (IsReviewStage && CanCommandReroll);
         }
     }
 
@@ -683,66 +684,9 @@ public class InteractiveAttackController
         }
     }
 
-    public void Continue()
+        public void Continue()
     {
-        if (CurrentVolley == null)
-        {
-            stage =
-                InteractiveAttackStage.AttackComplete;
-
-            return;
-        }
-
-        switch (stage)
-        {
-                        case InteractiveAttackStage.ReviewHits:
-                WarboardAttackDieLedger47.EmitStageEvents(
-                    game,
-                    attacker,
-                    target,
-                    CurrentVolley.weapon,
-                    WarboardAttackDieStage47.Hit
-                );
-
-                stage =
-                    InteractiveAttackStage.RollWounds;
-                break;
-
-            case InteractiveAttackStage.ReviewWounds:
-                WarboardAttackDieLedger47.EmitStageEvents(
-                    game,
-                    attacker,
-                    target,
-                    CurrentVolley.weapon,
-                    WarboardAttackDieStage47.Wound
-                );
-                if (CurrentVolley.normalWounds > 0)
-                {
-                    PrepareSaveTarget();
-                    stage =
-                        InteractiveAttackStage.RollSaves;
-                }
-                else
-                {
-                    stage =
-                        InteractiveAttackStage.RollDamage;
-                }
-                break;
-
-            case InteractiveAttackStage.ReviewSaves:
-                stage =
-                    InteractiveAttackStage.RollDamage;
-                break;
-
-            case InteractiveAttackStage.ReviewDamage:
-                stage =
-                    InteractiveAttackStage.ApplyDamage;
-                break;
-
-            case InteractiveAttackStage.WeaponComplete:
-                AdvanceToNextVolley();
-                break;
-        }
+        V48Continue();
     }
 
     public void RollAndAdvanceIfNoDecision()
@@ -814,174 +758,14 @@ public class InteractiveAttackController
         return IsComplete;
     }
 
-    public bool DeclineDecisionAndFastResolve()
+        public bool DeclineDecisionAndFastResolve()
     {
-        if (CanUsePartingTheVeil ||
-            CanUseMacabreResilience)
-        {
-            factionDefensiveReactionResolved =
-                true;
-
-            lastActionText =
-                "Defensive faction reaction declined.";
-        }
-        else if (HasMeaningfulDecision)
-        {
-            Continue();
-        }
-
-        return FastResolveUntilDecision();
+        return V48DeclineDecisionAndFastResolve();
     }
 
-    public bool UseCommandReroll()
+        public bool UseCommandReroll()
     {
-        if (!CanCommandReroll)
-            return false;
-
-        string faction =
-            GetRerollFaction();
-
-        SquadController rerollUnit =
-            stage == InteractiveAttackStage.ReviewSaves
-            ? target
-            : attacker;
-
-        if (!game.SpendStratagemCPForUnit(
-                rerollUnit,
-                1,
-                "Command Re-roll"))
-        {
-            return false;
-        }
-
-        int index =
-            FindRerollableDieIndex();
-
-        if (index < 0)
-            return false;
-
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        switch (stage)
-        {
-            case InteractiveAttackStage.ReviewHits:
-            {
-                int old =
-                    volley.hitRolls[index];
-
-                int value =
-                    DiceRoller.RollD6(
-                        "Command Re-roll Hit: " +
-                        volley.weapon.displayName
-                    );
-
-                volley.hitRolls[index] =
-                    value;
-
-                volley.hitCommandRerollUsed =
-                    true;
-
-                RecalculateHitResults();
-
-                lastActionText =
-                    "Command Re-roll hit: " +
-                    old +
-                    "  ->  " +
-                    value;
-
-                break;
-            }
-
-            case InteractiveAttackStage.ReviewWounds:
-            {
-                int old =
-                    volley.woundRolls[index];
-
-                int value =
-                    DiceRoller.RollD6(
-                        "Command Re-roll Wound: " +
-                        volley.weapon.displayName
-                    );
-
-                volley.woundRolls[index] =
-                    value;
-
-                volley.woundCommandRerollUsed =
-                    true;
-
-                RecalculateWoundResults();
-
-                lastActionText =
-                    "Command Re-roll wound: " +
-                    old +
-                    "  ->  " +
-                    value;
-
-                break;
-            }
-
-            case InteractiveAttackStage.ReviewSaves:
-            {
-                int old =
-                    volley.saveRolls[index];
-
-                int value =
-                    DiceRoller.RollD6(
-                        "Command Re-roll Save: " +
-                        target.DisplayName
-                    );
-
-                volley.saveRolls[index] =
-                    value;
-
-                volley.saveCommandRerollUsed =
-                    true;
-
-                RecalculateSaveResults();
-
-                lastActionText =
-                    "Command Re-roll save: " +
-                    old +
-                    "  ->  " +
-                    value;
-
-                break;
-            }
-
-            case InteractiveAttackStage.ReviewDamage:
-            {
-                int old =
-                    volley.damageValues[index];
-
-                int value =
-                    RollDamageCharacteristic(
-                        volley.weapon,
-                        "Command Re-roll Damage: " +
-                        volley.weapon.displayName
-                    ) +
-                    volley.meltaBonus;
-
-                volley.damageValues[index] =
-                    value;
-
-                volley.damageCommandRerollUsed =
-                    true;
-
-                lastActionText =
-                    "Command Re-roll damage: " +
-                    old +
-                    "  ->  " +
-                    value;
-
-                break;
-            }
-
-            default:
-                return false;
-        }
-
-        return true;
+        return V48UseCommandReroll();
     }
 
     public void MarkOneShotWeaponsUsed()
@@ -2005,8 +1789,9 @@ rapid +=
                 if (!shouldReroll)
                     continue;
 
-                volley.hitRolls[i] =
-                    DiceRoller.RollD6(
+                V48MarkHitRerolled(volley, i);
+
+                volley.hitRolls[i] = DiceRoller.RollD6(
                         "Automatic Hit re-roll: " +
                         volley.weapon.displayName
                     );
@@ -2025,6 +1810,7 @@ rapid +=
                 if (!CustodesFactionPack11.AutomaticRerollHit(
                         game, attacker, roll, success, mode))
                     continue;
+                V48MarkHitRerolled(volley, i);
                 volley.hitRolls[i] = DiceRoller.RollD6(
                     "Custodes Hit re-roll: " + volley.weapon.displayName);
                 custodesRerolled = true;
@@ -2045,6 +1831,7 @@ rapid +=
                 if (!NecronsFactionPack11.AutomaticRerollHit(
                         game, attacker, target, roll, success, mode))
                     continue;
+                V48MarkHitRerolled(volley, i);
                 volley.hitRolls[i] = DiceRoller.RollD6(
                     "Necrons Hit re-roll: " + volley.weapon.displayName);
                 necronsRerolled = true;
@@ -2065,110 +1852,9 @@ rapid +=
             InteractiveAttackStage.ReviewHits;
     }
 
-    private void RecalculateHitResults()
+        private void RecalculateHitResults()
     {
-        // WARBOARD_V47_RECALCULATE_HITS
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        WarboardAttackDieLedger47.ClearAttackStage(
-            attacker,
-            target,
-            volley.weapon,
-            WarboardAttackDieStage47.Hit
-        );
-
-        int hits = 0;
-        int lethal = 0;
-        int precisionCriticalHits = 0;
-        int precisionLethal = 0;
-
-        ModelToken sourceModel =
-            volley.selections.Count > 0
-            ? volley.selections[0].model
-            : null;
-
-        foreach (int roll
-            in volley.hitRolls)
-        {
-            bool success = false;
-
-            if (roll != 1 &&
-                (volley.minimumUnmodifiedHit <= 0 ||
-                 roll >= volley.minimumUnmodifiedHit))
-            {
-                int modified =
-                    roll +
-                    volley.hitRollModifier;
-
-                success =
-                    roll == 6 ||
-                    modified >=
-                        volley.skill;
-            }
-
-            bool critical =
-                WarboardV47FactionRules.IsCriticalHit(
-                    attacker,
-                    roll,
-                    success
-                );
-
-            bool precision =
-                volley.precision ||
-                (volley.precisionOnCriticalHit &&
-                 critical);
-
-            WarboardAttackDieLedger47.RecordHit(
-                game,
-                attacker,
-                target,
-                sourceModel,
-                volley.weapon,
-                mode,
-                roll,
-                success,
-                critical,
-                false,
-                precision,
-                critical && volley.lethalHits,
-                critical
-                ? volley.sustainedHits
-                : 0
-            );
-
-            if (!success)
-                continue;
-
-            hits++;
-
-            if (!critical)
-                continue;
-
-            if (precision)
-                precisionCriticalHits++;
-
-            if (volley.lethalHits)
-            {
-                lethal++;
-
-                if (precision)
-                    precisionLethal++;
-            }
-
-            if (volley.sustainedHits > 0)
-            {
-                hits +=
-                    volley.sustainedHits;
-            }
-        }
-
-        volley.hits = hits;
-        volley.lethalAutoWounds = lethal;
-        volley.precisionCriticalHits =
-            precisionCriticalHits;
-        volley.precisionLethalAutoWounds =
-            precisionLethal;
+        V48RecalculateHitResults();
     }
 
     private void RollWounds()
@@ -2261,8 +1947,9 @@ rapid +=
                 if (success)
                     continue;
 
-                volley.woundRolls[i] =
-                    DiceRoller.RollD6(
+                V48MarkWoundRerolled(volley, i);
+
+                volley.woundRolls[i] = DiceRoller.RollD6(
                         "Twin-linked wound re-roll: " +
                         volley.weapon.displayName
                     );
@@ -2355,8 +2042,9 @@ rapid +=
                 if (!reroll)
                     continue;
 
-                volley.woundRolls[i] =
-                    DiceRoller.RollD6(
+                V48MarkWoundRerolled(volley, i);
+
+                volley.woundRolls[i] = DiceRoller.RollD6(
                         "Automatic Wound re-roll: " +
                         volley.weapon.displayName
                     );
@@ -2376,6 +2064,7 @@ rapid +=
             if (!CustodesFactionPack11.AutomaticRerollWound(
                     attacker, target, roll, success, mode))
                 continue;
+            V48MarkWoundRerolled(volley, i);
             volley.woundRolls[i] = DiceRoller.RollD6(
                 "Custodes Wound re-roll: " + volley.weapon.displayName);
             custodesWoundRerolled = true;
@@ -2394,6 +2083,7 @@ rapid +=
             if (!NecronsFactionPack11.AutomaticRerollWound(
                     game, attacker, target, roll, success, mode))
                 continue;
+            V48MarkWoundRerolled(volley, i);
             volley.woundRolls[i] = DiceRoller.RollD6(
                 "Necrons Wound re-roll: " + volley.weapon.displayName);
             necronsWoundRerolled = true;
@@ -2448,8 +2138,9 @@ rapid +=
             if (!shouldReroll)
                 continue;
 
-            volley.woundRolls[i] =
-                DiceRoller.RollD6(
+            V48MarkWoundRerolled(volley, i);
+
+            volley.woundRolls[i] = DiceRoller.RollD6(
                     "Faction Wound re-roll: " +
                     volley.weapon.displayName
                 );
@@ -2683,175 +2374,19 @@ rapid +=
             usesInvulnerable;
     }
 
-    private void RollSaves()
+        private void RollSaves()
     {
-        // WARBOARD_V47_ROLL_SAVES_PER_DIE
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        volley.saveRolls.Clear();
-        volley.saveTargetsPerDie.Clear();
-        volley.savePrecisionFlags.Clear();
-        volley.failedSavePrecisionFlags.Clear();
-
-        if (volley.normalWounds <= 0)
-        {
-            volley.failedSaves = 0;
-
-            lastActionText =
-                "No normal saves required.";
-
-            stage =
-                InteractiveAttackStage.ReviewSaves;
-
-            return;
-        }
-
-        for (int i = 0;
-             i < volley.normalWounds;
-             i++)
-        {
-            bool precision =
-                volley.precision ||
-                i < volley.precisionNormalWounds;
-
-            bool usesInvulnerable;
-            int targetNumber =
-                CalculateSaveTarget47(
-                    precision,
-                    out usesInvulnerable
-                );
-
-            int roll =
-                DiceRoller.RollD6(
-                    "Save roll: " +
-                    target.DisplayName
-                );
-
-            volley.saveRolls.Add(roll);
-            volley.saveTargetsPerDie.Add(
-                targetNumber);
-            volley.savePrecisionFlags.Add(
-                precision);
-
-            if (i == 0)
-            {
-                volley.saveTarget =
-                    targetNumber;
-                volley.saveUsesInvulnerable =
-                    usesInvulnerable;
-            }
-        }
-
-        RecalculateSaveResults();
-
-        lastActionText =
-            volley.failedSaves +
-            " failed save(s).";
-
-        stage =
-            InteractiveAttackStage.ReviewSaves;
+        V48RollSaves();
     }
 
-    private void RecalculateSaveResults()
+        private void RecalculateSaveResults()
     {
-        // WARBOARD_V47_RECALCULATE_SAVES
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        int failed = 0;
-        volley.failedSavePrecisionFlags.Clear();
-
-        for (int i = 0;
-             i < volley.saveRolls.Count;
-             i++)
-        {
-            int targetNumber =
-                i < volley.saveTargetsPerDie.Count
-                ? volley.saveTargetsPerDie[i]
-                : volley.saveTarget;
-
-            if (volley.saveRolls[i] >=
-                targetNumber)
-            {
-                continue;
-            }
-
-            failed++;
-
-            volley.failedSavePrecisionFlags.Add(
-                i < volley.savePrecisionFlags.Count &&
-                volley.savePrecisionFlags[i]
-            );
-        }
-
-        volley.failedSaves = failed;
+        V48RecalculateSaveResults();
     }
 
-    private void RollDamage()
+        private void RollDamage()
     {
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        volley.damageValues.Clear();
-
-        int damageEvents =
-            volley.failedSaves +
-            volley.devastatingWounds;
-
-        if (damageEvents <= 0)
-        {
-            lastActionText =
-                "No damage rolls required.";
-
-            stage =
-                InteractiveAttackStage.ReviewDamage;
-
-            return;
-        }
-
-        for (int i = 0;
-             i < damageEvents;
-             i++)
-        {
-            int damage =
-                RollDamageCharacteristic(
-                    volley.weapon,
-                    "Damage: " +
-                    volley.weapon.displayName
-                ) +
-                volley.meltaBonus +
-                (game != null
-                    ? game.AeldariDamageModifier(
-                        attacker,
-                        volley.weapon,
-                        mode
-                      )
-                    : 0);
-
-            damage +=
-                NecronsFactionPack11.DamageModifier(
-                    attacker,
-                    volley.selections.Count > 0
-                        ? volley.selections[0].model
-                        : null,
-                    volley.weapon, mode);
-
-            volley.damageValues.Add(
-                Mathf.Max(
-                    0,
-                    damage
-                )
-            );
-        }
-
-        lastActionText =
-            "Rolled " +
-            damageEvents +
-            " damage result(s).";
-
-        stage =
-            InteractiveAttackStage.ReviewDamage;
+        V48RollDamageCompatibility();
     }
 
     private int RollDamageCharacteristic(
@@ -2992,262 +2527,9 @@ rapid +=
         );
     }
 
-    private void ApplyDamage()
+        private void ApplyDamage()
     {
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        volley.woundsLost = 0;
-        volley.modelsKilled = 0;
-
-        int normalEvents =
-            volley.failedSaves;
-
-        int devEvents =
-            volley.devastatingWounds;
-
-        int damageIndex = 0;
-
-                for (int i = 0;
-             i < normalEvents;
-             i++)
-        {
-            if (damageIndex >=
-                volley.damageValues.Count)
-            {
-                break;
-            }
-
-            bool v47NormalPrecision =
-                volley.precision ||
-                (i < volley.failedSavePrecisionFlags.Count &&
-                 volley.failedSavePrecisionFlags[i]);
-
-            ModelToken allocated =
-                GetAllocationModel(
-                    v47NormalPrecision
-                );
-
-            if (allocated == null)
-                break;
-
-            bool wasAlive =
-                allocated.IsAlive;
-
-            int previousWounds =
-                allocated.CurrentWounds;
-
-            Vector3 previousPosition =
-                allocated.transform.position;
-
-            int attackDamage =
-                volley.damageValues[
-                    damageIndex
-                ];
-
-            if (UniversalRuleRegistry.UnitHasRule(
-                    allocated.Squad,
-                    "Implacable Resilience"
-                ))
-            {
-                attackDamage =
-                    Mathf.Max(
-                        1,
-                        attackDamage - 1
-                    );
-            }
-
-            attackDamage =
-                CustodesFactionPack11.ModifyIncomingDamage(
-                    allocated, attacker, volley.weapon, attackDamage);
-
-            attackDamage =
-                NecronsFactionPack11.ModifyIncomingDamage(
-                    allocated.Squad, attackDamage);
-
-            int incoming =
-                Mathf.Min(
-                    allocated.CurrentWounds,
-                    attackDamage);
-
-            int afterFnp =
-                UniversalRuleRegistry
-                    .ApplyFeelNoPain(
-                        allocated.Squad,
-                        incoming,
-                        volley.weapon.displayName
-                    );
-
-            int lost =
-                allocated.ApplyDamage(
-                    afterFnp
-                );
-
-            volley.woundsLost +=
-                lost;
-
-            if (wasAlive &&
-                !allocated.IsAlive)
-            {
-                volley.modelsKilled++;
-
-                if (!destroyedModels.Contains(
-                        allocated))
-                {
-                    destroyedModels.Add(
-                        allocated
-                    );
-                }
-
-                pendingCasualties.Add(
-                    new InteractiveCasualtyChoice
-                    {
-                        automaticModel =
-                            allocated,
-                        previousWounds =
-                            previousWounds,
-                        previousPosition =
-                            previousPosition
-                    }
-                );
-            }
-
-            damageIndex++;
-        }
-
-        // Devastating Wounds are applied after normal damage. Each individual
-        // critical wound is capped to the currently allocated model.
-                for (int i = 0;
-             i < devEvents;
-             i++)
-        {
-            if (damageIndex >=
-                volley.damageValues.Count)
-            {
-                break;
-            }
-
-            bool v47DevastatingPrecision =
-                volley.precision ||
-                i < volley.precisionDevastatingWounds;
-
-            ModelToken allocated =
-                GetAllocationModel(
-                    v47DevastatingPrecision
-                );
-
-            if (allocated == null)
-                break;
-
-            bool wasAlive =
-                allocated.IsAlive;
-
-            int previousWounds =
-                allocated.CurrentWounds;
-
-            Vector3 previousPosition =
-                allocated.transform.position;
-
-            int attackDamage =
-                volley.damageValues[
-                    damageIndex
-                ];
-
-            if (UniversalRuleRegistry.UnitHasRule(
-                    allocated.Squad,
-                    "Implacable Resilience"
-                ))
-            {
-                attackDamage =
-                    Mathf.Max(
-                        1,
-                        attackDamage - 1
-                    );
-            }
-
-            attackDamage =
-                CustodesFactionPack11.ModifyIncomingDamage(
-                    allocated, attacker, volley.weapon, attackDamage, false);
-
-            attackDamage =
-                NecronsFactionPack11.ModifyIncomingDamage(
-                    allocated.Squad, attackDamage);
-
-            int incoming =
-                Mathf.Min(
-                    allocated.CurrentWounds,
-                    attackDamage);
-
-            int afterFnp =
-                UniversalRuleRegistry
-                    .ApplyFeelNoPain(
-                        allocated.Squad,
-                        incoming,
-                        "Devastating Wounds: " +
-                        volley.weapon.displayName
-                    );
-
-            int lost =
-                allocated.ApplyDamage(
-                    afterFnp
-                );
-
-            volley.woundsLost +=
-                lost;
-
-            if (wasAlive &&
-                !allocated.IsAlive)
-            {
-                volley.modelsKilled++;
-
-                if (!destroyedModels.Contains(
-                        allocated))
-                {
-                    destroyedModels.Add(
-                        allocated
-                    );
-                }
-
-                pendingCasualties.Add(
-                    new InteractiveCasualtyChoice
-                    {
-                        automaticModel =
-                            allocated,
-                        previousWounds =
-                            previousWounds,
-                        previousPosition =
-                            previousPosition
-                    }
-                );
-            }
-
-            damageIndex++;
-        }
-
-        totalWoundsLost +=
-            volley.woundsLost;
-
-        totalModelsKilled +=
-            volley.modelsKilled;
-
-        target.RefreshVisuals();
-
-        if (target.AttachedLeader != null)
-            target.AttachedLeader.RefreshVisuals();
-
-        ResolveHazardous(
-            volley
-        );
-
-        lastActionText =
-            "Applied " +
-            volley.woundsLost +
-            " wound(s); " +
-            volley.modelsKilled +
-            " model(s) killed.";
-
-        stage =
-            InteractiveAttackStage.WeaponComplete;
+        V48ApplyDamageCompatibility();
     }
 
     private void ResolveHazardous(
@@ -3311,175 +2593,14 @@ rapid +=
             attacker.AttachedLeader.RefreshVisuals();
     }
 
-    private void AdvanceToNextVolley()
+        private void AdvanceToNextVolley()
     {
-        if (!target.IsAlive &&
-            (target.AttachedLeader == null ||
-             !target.AttachedLeader.IsAlive))
-        {
-            stage =
-                InteractiveAttackStage.AttackComplete;
-
-            return;
-        }
-
-        volleyIndex++;
-
-        if (volleyIndex >=
-            volleys.Count)
-        {
-            stage =
-                InteractiveAttackStage.AttackComplete;
-
-            return;
-        }
-
-        stage =
-            InteractiveAttackStage.RollHits;
-
-        lastActionText =
-            "Next weapon profile.";
+        V48AdvanceToNextVolley();
     }
 
-    private int FindRerollableDieIndex()
+        private int FindRerollableDieIndex()
     {
-        InteractiveWeaponVolley volley =
-            CurrentVolley;
-
-        if (volley == null)
-            return -1;
-
-        switch (stage)
-        {
-            case InteractiveAttackStage.ReviewHits:
-                if (volley.hitCommandRerollUsed ||
-                    volley.torrent ||
-                    volley.cannotRerollHits ||
-                    volley.automaticHitRerolls)
-                {
-                    return -1;
-                }
-
-                for (int i = 0;
-                     i < volley.hitRolls.Count;
-                     i++)
-                {
-                    int roll =
-                        volley.hitRolls[i];
-
-                    if (roll == 1)
-                        return i;
-
-                    if (volley.minimumUnmodifiedHit > 0 &&
-                        roll <
-                            volley.minimumUnmodifiedHit)
-                    {
-                        return i;
-                    }
-
-                    if (roll != 6 &&
-                        roll +
-                            volley.hitRollModifier <
-                            volley.skill)
-                    {
-                        return i;
-                    }
-                }
-
-                return -1;
-
-            case InteractiveAttackStage.ReviewWounds:
-                if (volley.woundCommandRerollUsed ||
-                    volley.twinLinked ||
-                    volley.automaticWoundRerolls)
-                {
-                    return -1;
-                }
-
-                for (int i = 0;
-                     i < volley.woundRolls.Count;
-                     i++)
-                {
-                    int value =
-                        volley.woundRolls[i];
-
-                    bool critical =
-                        value >=
-                            volley.criticalWoundThreshold;
-
-                    bool success =
-                        value != 1 &&
-                        (critical ||
-                         value == 6 ||
-                         value +
-                            volley.woundRollModifier >=
-                            volley.woundTarget);
-
-                    if (!success)
-                        return i;
-                }
-
-                return -1;
-
-            case InteractiveAttackStage.ReviewSaves:
-                if (volley.saveCommandRerollUsed)
-                    return -1;
-
-                                int bestSaveIndex = -1;
-                int bestSaveRoll = int.MaxValue;
-
-                for (int i = 0;
-                     i < volley.saveRolls.Count;
-                     i++)
-                {
-                    int targetNumber =
-                        i < volley.saveTargetsPerDie.Count
-                        ? volley.saveTargetsPerDie[i]
-                        : volley.saveTarget;
-
-                    int roll =
-                        volley.saveRolls[i];
-
-                    if (roll < targetNumber &&
-                        roll < bestSaveRoll)
-                    {
-                        bestSaveRoll = roll;
-                        bestSaveIndex = i;
-                    }
-                }
-
-                return bestSaveIndex;
-
-            case InteractiveAttackStage.ReviewDamage:
-                if (volley.damageCommandRerollUsed ||
-                    string.IsNullOrWhiteSpace(
-                        volley.weapon.damageExpression))
-                {
-                    return -1;
-                }
-
-                if (volley.damageValues.Count == 0)
-                    return -1;
-
-                int lowestIndex = 0;
-
-                for (int i = 1;
-                     i < volley.damageValues.Count;
-                     i++)
-                {
-                    if (volley.damageValues[i] <
-                        volley.damageValues[
-                            lowestIndex
-                        ])
-                    {
-                        lowestIndex = i;
-                    }
-                }
-
-                return lowestIndex;
-        }
-
-        return -1;
+        return V48FindRerollableDieIndex();
     }
 
     private int LowestFailedIndex(

@@ -1223,10 +1223,7 @@ int failedSaves = 0;
             hazardFailures++;
 
             int mortalWounds =
-                attacker.HasKeyword(
-                    "monster") ||
-                attacker.HasKeyword(
-                    "vehicle")
+                WarboardV48CoreRules.AllModelsMonsterOrVehicle(attacker)
                 ? 3
                 : 1;
 

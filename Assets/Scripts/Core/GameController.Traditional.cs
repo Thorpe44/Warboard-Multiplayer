@@ -1237,52 +1237,9 @@ public partial class GameController : MonoBehaviour
         );
     }
 
-    private void CompleteTraditionalCharge()
+        private void CompleteTraditionalCharge()
     {
-        if (!traditionalChargePending ||
-            traditionalChargeAttacker == null ||
-            traditionalChargeTarget == null)
-        {
-            traditionalChargePending = false;
-            traditionalChargeAttacker = null;
-            traditionalChargeTarget = null;
-            return;
-        }
-
-        SquadController attacker =
-            traditionalChargeAttacker;
-
-        SquadController target =
-            traditionalChargeTarget;
-
-        int result =
-            Mathf.Clamp(
-                traditionalChargeResult,
-                2,
-                12
-            );
-
-        traditionalChargePending = false;
-        traditionalChargeAttacker = null;
-        traditionalChargeTarget = null;
-
-        AppendBattleLog(
-            "CHARGE",
-            attacker.DisplayName +
-            "  ->  " +
-            target.DisplayName,
-            "Player-entered final Charge total: " +
-            result +
-            ". Warboard did not interpret the physical dice or offer rerolls."
-        );
-
-        ResolveChargeRoll(
-            attacker,
-            target,
-            result,
-            false,
-            0
-        );
+        V48CompleteTraditionalCharge();
     }
 
     private void CancelTraditionalCharge()

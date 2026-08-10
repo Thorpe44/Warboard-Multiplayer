@@ -1462,18 +1462,6 @@ public partial class GameController : MonoBehaviour
                 squad.StartTurn();
             }
         }
-
-        // 11e Core CP: both players gain 1 CP at the start of each
-        // Command phase.
-        foreach (string faction
-            in factions)
-        {
-            GainCommandPoints(
-                faction,
-                1
-            );
-        }
-
         GameEventBus.Raise(
             new GameEventContext
             {
@@ -1490,7 +1478,18 @@ public partial class GameController : MonoBehaviour
             }
         );
 
+        // 11e sequence: Start of Command phase first, then Core CP, then
+        // Battle-shock, then Command Abilities.
         RaisePhaseStarted();
+
+        foreach (string faction
+            in factions)
+        {
+            GainCommandPoints(
+                faction,
+                1
+            );
+        }
 
         string battleShockSummary =
             ResolveCommandPhaseBattleShock();
@@ -1686,8 +1685,10 @@ public partial class GameController : MonoBehaviour
         );
     }
 
-    private void RaisePhaseStarted()
+        private void RaisePhaseStarted()
     {
+        V48ResetPhaseWindows();
+
         GameEventBus.Raise(
             new GameEventContext
             {

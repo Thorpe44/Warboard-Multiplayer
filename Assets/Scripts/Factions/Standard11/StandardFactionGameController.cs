@@ -734,17 +734,8 @@ public sealed partial class StandardFactionGameController :
         int limit =
             DetachmentPointLimit;
 
-        bool incursionThreePointException =
-            string.Equals(
-                Game.StandardBattleSizeName,
-                "Incursion",
-                StringComparison.OrdinalIgnoreCase) &&
-            definitions.Count == 1 &&
-            definitions[0].dp == 3;
-
         if (limit > 0 &&
-            total > limit &&
-            !incursionThreePointException)
+            total > limit)
         {
             reason =
                 total +
@@ -752,7 +743,7 @@ public sealed partial class StandardFactionGameController :
                 Game.StandardBattleSizeName +
                 " normally allows " +
                 limit +
-                "DP. Incursion permits a single 3DP Detachment as the exception.";
+                "DP.";
             return false;
         }
 

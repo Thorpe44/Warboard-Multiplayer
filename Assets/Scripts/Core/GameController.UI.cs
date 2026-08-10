@@ -2038,24 +2038,25 @@ public partial class GameController : MonoBehaviour
         }
     }
 
-    private void DrawXcomAttackDecisionWindow()
+        private void DrawXcomAttackDecisionWindow()
     {
         if (interactiveAttack == null)
             return;
 
         float width =
             Mathf.Min(
-                690f,
+                720f,
                 Screen.width - 50f
             );
 
+        float height = 430f;
+
         Rect panel =
             new Rect(
-                (Screen.width - width) *
-                    0.5f,
-                120f,
+                (Screen.width - width) * 0.5f,
+                Mathf.Max(80f, (Screen.height - height) * 0.5f),
                 width,
-                280f
+                height
             );
 
         DrawTintedBox(
@@ -2074,8 +2075,13 @@ public partial class GameController : MonoBehaviour
             );
 
         heading.fontSize = 20;
-        heading.fontStyle =
-            FontStyle.Bold;
+        heading.fontStyle = FontStyle.Bold;
+
+        GUIStyle wrap =
+            new GUIStyle(
+                GUI.skin.label
+            );
+        wrap.wordWrap = true;
 
         GUI.Label(
             new Rect(
@@ -2084,104 +2090,193 @@ public partial class GameController : MonoBehaviour
                 panel.width - 36f,
                 28f
             ),
-            "XCOM RESOLUTION  -  DECISION REQUIRED",
+            "XCOM RESOLUTION - 11E DECISION REQUIRED",
             heading
         );
 
         GUI.Label(
             new Rect(
                 panel.x + 18f,
-                panel.y + 52f,
+                panel.y + 50f,
                 panel.width - 36f,
-                52f
+                58f
             ),
             interactiveAttack.Attacker.DisplayName +
             "  ->  " +
             interactiveAttack.Target.DisplayName +
             "\n" +
-            interactiveAttack.RequirementText
+            interactiveAttack.RequirementText,
+            wrap
         );
 
-        float x =
-            panel.x + 18f;
+        float y = panel.y + 118f;
 
-        if (interactiveAttack
-            .CanUsePartingTheVeil)
+        if (interactiveAttack.V48LethalDecisionPending)
+        {
+            GUI.Label(
+                new Rect(panel.x + 18f, y, panel.width - 36f, 42f),
+                "LETHAL HITS is optional in 11e. Choose how many Critical Hits automatically wound; the remainder continue to the Wound roll.",
+                wrap
+            );
+            y += 48f;
+
+            if (GUI.Button(
+                new Rect(panel.x + 18f, y, 46f, 36f),
+                "-"))
+            {
+                interactiveAttack.V48AdjustLethalDraft(-1);
+            }
+
+            GUI.Label(
+                new Rect(panel.x + 74f, y + 7f, 210f, 24f),
+                interactiveAttack.V48LethalDraft +
+                " / " +
+                interactiveAttack.V48LethalChoiceMaximum +
+                " auto-wound"
+            );
+
+            if (GUI.Button(
+                new Rect(panel.x + 292f, y, 46f, 36f),
+                "+"))
+            {
+                interactiveAttack.V48AdjustLethalDraft(1);
+            }
+
+            if (GUI.Button(
+                new Rect(panel.x + panel.width - 258f, y, 240f, 36f),
+                "CONFIRM LETHAL HITS"))
+            {
+                interactiveAttack.V48ConfirmLethalChoice();
+                ResumeXcomAttack();
+            }
+
+            y += 48f;
+        }
+
+        if (interactiveAttack.V48PrecisionDecisionPending)
+        {
+            GUI.Label(
+                new Rect(panel.x + 18f, y, panel.width - 36f, 38f),
+                "PRECISION is optional. Select a visible Character allocation group, or resolve these wounds normally.",
+                wrap
+            );
+            y += 42f;
+
+            if (GUI.Button(
+                new Rect(panel.x + 18f, y, 46f, 36f),
+                "<"))
+            {
+                interactiveAttack.V48CyclePrecisionCharacter(-1);
+            }
+
+            GUI.Label(
+                new Rect(panel.x + 74f, y + 7f, 300f, 24f),
+                interactiveAttack.V48PrecisionCandidateLabel
+            );
+
+            if (GUI.Button(
+                new Rect(panel.x + 380f, y, 46f, 36f),
+                ">"))
+            {
+                interactiveAttack.V48CyclePrecisionCharacter(1);
+            }
+
+            if (GUI.Button(
+                new Rect(panel.x + 438f, y, 120f, 36f),
+                "USE PRECISION"))
+            {
+                interactiveAttack.V48UsePrecisionCharacter();
+                ResumeXcomAttack();
+            }
+
+            if (GUI.Button(
+                new Rect(panel.x + 566f, y, 136f, 36f),
+                "NORMAL ALLOCATION"))
+            {
+                interactiveAttack.V48DeclinePrecision();
+                ResumeXcomAttack();
+            }
+
+            y += 48f;
+        }
+
+        float reactionX = panel.x + 18f;
+
+        if (interactiveAttack.CanUsePartingTheVeil)
         {
             if (GUI.Button(
-                new Rect(
-                    x,
-                    panel.y + 126f,
-                    210f,
-                    40f
-                ),
+                new Rect(reactionX, y, 210f, 38f),
                 "USE PARTING THE VEIL"))
             {
-                interactiveAttack
-                    .UsePartingTheVeil();
-
+                interactiveAttack.UsePartingTheVeil();
                 ResumeXcomAttack();
             }
-
-            x += 220f;
+            reactionX += 220f;
         }
 
-        if (interactiveAttack
-            .CanUseMacabreResilience)
+        if (interactiveAttack.CanUseMacabreResilience)
         {
             if (GUI.Button(
-                new Rect(
-                    x,
-                    panel.y + 126f,
-                    220f,
-                    40f
-                ),
+                new Rect(reactionX, y, 225f, 38f),
                 "USE MACABRE RESILIENCE"))
             {
-                interactiveAttack
-                    .UseMacabreResilience();
-
+                interactiveAttack.UseMacabreResilience();
                 ResumeXcomAttack();
             }
-
-            x += 230f;
+            reactionX += 235f;
         }
 
-        if (interactiveAttack
-            .CanCommandReroll)
+        if (reactionX > panel.x + 18f)
+            y += 48f;
+
+        if (interactiveAttack.CanCommandReroll)
         {
+            GUI.Label(
+                new Rect(panel.x + 18f, y + 7f, 154f, 24f),
+                "COMMAND RE-ROLL:"
+            );
+
             if (GUI.Button(
-                new Rect(
-                    panel.x + 18f,
-                    panel.y + 178f,
-                    260f,
-                    40f
-                ),
-                "COMMAND RE-ROLL (1 CP)"))
+                new Rect(panel.x + 176f, y, 42f, 36f),
+                "<"))
             {
-                if (interactiveAttack
-                    .UseCommandReroll())
-                {
-                    interactiveAttack.Continue();
-                    ResumeXcomAttack();
-                }
+                interactiveAttack.V48CycleCommandRerollDie(-1);
             }
+
+            GUI.Label(
+                new Rect(panel.x + 228f, y + 7f, 180f, 24f),
+                interactiveAttack.V48SelectedRerollLabel
+            );
+
+            if (GUI.Button(
+                new Rect(panel.x + 410f, y, 42f, 36f),
+                ">"))
+            {
+                interactiveAttack.V48CycleCommandRerollDie(1);
+            }
+
+            if (GUI.Button(
+                new Rect(panel.x + panel.width - 258f, y, 240f, 36f),
+                "RE-ROLL SELECTED DIE (1 CP)"))
+            {
+                if (interactiveAttack.UseCommandReroll())
+                    ResumeXcomAttack();
+            }
+
+            y += 48f;
         }
 
         if (GUI.Button(
             new Rect(
-                panel.x +
-                    panel.width -
-                    280f,
-                panel.y + 178f,
+                panel.x + 18f,
+                panel.y + panel.height - 58f,
                 260f,
-                40f
+                38f
             ),
             "DECLINE / CONTINUE AUTO"))
         {
             bool complete =
-                interactiveAttack
-                    .DeclineDecisionAndFastResolve();
+                interactiveAttack.DeclineDecisionAndFastResolve();
 
             if (complete)
                 FinalizeInteractiveAttack();
@@ -2189,14 +2284,16 @@ public partial class GameController : MonoBehaviour
 
         GUI.Label(
             new Rect(
-                panel.x + 18f,
-                panel.y + 232f,
-                panel.width - 36f,
-                30f
+                panel.x + 294f,
+                panel.y + panel.height - 54f,
+                panel.width - 312f,
+                34f
             ),
-            "Routine dice stay hidden. Warboard only stops for a real player decision."
+            "v48 preserves player choices that can change the 11e result; routine resolution remains automatic.",
+            wrap
         );
     }
+
 
     private void DrawInteractiveAttackWindow()
     {

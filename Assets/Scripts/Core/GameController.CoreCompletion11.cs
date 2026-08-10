@@ -182,7 +182,7 @@ public partial class GameController
         }
     }
 
-    private bool Core11CanAdvancePhase(
+        private bool Core11CanAdvancePhase(
         out string reason)
     {
         reason = "";
@@ -191,36 +191,39 @@ public partial class GameController
 
         if (core11DisembarkPassenger != null)
         {
-            reason =
-                "Finish the pending disembark placement before changing phase.";
+            reason = "Finish the pending disembark placement before changing phase.";
             return false;
         }
 
         if (core11HeroicChargeUnit != null)
         {
-            reason =
-                "Finish the Heroic Intervention charge move before changing phase.";
+            reason = "Finish the Heroic Intervention charge move before changing phase.";
             return false;
         }
 
         if (core11EmergencyDisembarkQueue.Count > 0)
         {
-            reason =
-                "Finish all emergency disembark placements before continuing.";
+            reason = "Finish all emergency disembark placements before continuing.";
             return false;
         }
 
         if (core11CounteroffensiveDecisionPending)
         {
-            reason =
-                "Resolve the pending Counteroffensive decision before continuing.";
+            reason = "Resolve the pending Counteroffensive decision before continuing.";
             return false;
         }
 
         if (reservePlacementSquad != null)
         {
-            reason =
-                "Finish the reserve/ingress placement before changing phase.";
+            reason = "Finish the reserve/ingress placement before changing phase.";
+            return false;
+        }
+
+        if (phase == Phase.Move &&
+            !v48EndMoveOverwatchResolved &&
+            V48OpenFireOverwatchWindow())
+        {
+            reason = "Resolve the end-of-Movement Fire Overwatch window first.";
             return false;
         }
 
@@ -228,8 +231,7 @@ public partial class GameController
             !core11EndMoveWindowResolved &&
             Core11OpenRapidIngressWindow())
         {
-            reason =
-                "Resolve the end-of-Movement Rapid Ingress window first.";
+            reason = "Resolve the end-of-Movement Rapid Ingress window first.";
             return false;
         }
 
@@ -237,8 +239,7 @@ public partial class GameController
             !core11EndChargeWindowResolved &&
             Core11OpenHeroicInterventionWindow())
         {
-            reason =
-                "Resolve the end-of-Charge Heroic Intervention window first.";
+            reason = "Resolve the end-of-Charge Heroic Intervention window first.";
             return false;
         }
 
@@ -1910,137 +1911,16 @@ public partial class GameController
             unit.AttachedLeader.RefreshVisuals();
     }
 
-    private bool Core11CanUseExplosives(
+        private bool Core11CanUseExplosives(
         SquadController unit)
     {
-        return
-            unit != null &&
-            unit.IsOnBattlefield &&
-            !IsEngaged(unit) &&
-            !unit.HasAdvanced &&
-            !unit.HasShot &&
-            (unit.HasKeyword("EXPLOSIVES") ||
-             unit.HasKeyword("GRENADES")) &&
-            GetCommandPoints(unit.FactionId) >= 1;
+        return V48CanUseExplosives(unit);
     }
 
-    private void Core11UseExplosives(
+        private void Core11UseExplosives(
         SquadController unit)
     {
-        if (!Core11CanUseExplosives(unit))
-            return;
-
-        List<SquadController> targets =
-            squads
-                .Where(
-                    enemy =>
-                        enemy != null &&
-                        enemy.IsAlive &&
-                        enemy.IsOnBattlefield &&
-                        !enemy.IsAttachedLeader &&
-                        enemy.FactionId != unit.FactionId &&
-                        !IsEngaged(enemy) &&
-                        JoinedModels(unit).Any(
-                            model =>
-                                model != null &&
-                                ModelHasLineOfSight(model, enemy) &&
-                                enemy.JoinedLivingModelTokens().Any(
-                                    targetModel =>
-                                        targetModel != null &&
-                                        CoreRules11Terrain.ModelDistance(
-                                            model,
-                                            targetModel
-                                        ) <= 8f + 0.001f
-                                )
-                        )
-                )
-                .ToList();
-
-        if (targets.Count == 0)
-        {
-            status =
-                "Explosives: no unengaged visible enemy is within 8\".";
-            return;
-        }
-
-        List<RuleChoiceOption> options =
-            new List<RuleChoiceOption>();
-
-        foreach (SquadController target
-            in targets)
-        {
-            SquadController captured = target;
-            options.Add(
-                new RuleChoiceOption(
-                    captured.DisplayName,
-                    () =>
-                    {
-                        CloseRuleChoice();
-
-                        if (!SpendFactionStratagemCP(
-                                unit,
-                                1,
-                                "Explosives"))
-                        {
-                            return;
-                        }
-
-                        Action<int> apply =
-                            successes =>
-                            {
-                                Core11ApplyMortalWounds(
-                                    captured,
-                                    successes,
-                                    "Explosives",
-                                    unit
-                                );
-
-                                status =
-                                    "Explosives inflicted " +
-                                    successes +
-                                    " mortal wound(s) on " +
-                                    captured.DisplayName + ".";
-                            };
-
-                        if (!IsXcomMode)
-                        {
-                            OpenTraditionalNumericPrompt(
-                                "EXPLOSIVES",
-                                "Roll six D6. Enter the number of results of 4+.",
-                                0,
-                                6,
-                                0,
-                                6,
-                                apply
-                            );
-                            return;
-                        }
-
-                        int successes = 0;
-                        for (int die = 0; die < 6; die++)
-                        {
-                            if (DiceRoller.RollD6("Explosives") >= 4)
-                                successes++;
-                        }
-
-                        apply(successes);
-                    }
-                )
-            );
-        }
-
-        options.Add(
-            new RuleChoiceOption(
-                "Cancel",
-                CloseRuleChoice
-            )
-        );
-
-        OpenRuleChoice(
-            "EXPLOSIVES  -  1CP",
-            "Select one visible unengaged enemy within 8\".",
-            options
-        );
+        V48UseExplosives(unit);
     }
 
     private bool Core11CanUseCrushingImpact(
@@ -2055,125 +1935,10 @@ public partial class GameController
             GetCommandPoints(unit.FactionId) >= 1;
     }
 
-    private void Core11UseCrushingImpact(
+        private void Core11UseCrushingImpact(
         SquadController unit)
     {
-        if (!Core11CanUseCrushingImpact(unit))
-            return;
-
-        List<SquadController> targets =
-            EngagedEnemies(unit);
-
-        List<RuleChoiceOption> options =
-            new List<RuleChoiceOption>();
-
-        foreach (SquadController target
-            in targets)
-        {
-            SquadController captured = target;
-
-            options.Add(
-                new RuleChoiceOption(
-                    captured.DisplayName,
-                    () =>
-                    {
-                        CloseRuleChoice();
-
-                        if (!SpendFactionStratagemCP(
-                                unit,
-                                1,
-                                "Crushing Impact"))
-                        {
-                            return;
-                        }
-
-                        int dice = Mathf.Max(1, unit.Toughness);
-
-                        Action<int, int> apply =
-                            (selfWounds, enemyWounds) =>
-                            {
-                                Core11ApplyMortalWounds(
-                                    unit,
-                                    selfWounds,
-                                    "Crushing Impact recoil"
-                                );
-
-                                Core11ApplyMortalWounds(
-                                    captured,
-                                    Mathf.Min(6, enemyWounds),
-                                    "Crushing Impact",
-                                    unit
-                                );
-
-                                status =
-                                    "Crushing Impact: " +
-                                    selfWounds +
-                                    " self mortal wound(s), " +
-                                    Mathf.Min(6, enemyWounds) +
-                                    " enemy mortal wound(s).";
-                            };
-
-                        if (!IsXcomMode)
-                        {
-                            OpenTraditionalNumericPrompt(
-                                "CRUSHING IMPACT  -  1s",
-                                "Roll " + dice +
-                                " D6. Enter how many dice rolled a 1.",
-                                0,
-                                dice,
-                                0,
-                                dice,
-                                selfWounds =>
-                                    OpenTraditionalNumericPrompt(
-                                        "CRUSHING IMPACT  -  5+",
-                                        "Using the same roll, enter how many dice rolled 5+ (maximum 6 inflicted).",
-                                        0,
-                                        dice,
-                                        0,
-                                        dice,
-                                        enemyWounds =>
-                                            apply(
-                                                selfWounds,
-                                                enemyWounds
-                                            )
-                                    )
-                            );
-                            return;
-                        }
-
-                        int self = 0;
-                        int enemy = 0;
-
-                        for (int die = 0;
-                             die < dice;
-                             die++)
-                        {
-                            int roll = DiceRoller.RollD6(
-                                "Crushing Impact"
-                            );
-
-                            if (roll == 1) self++;
-                            if (roll >= 5) enemy++;
-                        }
-
-                        apply(self, enemy);
-                    }
-                )
-            );
-        }
-
-        options.Add(
-            new RuleChoiceOption(
-                "Cancel",
-                CloseRuleChoice
-            )
-        );
-
-        OpenRuleChoice(
-            "CRUSHING IMPACT  -  1CP",
-            "Select one enemy unit engaged with the charging MONSTER/VEHICLE.",
-            options
-        );
+        V48UseCrushingImpact(unit);
     }
 
     private void Core11OfferSmokescreenWindow()
@@ -2434,193 +2199,18 @@ public partial class GameController
         return true;
     }
 
-    private void Core11ChooseHeroicTarget(
+        private void Core11ChooseHeroicTarget(
         SquadController unit)
     {
-        List<SquadController> chargedTargets =
-            squads
-                .Where(
-                    enemy =>
-                        enemy != null &&
-                        enemy.IsAlive &&
-                        enemy.IsOnBattlefield &&
-                        enemy.FactionId != unit.FactionId &&
-                        enemy.MadeChargeMove &&
-                        JoinedDistance(unit, enemy) <= 12f + 0.001f
-                )
-                .ToList();
-
-        List<SquadController> intoFrayTargets =
-            squads
-                .Where(
-                    enemy =>
-                        enemy != null &&
-                        enemy.IsAlive &&
-                        enemy.IsOnBattlefield &&
-                        enemy.FactionId != unit.FactionId &&
-                        JoinedDistance(unit, enemy) <= 6f + 0.001f
-                )
-                .ToList();
-
-        List<RuleChoiceOption> options =
-            new List<RuleChoiceOption>();
-
-        foreach (SquadController target
-            in chargedTargets)
-        {
-            SquadController captured = target;
-            options.Add(
-                new RuleChoiceOption(
-                    "Leap to Defend: " +
-                    captured.DisplayName +
-                    " (1CP)",
-                    () =>
-                    {
-                        CloseRuleChoice();
-                        Core11ResolveHeroicIntervention(
-                            unit,
-                            captured,
-                            false
-                        );
-                    }
-                )
-            );
-        }
-
-        foreach (SquadController target
-            in intoFrayTargets)
-        {
-            SquadController captured = target;
-            options.Add(
-                new RuleChoiceOption(
-                    "Into the Fray: " +
-                    captured.DisplayName +
-                    " (2CP)",
-                    () =>
-                    {
-                        CloseRuleChoice();
-                        Core11ResolveHeroicIntervention(
-                            unit,
-                            captured,
-                            true
-                        );
-                    }
-                )
-            );
-        }
-
-        options.Add(
-            new RuleChoiceOption(
-                "Cancel",
-                () =>
-                {
-                    CloseRuleChoice();
-                    core11EndChargeWindowResolved = true;
-                }
-            )
-        );
-
-        OpenRuleChoice(
-            "HEROIC INTERVENTION TARGET",
-            "Leap to Defend costs 1CP. Into the Fray costs 2CP and caps the charge roll at 6.",
-            options
-        );
+        V48ChooseHeroicMode(unit);
     }
 
-    private void Core11ResolveHeroicIntervention(
+        private void Core11ResolveHeroicIntervention(
         SquadController unit,
         SquadController target,
         bool intoFray)
     {
-        int cost = intoFray ? 2 : 1;
-
-        if (!SpendFactionStratagemCP(
-                unit,
-                cost,
-                "Heroic Intervention"))
-        {
-            core11EndChargeWindowResolved = true;
-            return;
-        }
-
-        GameEventBus.Raise(
-            new GameEventContext
-            {
-                Type = GameEventType.ChargeDeclared,
-                Game = this,
-                ActingFaction = unit.FactionId,
-                Phase = phase,
-                Source = unit,
-                Target = target,
-                Note = intoFray
-                    ? "Heroic Intervention: Into the Fray"
-                    : "Heroic Intervention: Leap to Defend"
-            }
-        );
-
-        Action<int> useRoll =
-            roll =>
-            {
-                int resolved =
-                    intoFray
-                    ? Mathf.Min(6, roll)
-                    : roll;
-
-                GameEventBus.Raise(
-                    new GameEventContext
-                    {
-                        Type = GameEventType.ChargeRolled,
-                        Game = this,
-                        ActingFaction = unit.FactionId,
-                        Phase = phase,
-                        Source = unit,
-                        Target = target,
-                        RollTotal = resolved,
-                        Note = "Heroic Intervention"
-                    }
-                );
-
-                if (JoinedDistance(unit, target) >
-                    resolved + EngagementRange + 0.05f)
-                {
-                    core11EndChargeWindowResolved = true;
-                    status =
-                        "Heroic Intervention failed: charge roll " +
-                        resolved + ". Press NEXT PHASE again.";
-                    return;
-                }
-
-                core11HeroicChargeUnit = unit;
-                core11HeroicChargeTarget = target;
-                core11HeroicChargeDistance = resolved;
-                core11EndChargeWindowResolved = true;
-
-                status =
-                    "HEROIC INTERVENTION: click the board to move " +
-                    unit.DisplayName +
-                    " up to " + resolved +
-                    "\" and end engaged with " +
-                    target.DisplayName + ".";
-            };
-
-        if (!IsXcomMode)
-        {
-            OpenTraditionalNumericPrompt(
-                "HEROIC INTERVENTION CHARGE",
-                "Roll 2D6 and enter the final charge result.",
-                2,
-                12,
-                7,
-                2,
-                useRoll
-            );
-            return;
-        }
-
-        useRoll(
-            DiceRoller.RollD6("Heroic Intervention") +
-            DiceRoller.RollD6("Heroic Intervention")
-        );
+        V48BeginHeroicCharge(unit, intoFray);
     }
 
     private void Core11TryPlaceHeroicCharge(
