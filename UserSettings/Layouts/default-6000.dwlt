@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 56}
   m_MaxSize: {x: 8096, y: 8096}
   vertical: 0
-  controlID: 28
+  controlID: 14
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:

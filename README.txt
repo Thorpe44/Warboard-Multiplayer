@@ -1,45 +1,35 @@
-WARBOARD SHARED MULTIPLAYER DICE
+WARBOARD DICE VISIBILITY + TRAY POLISH
 
-ROOT CAUSE
-----------
-TraditionalDiceTray3D was entirely local:
-- ROLL POOL called RollAll() locally.
-- SpawnDie() used Unity Random and local Rigidbody physics.
-- Dice state was not present in WarboardMatchSnapshot.
+Designed for the current Warboard-Multiplayer main build.
 
-Therefore two connected machines could sync the game perfectly while their
-dice trays remained independent.
+CHANGES
+-------
+- Dice are ~28% larger in world space.
+- Corrects the non-uniform tray scaling so polyhedral dice are not visually
+  stretched/squashed by their parent transform.
+- Dice are brighter ivory with much larger high-contrast face numbers.
+- Physical dice tray is longer and significantly wider.
+- Adds tall invisible catch-wall colliders and an invisible ceiling so dice
+  cannot jump over the visible lip.
+- Adds an emergency bounds recovery: even if physics somehow tunnels through
+  a collider, the die is returned to the tray instead of being lost.
+- Adds a dedicated RESULT display using the already-synchronized settledText,
+  so multiplayer clients see the same final result text.
 
-THIS FIX
---------
-Adds a dedicated host-authoritative dice channel.
-
-Either player can:
-- change pool counts
-- roll
-- select dice
-- reroll selected dice
-- clear the tray
-
-For a roll:
-1. The controlling player sends a request to the host.
-2. The host performs the authoritative physical roll.
-3. Both machines run a local rolling animation.
-4. When the host dice settle, exact final positions/rotations/results are sent.
-5. The client snaps to the authoritative final dice.
-
-This intentionally does NOT try to stream Rigidbody transforms every frame.
-Unity physics is not deterministic across separate processes, so doing that
-would be wasteful and still prone to divergence.
+MULTIPLAYER
+-----------
+No changes to the working host-authoritative shared dice networking.
+The result display reads the synchronized settledText that is already included
+in WarboardDiceSnapshot.
 
 INSTALL
 -------
-1. Extract this ZIP into the Warboard-Multiplayer project root.
-2. Run INSTALL_SHARED_MULTIPLAYER_DICE.bat.
+1. Extract into the Warboard-Multiplayer project root.
+2. Run INSTALL_DICE_TRAY_POLISH.bat
 3. Wait for:
-   SUCCESS - SHARED MULTIPLAYER DICE INSTALLED
+   SUCCESS - DICE VISIBILITY + TRAY POLISH VERIFIED
 4. Return to Unity and let it compile.
-5. REBUILD the Windows EXE.
-6. Test Editor host + rebuilt EXE client.
+5. Test in Editor first.
+6. Rebuild the Windows EXE only after the Editor version looks right.
 
-No scene changes are required.
+No scene remake is required.
