@@ -1,8 +1,490 @@
 {
-  "indexed_objects": 104,
-  "meshes": 113,
-  "textures": 100,
-  "missing_meshes": 10,
-  "missing_textures": 1,
-  "source_custom_models": 110
+  "faction": "Necrons",
+  "packId": "warboard.necrons",
+  "displayName": "Warboard Necrons Model Pack",
+  "sourceJsons": [
+    "Necron main(1).json",
+    "Necron back up(1).json"
+  ],
+  "candidateCount": 684,
+  "selectedCanonicalCount": 164,
+  "completeUnitCount": 105,
+  "incompleteExcludedCount": 59,
+  "meshFileCount": 132,
+  "textureFileCount": 111,
+  "incompleteExcluded": [
+    {
+      "name": "10/10 Tesseract Ark (2x G. Cannon) #1",
+      "canonical": "tesseract ark (2x g. cannon)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc941683695160714188259DB5A2CC7EA5543FE79B01767222049C5A8DE5"
+      ]
+    },
+    {
+      "name": "10/10 Tesseract Ark (2x P. Beamer) #1",
+      "canonical": "tesseract ark (2x p. beamer)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc941683695160714188259DB5A2CC7EA5543FE79B01767222049C5A8DE5"
+      ]
+    },
+    {
+      "name": "10/10 Tesseract Ark (2x T. Cannon) #1",
+      "canonical": "tesseract ark (2x t. cannon)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc941683695160714188259DB5A2CC7EA5543FE79B01767222049C5A8DE5"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (2x G. Blaster)  #1",
+      "canonical": "tomb blade (2x g. blaster)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167357841B10A3651FDBF93FE8D9DA3E1BB34B8F2DB06F86F"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (2x T. Carbine)  #1",
+      "canonical": "tomb blade (2x t. carbine)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606038801673610192DD952EFE48D8A3BD876A60EDCAE52E44027C153"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Loom/2x G. Blaster)  #1",
+      "canonical": "tomb blade (loom/2x g. blaster)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167378084E5D1E295989075AF7C7B9A9F753E703256C4EA6A"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Loom/2x P. Beamer)  #1",
+      "canonical": "tomb blade (loom/2x p. beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606038801673842124424DD5AB7961AC255F20C0122288C8D187822E5"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Loom/2x T. Carbine)  #1",
+      "canonical": "tomb blade (loom/2x t. carbine)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167381703600E87CC3D1B3E8CA4E2CC6749EC4DA7C771C861"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (P. Beamer)  #1",
+      "canonical": "tomb blade (p. beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc86060388016736488262670246865BE7010CA4FE23F4C3E679827A5B69"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/2x G. Blaster)  #1",
+      "canonical": "tomb blade (shields/2x g. blaster)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606038801673597127A0C3C73722FA1B34BAB35688300D68A918AD56B"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/2x T. Carbine) #1",
+      "canonical": "tomb blade (shields/2x t. carbine)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167363615937C516CA896ED857323E7F47DD3FE6EB0CBC8A2"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/Loom/2x G. Blaster) #1",
+      "canonical": "tomb blade (shields/loom/2x g. blaster)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167380612B2C39FD7C875211224B68F30C21244EFE2D58158"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/Loom/2x T. Carbine) #1",
+      "canonical": "tomb blade (shields/loom/2x t. carbine)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc86060388016738267287FB3B7B01C25AA9710CC4EB6DAEA43976C29C0D"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/Loom/P. Beamer) #1",
+      "canonical": "tomb blade (shields/loom/p. beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603880167385224C47740BC1C16CF6FB45CF00420A02F1BA7D828EB"
+      ]
+    },
+    {
+      "name": "2/2 Tomb Blade (Shields/P. Beamer) #1",
+      "canonical": "tomb blade (shields/p. beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc86060388016736639128700ACF0E6FA9B1FE4A72123DBAD2AC9501AAC8"
+      ]
+    },
+    {
+      "name": "3/3 Canoptek Acanthrites #1",
+      "canonical": "canoptek acanthrites",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860605148059093269D0918F58E2315055A5F67707E7B0DF6AF7754810"
+      ]
+    },
+    {
+      "name": "3/3 Canoptek Wraith (P. Caster) #1",
+      "canonical": "canoptek wraith (p. caster)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc775119834830375315F93BC66B3334268C247C7A1977B32143D88FBDF1"
+      ]
+    },
+    {
+      "name": "3/3 Canoptek Wraith (Transdimensional Beamer) #1",
+      "canonical": "canoptek wraith (transdimensional beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc779604404004149467D006A6CEF08752BFA91E2959AE4E98FCC310ACB2"
+      ]
+    },
+    {
+      "name": "30/30 Gauss Pylon",
+      "canonical": "gauss pylon",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc803409569977791962D53D01F74E14526797C4148C8106F7F886697AB"
+      ]
+    },
+    {
+      "name": "4/4 Canoptek Spyder (2x P. Beamer)",
+      "canonical": "canoptek spyder (2x p. beamer)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860604274412260025EF36E28BDC9CBDAFA5043D5090F584F3DEF0423A"
+      ]
+    },
+    {
+      "name": "4/4 Canoptek Spyder (Fab. Claw/Prism)",
+      "canonical": "canoptek spyder (fab. claw/prism)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860604274412247212E19378A4E55111E5DB7204147B7077E96A691064"
+      ]
+    },
+    {
+      "name": "5/5 Kutlakh the World Killer",
+      "canonical": "kutlakh the world killer",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603645842315058CF56E77DE4A66499161741E20E2DD1134FE5F629"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (Blade)",
+      "canonical": "overlord (blade)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc86060364584232309725893CD8DE52D7CA313C146F4CB07E36C60F57FC"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (Blade/Orb)",
+      "canonical": "overlord (blade/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606036458423217867248EE35BB9EAB01BD8844951BF8AB0D25DB78FE"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (SoL)",
+      "canonical": "overlord (sol)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603645842315058CF56E77DE4A66499161741E20E2DD1134FE5F629"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (SoL/Orb)",
+      "canonical": "overlord (sol/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606036458423052177145D31727F6555457236DADF2B02F904516B7E3"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (Sword)",
+      "canonical": "overlord (sword)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606036458423204098AE3F1ACCFC40ADF7A34B51DF547F90A1519AC83"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (Sword/Orb)",
+      "canonical": "overlord (sword/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606036458423171267CB37E6E12028D3258585F456FE8602298229E4B"
+      ]
+    },
+    {
+      "name": "5/5 Overlord (Warscythe)",
+      "canonical": "overlord (warscythe)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603645842328119DF923E95A334BE0555DC8C55B7C1F1C2E76C2C67"
+      ]
+    },
+    {
+      "name": "5/5 Sautekh Overlord (Voidscythe)",
+      "canonical": "overlord (voidscythe)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc94396185982649434376C8021B7E32BF53EE7F8C1B84F8C8EE6EB03904"
+      ]
+    },
+    {
+      "name": "6/6 Anrakyr the Traveller (Arrow)",
+      "canonical": "anrakyr the traveller (arrow)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc7875041894543556275A1B95A46F6C8E210ECD35BCCFAFAC4F2E0848A6"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (Blade)",
+      "canonical": "destroyer lord (blade)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603504045208697F81671ED120DF2DC1826D1A52F7C81DCB600AD6D"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (Blade/Orb)",
+      "canonical": "destroyer lord (blade/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603504045206270B4991D35128769956BA4A841B38946F245D8180E"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (SoL)",
+      "canonical": "destroyer lord (sol)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc787504189454353207854C8414FE7B3FF8ACCCD5FD89D2A58AD23261C8"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (SoL/Orb)",
+      "canonical": "destroyer lord (sol/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606036458423632393D134D6D821631B8AB7C42A9992162283E7CE1DC"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (Sword)",
+      "canonical": "destroyer lord (sword)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc860603504045204539C4047D640B105128938936DD97BE54CD2935AD62"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (Sword/Orb)",
+      "canonical": "destroyer lord (sword/orb)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606035040452025789A4E3FDE141D3A10A8431DAFE0E1B7FE21D4BAD3"
+      ]
+    },
+    {
+      "name": "6/6 Destroyer Lord (Warscythe)",
+      "canonical": "destroyer lord (warscythe)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606035040452126808539DB3DC7E9EC23480FA7754D9BFEEC2109A170"
+      ]
+    },
+    {
+      "name": "6/6 Nemesor Zahndrekh",
+      "canonical": "nemesor zahndrekh",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc940590789286036312E860904971C390C7556A787D8313839788477E54"
+      ]
+    },
+    {
+      "name": "6/6 Vargard Obyron",
+      "canonical": "vargard obyron",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc9405907892860093098F1F82D850235DCC58942CD22BD5F23B2CB48330"
+      ]
+    },
+    {
+      "name": "8/8 Lovecrons Sentry Pylon (Focussed Death Ray) #1",
+      "canonical": "sentry pylon (focussed death ray)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc803409569977791962D53D01F74E14526797C4148C8106F7F886697AB"
+      ]
+    },
+    {
+      "name": "Anrakyr",
+      "canonical": "anrakyr",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1653347522915691976C44E2250B6BE1FF1D45AA68A1050D9699BE40B6D"
+      ]
+    },
+    {
+      "name": "Canoptek Acanthrite",
+      "canonical": "canoptek acanthrite",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc20936687997972097470D17E0FDB0E04B3E5A55ED751094F158EF1ADD3F"
+      ]
+    },
+    {
+      "name": "Canopter Tomb Sentinel",
+      "canonical": "canopter tomb sentinel",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1697279271974545329AEB4B170FA31C33BD88C8F05C39D3027AE31EB8B",
+        "httpssteamusercontentaakamaihdnetugc228620379075683932305C16BD41E2C0B79505C5AE4EFBCD02C34CA3CDE"
+      ]
+    },
+    {
+      "name": "Heat Cannon",
+      "canonical": "heat cannon",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1682618843769628697B4C8553EE0F5A15D5344EE43D359129F2080248C"
+      ]
+    },
+    {
+      "name": "Lord",
+      "canonical": "lord",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc2023839223619576364FA7C814E06D387628D9493DD4FE587F249EA18F5"
+      ]
+    },
+    {
+      "name": "Monolith w/Gauss Flux Arc",
+      "canonical": "monolith w/gauss flux arc",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1661224360653713975618F8E59CF668FC60786D8C2EEE5AE285D5F04A4"
+      ]
+    },
+    {
+      "name": "Night Shroud",
+      "canonical": "night shroud",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc16826188437696336885B8C12FBA0EB39FF150D1F43559A1C5A363693E0"
+      ]
+    },
+    {
+      "name": "Night Shroud (185pts)",
+      "canonical": "night shroud (185pts)",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc102732493274244911615971B50B1A4BB67736ABFAE36BAAB8A4514CFA3"
+      ]
+    },
+    {
+      "name": "Obyon",
+      "canonical": "obyon",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc16544766251396210741CCD225240328D2BE2CEFD1D4C72E3C3FDC50CAE"
+      ]
+    },
+    {
+      "name": "Pylon",
+      "canonical": "pylon",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc165334752291568977566342C2E8832FF300EECC1A171C6AAF01393592B"
+      ]
+    },
+    {
+      "name": "Sentry Pylon",
+      "canonical": "sentry pylon",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1653347522915687588CD78E845678EBBD0130E2220623D3F2E42572BD9"
+      ]
+    },
+    {
+      "name": "Seraptek Heavy Construct",
+      "canonical": "seraptek heavy construct",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc2380801904442413908F3A1C57251500BA711EB2080769487540FBF6F29"
+      ]
+    },
+    {
+      "name": "Technomancer",
+      "canonical": "technomancer",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc17180319859935197382D40E3E7AD06B5C290CCD7143B475F4F56D754132"
+      ]
+    },
+    {
+      "name": "Tomb Sentinel",
+      "canonical": "tomb sentinel",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc16522172076690632955BF24D19BCC18370D869676C82EA10A2E722DBF2"
+      ]
+    },
+    {
+      "name": "Tomb Stalkers",
+      "canonical": "tomb stalkers",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1682618843769614542D8B474C3FBE69366D6EAD00EF756918E3B5783F0"
+      ]
+    },
+    {
+      "name": "Triarch Stalker (Heat Ray)",
+      "canonical": "triarch stalker (heat ray)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606044165062965519D5CFC2E6BCB8058452DA93851068D78A0D92EE1"
+      ]
+    },
+    {
+      "name": "Triarch Stalker (P. Shredder)",
+      "canonical": "triarch stalker (p. shredder)",
+      "source": "Backup",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc8606044165063006751CB7C0E8CB3974DFAD8268F4E81ECA352CAD930E"
+      ]
+    },
+    {
+      "name": "Zahndrekh",
+      "canonical": "zahndrekh",
+      "source": "Main",
+      "missingMeshStems": [
+        "httpssteamusercontentaakamaihdnetugc1653347522915721301E812D126C618BA5589B7673861C47E9731BB26B8"
+      ]
+    }
+  ]
 }
