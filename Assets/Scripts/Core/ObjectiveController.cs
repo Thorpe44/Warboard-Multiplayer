@@ -116,10 +116,14 @@ public partial class ObjectiveController : MonoBehaviour
             }
 
             int oc =
-                squad.TotalObjectiveControlWithin(
+                terrainObjectiveArea != null
+                ? squad.TotalObjectiveControlWithinTerrain(
+                    terrainObjectiveArea
+                )
+                : squad.TotalObjectiveControlWithin(
                     transform.position,
                     ControlRadius
-                );
+                ); // WARBOARD_V49_TERRAIN_OBJECTIVE_OC
 
             if (oc <= 0)
                 continue;
@@ -145,6 +149,19 @@ public partial class ObjectiveController : MonoBehaviour
         {
             return false;
         }
+
+        if (terrainObjectiveArea != null)
+        {
+            return squad
+                .JoinedLivingModelTokens()
+                .Any(
+                    model =>
+                        terrainObjectiveArea
+                            .ModelTouchesObjectiveArea(
+                                model
+                            )
+                );
+        } // WARBOARD_V49_TERRAIN_OBJECTIVE_RANGE
 
         return squad
             .JoinedLivingModelTokens()

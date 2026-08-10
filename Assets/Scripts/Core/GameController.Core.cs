@@ -1738,6 +1738,19 @@ public partial class GameController : MonoBehaviour
                     TerrainFeature
                 >();
 
+        // WARBOARD_V49_OBJECTIVE_TERRAIN_CLICK_LINK
+        if (clickedObjective == null &&
+            clickedTerrain != null)
+        {
+            ObjectiveTerrainLink49 objectiveLink =
+                clickedTerrain.GetComponent<
+                    ObjectiveTerrainLink49
+                >();
+
+            if (objectiveLink != null)
+                clickedObjective = objectiveLink.Objective;
+        }
+
         if (!IsXcomMode &&
             (manualWoundEditMode ||
              manualRestoreEditMode) &&

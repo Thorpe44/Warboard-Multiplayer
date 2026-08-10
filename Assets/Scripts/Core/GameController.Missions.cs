@@ -113,6 +113,8 @@ public partial class GameController : MonoBehaviour
             );
         }
 
+        BuildAndBindStandardTerrainAreas50(); // WARBOARD_V50_STANDARD_TERRAIN_AREAS
+
         CreateDeploymentZoneOutlines();
 
         Physics.SyncTransforms();
@@ -424,7 +426,7 @@ public partial class GameController : MonoBehaviour
         string targetInstruction =
             definition.TargetType ==
                 MissionActionTargetType.Objective
-            ? "click a legal objective marker"
+            ? "click a legal objective terrain area"
             : definition.TargetType ==
                 MissionActionTargetType.EnemyUnit
                 ? "click a legal enemy unit"
