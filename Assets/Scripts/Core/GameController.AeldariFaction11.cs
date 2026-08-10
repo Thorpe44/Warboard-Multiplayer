@@ -145,6 +145,9 @@ public partial class GameController
 
     public void Aeldari11OfferEventRules(AeldariGameController faction, GameEventContext context)
     {
+        // WARBOARD_V54_TRADITIONAL_NO_AELDARI_REACTION_POPUPS
+        if (!IsXcomMode)
+            return;
         if (faction == null || context == null || !faction.DetachmentLocked) return;
 
         // Enhancement reactions that are not Stratagems.
@@ -178,6 +181,12 @@ public partial class GameController
 
     public void Aeldari11PumpDeferredReactions()
     {
+        // WARBOARD_V54_TRADITIONAL_CLEAR_AELDARI_REACTIONS
+        if (!IsXcomMode)
+        {
+            aeldari11DeferredReactions.Clear();
+            return;
+        }
         if (showRuleChoiceWindow || interactiveAttack != null || aeldari11OpeningReaction) return;
         if (aeldari11DeferredChoices.Count > 0)
         {

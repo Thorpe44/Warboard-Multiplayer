@@ -42,6 +42,11 @@ public partial class GameController : MonoBehaviour
             if (col == null)
                 continue;
 
+            // WARBOARD_V54_OBJECTIVE_TRIGGER_NOT_SOLID
+            // Click/area triggers stay queryable but never block a model base.
+            if (col.isTrigger)
+                continue;
+
             ModelToken owner =
                 col.GetComponentInParent<ModelToken>();
 

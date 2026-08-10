@@ -3133,10 +3133,11 @@ public partial class GameController : MonoBehaviour
             );
         }
 
+        // WARBOARD_V54_LARGE_STRATAGEM_RULE_BOX
         GUI.Label(
             new Rect(
                 panel.x + 18f,
-                panel.y + height - 94f,
+                panel.y + height - 192f,
                 panel.width - 36f,
                 24f
             ),
@@ -3147,9 +3148,9 @@ public partial class GameController : MonoBehaviour
         DrawCurrentTooltip(
             new Rect(
                 panel.x + 18f,
-                panel.y + height - 66f,
+                panel.y + height - 164f,
                 panel.width - 36f,
-                52f
+                150f
             )
         );
     }
@@ -3679,6 +3680,8 @@ public partial class GameController : MonoBehaviour
         }
 
         // WARBOARD_V45_5_MERGED_CONTEXT_BAR
+        // WARBOARD_V54_FIGHT_CONTEXT_VISIBLE
+        V54DrawFightControls();
         DrawV45SelectedUnitCard();
         DrawStatusToast();
         DrawDiceTray();
@@ -4071,15 +4074,16 @@ public partial class GameController : MonoBehaviour
         Rect rect,
         MissionBattlefieldDefinition definition)
     {
+        // WARBOARD_V54_BRIGHT_MISSION_PREVIEW
         if (definition == null)
             return;
 
         DrawTintedBox(
             rect,
             new Color(
-                0.035f,
-                0.04f,
-                0.052f,
+                0.10f,
+                0.12f,
+                0.15f,
                 1f
             )
         );
@@ -4095,9 +4099,9 @@ public partial class GameController : MonoBehaviour
         DrawTintedBox(
             board,
             new Color(
-                0.28f,
-                0.31f,
-                0.30f,
+                0.43f,
+                0.47f,
+                0.45f,
                 1f
             )
         );
@@ -4145,15 +4149,15 @@ public partial class GameController : MonoBehaviour
                 terrain.Trait ==
                     TerrainTrait.Blocking
                 ? new Color(
-                    0.10f,
-                    0.11f,
-                    0.12f,
+                    0.28f,
+                    0.30f,
+                    0.34f,
                     0.95f
                   )
                 : new Color(
-                    0.20f,
-                    0.24f,
-                    0.20f,
+                    0.36f,
+                    0.44f,
+                    0.35f,
                     0.95f
                   )
             );
@@ -4169,10 +4173,10 @@ public partial class GameController : MonoBehaviour
 
             DrawTintedBox(
                 new Rect(
-                    centre.x - 4f,
-                    centre.y - 4f,
-                    8f,
-                    8f
+                    centre.x - 5f,
+                    centre.y - 5f,
+                    10f,
+                    10f
                 ),
                 new Color(
                     0.95f,
@@ -4312,12 +4316,8 @@ public partial class GameController : MonoBehaviour
                     rect.width - 28f,
                     42f
                 ),
-                "Faction rules: " +
-                (factionRules != null
-                    ? factionRules.RuleSummary(
-                        faction
-                      )
-                    : "Generic Core"),
+                // WARBOARD_V54_FACTION_RULE_SUMMARY
+                V54FactionRuleSummary(faction),
                 small
             );
         }

@@ -897,6 +897,12 @@ public partial class GameController
 
     private bool V48OpenFireOverwatchWindow()
     {
+        // WARBOARD_V54_TRADITIONAL_NO_OVERWATCH_POPUP
+        if (!IsXcomMode)
+        {
+            v48EndMoveOverwatchResolved = true;
+            return false;
+        }
         if (phase != Phase.Move)
             return false;
 

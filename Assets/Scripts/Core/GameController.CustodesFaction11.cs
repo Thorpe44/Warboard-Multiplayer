@@ -211,6 +211,9 @@ public partial class GameController
         CustodesGameController faction,
         GameEventContext context)
     {
+        // WARBOARD_V54_TRADITIONAL_NO_CUSTODES_REACTION_POPUPS
+        if (!IsXcomMode)
+            return;
         if (faction == null ||
             context == null ||
             !faction.DetachmentLocked)
@@ -277,6 +280,12 @@ public partial class GameController
 
     public void Custodes11PumpDeferredReactions()
     {
+        // WARBOARD_V54_TRADITIONAL_CLEAR_CUSTODES_REACTIONS
+        if (!IsXcomMode)
+        {
+            custodes11DeferredReactions.Clear();
+            return;
+        }
         if (showRuleChoiceWindow ||
             interactiveAttack != null ||
             custodes11OpeningReaction)

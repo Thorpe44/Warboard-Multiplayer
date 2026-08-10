@@ -422,6 +422,9 @@ public partial class GameController : MonoBehaviour
 
     private void OnDestroy()
     {
+        // WARBOARD_V54_GHOST_DESTROY_HOOK
+        V54ClearPlacementGhosts();
+
         Core11Uninstall();
 
         UnbindAsCurrent();
@@ -432,6 +435,9 @@ public partial class GameController : MonoBehaviour
 
     private void Update()
     {
+        // WARBOARD_V54_GHOST_UPDATE_HOOK
+        V54UpdatePlacementGhost();
+
         Custodes11PumpDeferredReactions();
 
 
