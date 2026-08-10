@@ -1,45 +1,33 @@
-[2026-08-10T15:59:58.195Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.7f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 28844 --ipc-path Unity-Upm-28844 -l 2 --log-file C:\\Users\\elli0\\Documents\\GitHub\\Multiplayer/Logs/upm.log
-[2026-08-10T15:59:58.242Z][INFO] IPC server started (IPC path=Unity-Upm-28844).
-[2026-08-10T15:59:58.243Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-28844.
-[2026-08-10T16:00:01.374Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:47:47.185Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.7f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 5016 --ipc-path Unity-Upm-5016 -l 2 --log-file C:\\Users\\elli0\\Documents\\GitHub\\Multiplayer/Logs/upm.log
+[2026-08-10T16:47:47.231Z][INFO] IPC server started (IPC path=Unity-Upm-5016).
+[2026-08-10T16:47:47.232Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-5016.
+[2026-08-10T16:47:49.564Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:01.594Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:47:49.733Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:01.595Z][INFO] config:project:get-registries <-- Request received
+[2026-08-10T16:47:49.747Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-10T16:00:01.625Z][INFO] config:project:get-registries --> 200 (30 ms)
-[2026-08-10T16:00:01.655Z][INFO] project:list-packages --> 200 (281 ms)
-[2026-08-10T16:00:01.687Z][INFO] project:resolve-packages <-- Request received
+[2026-08-10T16:47:49.755Z][INFO] config:project:get-registries --> 200 (8 ms)
+[2026-08-10T16:47:49.789Z][INFO] project:list-packages --> 200 (225 ms)
+[2026-08-10T16:47:49.946Z][INFO] project:list-packages --> 200 (213 ms)
+[2026-08-10T16:47:57.302Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:01.869Z][INFO] project:list-packages --> 200 (275 ms)
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.16.0] for package [com.unity.services.core] overridden by minimum version [1.18.0].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.4.1] for package [com.unity.services.wire] overridden by minimum version [1.4.4].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.7.1] for package [com.unity.services.deployment] overridden by minimum version [1.7.2].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [3.6.0] for package [com.unity.services.authentication] overridden by minimum version [3.7.3].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [2.11.3] for package [com.unity.collab-proxy] overridden by minimum version [2.13.5].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.11.4] for package [com.unity.nuget.mono-cecil] overridden by minimum version [1.11.6].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.1.2] for package [com.unity.services.deployment.api] overridden by minimum version [1.1.3].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [1.8.25] for package [com.unity.burst] overridden by minimum version [1.8.30].
-[2026-08-10T16:00:06.793Z][WARN] Requested version [3.2.0] for package [com.unity.test-framework.performance] overridden by minimum version [3.5.0].
-[2026-08-10T16:00:06.795Z][INFO] project:resolve-packages --> 200 (5108 ms)
-[2026-08-10T16:00:23.458Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:47:57.317Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:23.481Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:47:57.530Z][INFO] project:list-packages --> 200 (228 ms)
+[2026-08-10T16:47:57.538Z][INFO] project:list-packages --> 200 (221 ms)
+[2026-08-10T16:47:59.817Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-10T16:00:23.790Z][INFO] project:list-packages --> 200 (333 ms)
-[2026-08-10T16:00:23.791Z][INFO] project:list-packages --> 200 (310 ms)
-[2026-08-10T16:00:26.121Z][INFO] config:project:get-registries <-- Request received
+[2026-08-10T16:47:59.821Z][INFO] config:project:get-registries --> 200 (4 ms)
+[2026-08-10T16:48:01.872Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:26.126Z][INFO] config:project:get-registries --> 200 (6 ms)
-[2026-08-10T16:00:28.599Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:48:02.115Z][INFO] project:list-packages --> 200 (244 ms)
+[2026-08-10T16:48:04.222Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:28.848Z][INFO] project:list-packages --> 200 (249 ms)
-[2026-08-10T16:00:31.043Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:48:05.591Z][INFO] project:list-packages --> 200 (1369 ms)
+[2026-08-10T16:50:00.490Z][INFO] project:list-packages <-- Request received
 params: {}
-[2026-08-10T16:00:31.253Z][INFO] project:list-packages --> 200 (210 ms)
-[2026-08-10T16:01:38.056Z][INFO] project:list-packages <-- Request received
+[2026-08-10T16:50:00.639Z][INFO] project:list-packages --> 200 (149 ms)
+[2026-08-10T16:50:00.922Z][INFO] config:project:get-registries <-- Request received
 params: {}
-[2026-08-10T16:01:38.198Z][INFO] project:list-packages --> 200 (142 ms)
-[2026-08-10T16:01:38.475Z][INFO] config:project:get-registries <-- Request received
-params: {}
-[2026-08-10T16:01:38.479Z][INFO] config:project:get-registries --> 200 (4 ms)
+[2026-08-10T16:50:00.927Z][INFO] config:project:get-registries --> 200 (5 ms)

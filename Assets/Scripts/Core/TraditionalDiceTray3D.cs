@@ -94,7 +94,7 @@ public class TraditionalDiceMarker : MonoBehaviour
     }
 }
 
-public class TraditionalDiceTray3D : MonoBehaviour
+public partial class TraditionalDiceTray3D : MonoBehaviour
 {
     private class DieGeometry
     {
@@ -728,9 +728,7 @@ public class TraditionalDiceTray3D : MonoBehaviour
 
         if (marker != null)
         {
-            marker.SetSelected(
-                !marker.Selected
-            );
+            SetDieSelectedShared(marker, !marker.Selected);
         }
     }
     private void RefreshSettledText()
@@ -798,6 +796,8 @@ public class TraditionalDiceTray3D : MonoBehaviour
 
     private void ClearDice()
     {
+        if (WarboardDiceNetworkBridge.TryInterceptClear(this)) return;
+
         foreach (TraditionalDiceMarker die
             in dice)
         {
@@ -845,6 +845,8 @@ public class TraditionalDiceTray3D : MonoBehaviour
 
     private void RollAll()
     {
+        if (WarboardDiceNetworkBridge.TryInterceptRoll(this)) return;
+
         EnsureBuilt();
         EnsurePoolInitialized();
 
@@ -1967,6 +1969,8 @@ public class TraditionalDiceTray3D : MonoBehaviour
 
     private void RerollSelected()
     {
+        if (WarboardDiceNetworkBridge.TryInterceptReroll(this)) return;
+
         List<TraditionalDiceMarker> selected =
             dice
                 .Where(
@@ -2096,9 +2100,7 @@ public class TraditionalDiceTray3D : MonoBehaviour
 
             if (marker != null)
             {
-                marker.SetSelected(
-                    !marker.Selected
-                );
+                SetDieSelectedShared(marker, !marker.Selected);
 
                 current.Use();
             }
@@ -2108,6 +2110,8 @@ public class TraditionalDiceTray3D : MonoBehaviour
     private void AdjustSelectedPool(
         int delta)
     {
+        if (WarboardDiceNetworkBridge.TryInterceptPoolAdjustment(this, selectedSides, delta)) return;
+
         EnsurePoolInitialized();
 
         int current =

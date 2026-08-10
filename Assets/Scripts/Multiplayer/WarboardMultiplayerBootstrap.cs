@@ -30,6 +30,9 @@ public static class WarboardMultiplayerBootstrap
             WarboardNetworkBridge>();
 
         root.AddComponent<
+            WarboardDiceNetworkBridge>();
+
+        root.AddComponent<
             WarboardMultiplayerUI>();
     }
 
