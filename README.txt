@@ -1,11 +1,21 @@
-Warboard V52 Unity 6000.5 compile fix
+WARBOARD V53 CORE RECOVERY V4
 
-Fixes:
-GameController.V52PlacementGhost.cs CS0619
-'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'
+This is a recovery for the large cascade of 'GameController does not contain a
+definition for...' errors that appeared after V53.
 
-Warboard only used the value as an in-memory material-cache key, so the fix
-uses the normal object hash code instead. No gameplay, placement, model, or
-network behaviour changes.
+The cascade means GameController.Core.cs is no longer intact. Do NOT fix the
+hundreds of individual errors.
 
-Run FIX_WARBOARD_V52_UNITY6000_ENTITYID.bat from the Warboard project root.
+This installer:
+- Finds the latest intact GameController.Core.cs backup created automatically by
+  V53_RECOVERY_V2 before that patch touched the file.
+- Validates that the backup contains representative core methods.
+- Restores the entire known-good Core file.
+- Re-applies only the single V53 CanPlaceModel scenery hook.
+- Replaces the V53 helper with the corrected generic version.
+- Refuses to finish if the restored/patched Core looks truncated.
+
+Run:
+INSTALL_WARBOARD_V53_CORE_RECOVERY_V4.bat
+
+Then return to Unity and allow it to compile.

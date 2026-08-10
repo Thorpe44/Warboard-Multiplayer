@@ -1,14 +1,11 @@
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
-// WARBOARD V53 RECOVERY V2
+// WARBOARD V53 CORE RECOVERY V4
 //
 // Terrain Area footprint = legal space.
 // Actual ruin / wall / rubble geometry = illegal END POSITION for a model base.
-//
-// This is intentionally an end-position test. It does not alter movement-path
-// permissions, so units that are allowed to move through a ruin wall can still
-// pass through it; they simply cannot finish/deploy with their base inside it.
 
 public partial class GameController : MonoBehaviour
 {
@@ -45,23 +42,18 @@ public partial class GameController : MonoBehaviour
             if (col == null)
                 continue;
 
-            // Ignore the moving model's entire hierarchy.
             ModelToken owner =
                 col.GetComponentInParent<ModelToken>();
 
             if (owner == model)
                 continue;
 
-            // The footprint itself is legal standing space.
             if (col.GetComponent<
                     TerrainAreaFootprint50>() != null)
             {
                 continue;
             }
 
-            // V45 presentation can create child geometry beneath the V50
-            // TerrainFeature object, so search upward rather than only on the
-            // collider's own GameObject.
             TerrainFeature feature =
                 col.GetComponentInParent<
                     TerrainFeature>();
@@ -73,8 +65,6 @@ public partial class GameController : MonoBehaviour
                 feature.GetComponentInParent<
                     TerrainAreaFootprint50>();
 
-            // Only apply this new rule to scenery physically sitting on a V50
-            // Terrain Area. Legacy terrain keeps its existing placement logic.
             if (area == null)
                 continue;
 
@@ -98,7 +88,6 @@ public partial class GameController : MonoBehaviour
         if (col == null)
             return false;
 
-        // Tiny tolerance prevents exact edge contact from flickering red.
         float allowedRadius =
             Mathf.Max(
                 0f,
@@ -110,9 +99,6 @@ public partial class GameController : MonoBehaviour
 
         if (box != null)
         {
-            // V50 scenery is primarily cube/BoxCollider geometry. Transform
-            // the base centre into collider local space so rotated ruins are
-            // tested correctly.
             Vector3 worldAtBoxHeight =
                 new Vector3(
                     baseCentre.x,
@@ -173,7 +159,6 @@ public partial class GameController : MonoBehaviour
                 allowedRadius;
         }
 
-        // Conservative fallback for future non-box scenery.
         Bounds bounds =
             col.bounds;
 
@@ -206,24 +191,67 @@ public partial class GameController : MonoBehaviour
             allowedRadius;
     }
 
-    private bool V53GhostCandidatesClearOfSolidAreaScenery(
-        List<PlacementGhostCandidate52> candidates)
+    // Generic on purpose: V53 never names V52's nested
+    // PlacementGhostCandidate52 type.
+    private bool V53GhostCandidatesClearOfSolidAreaScenery<T>(
+        IEnumerable<T> candidates)
     {
         if (candidates == null)
             return true;
 
-        foreach (PlacementGhostCandidate52 candidate
-            in candidates)
+        foreach (T candidate in candidates)
         {
-            if (candidate == null ||
-                candidate.Model == null)
+            if (candidate == null)
+                continue;
+
+            object boxed = candidate;
+            System.Type type =
+                boxed.GetType();
+
+            FieldInfo modelField =
+                type.GetField(
+                    "Model",
+                    BindingFlags.Instance |
+                    BindingFlags.Public |
+                    BindingFlags.NonPublic
+                );
+
+            FieldInfo destinationField =
+                type.GetField(
+                    "Destination",
+                    BindingFlags.Instance |
+                    BindingFlags.Public |
+                    BindingFlags.NonPublic
+                );
+
+            if (modelField == null ||
+                destinationField == null)
             {
                 continue;
             }
 
+            ModelToken model =
+                modelField.GetValue(
+                    boxed
+                ) as ModelToken;
+
+            if (model == null)
+                continue;
+
+            object destinationValue =
+                destinationField.GetValue(
+                    boxed
+                );
+
+            if (!(destinationValue is Vector3))
+                continue;
+
+            Vector3 destination =
+                (Vector3)destinationValue;
+
             if (V53ModelBaseOverlapsSolidAreaScenery(
-                    candidate.Model,
-                    candidate.Destination))
+                    model,
+                    destination))
             {
                 return false;
             }
