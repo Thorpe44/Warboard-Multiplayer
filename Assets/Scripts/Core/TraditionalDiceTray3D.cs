@@ -201,10 +201,12 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
 
         trayRoot.transform.localScale =
             new Vector3(
-                1.55f,
+                1.72f,
                 1.0f,
-                0.58f
+                0.74f
             );
+
+        ApplyDiceTrayPolish();
 
         Camera main =
             Camera.main;
@@ -577,6 +579,8 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
             PhysicsMaterialCombine.Average;
         dicePhysics.bounceCombine =
             PhysicsMaterialCombine.Average;
+
+        ApplyDiceTrayPolish();
     }
 
     private void CreateTrayPart(
@@ -638,6 +642,8 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
     {
         if (worldSpaceMode)
             HandleWorldDiceClick();
+
+        ContainEscapedDice();
 
         if (!rollInProgress ||
             dice.Count == 0)
@@ -895,9 +901,9 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
         int sides)
     {
         return new Color(
-            0.92f,
-            0.92f,
-            0.94f,
+            0.985f,
+            0.975f,
+            0.90f,
             1f
         );
     }
@@ -933,26 +939,17 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
         dieObject.transform.position =
             trayOrigin +
             new Vector3(
-                Random.Range(
-                    -5.0f,
-                    5.0f
-                ),
-                Random.Range(
-                    4.4f,
-                    7.8f
-                ) +
+                Random.Range(-5.8f, 5.8f),
+                Random.Range(3.8f, 6.3f) +
                 index * 0.018f,
-                Random.Range(
-                    -2.5f,
-                    2.5f
-                )
+                Random.Range(-2.35f, 2.35f)
             );
 
         dieObject.transform.rotation =
             Random.rotation;
 
         dieObject.transform.localScale =
-            Vector3.one;
+            DiceWorldScaleCompensated();
 
         SetLayerRecursive(
             dieObject,
@@ -1948,16 +1945,22 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
             TextAnchor.MiddleCenter;
         text.alignment =
             TextAlignment.Center;
-        text.fontSize = 56;
+        text.fontSize = 72;
 
         text.characterSize =
             sides >= 12
-            ? 0.047f
+            ? 0.058f
             : sides >= 8
-                ? 0.055f
-                : 0.065f;
+                ? 0.068f
+                : 0.082f;
 
-        text.color = Color.black;
+        text.color =
+            new Color(
+                0.015f,
+                0.018f,
+                0.022f,
+                1f
+            );
         text.fontStyle =
             FontStyle.Bold;
 
@@ -1991,14 +1994,8 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
             die.transform.position =
                 trayOrigin +
                 new Vector3(
-                    Random.Range(
-                        -4.8f,
-                        4.8f
-                    ),
-                    Random.Range(
-                        4.6f,
-                        7.5f
-                    ),
+                    Random.Range(-5.6f, 5.6f),
+                    Random.Range(3.9f, 6.2f),
                     Random.Range(
                         -2.4f,
                         2.4f
@@ -2383,6 +2380,8 @@ public partial class TraditionalDiceTray3D : MonoBehaviour
             ),
             "Dice are physical objects below the battlefield. Click a die there to select it for reroll."
         );
+
+        DrawDiceResultOverlay();
     }
 
 }
