@@ -1,2 +1,0 @@
-v38 multi-detachment compatibility migration completed successfully.
-AeldariRulesSystem detachment queries now use AeldariDetachmentRuntime.
