@@ -10,7 +10,7 @@ public enum SquadBattlefieldState
     Embarked
 }
 
-public class SquadController : MonoBehaviour
+public partial class SquadController : MonoBehaviour
 {
     public string UnitId { get; private set; }
     public string DisplayName { get; private set; }

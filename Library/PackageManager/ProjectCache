@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639219651588534343
-    m_Hash: 2562634196
+      ticks: 639219664089197154
+    m_Hash: 4199672561
   m_LockFileStatus:
     m_FilePath: C:/Users/elli0/Documents/GitHub/Multiplayer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639219651992381758
-    m_Hash: 2122759961
+      ticks: 639219664350903211
+    m_Hash: 3820300587
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,13 +22,13 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/elli0/Documents/GitHub/Multiplayer/Packages
 m_EditorVersion: 6000.5.7f1 (017862109af0)
 m_ResolvedPackages:
-- packageId: com.unity.services.multiplayer@2.0.0
+- packageId: com.unity.services.multiplayer@2.1.3
   testable: 0
   isDirectDependency: 1
   isInstalled: 1
-  version: 2.0.0
+  version: 2.1.3
   source: 1
-  resolvedPath: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.services.multiplayer@8d17beeef99f
+  resolvedPath: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.services.multiplayer@01ce6abde85b
   assetPath: Packages/com.unity.services.multiplayer
   name: com.unity.services.multiplayer
   displayName: Multiplayer Services
@@ -93,23 +93,23 @@ m_ResolvedPackages:
     deprecated: []
   dependencies:
   - name: com.unity.transport
-    version: 2.5.0
+    version: 2.6.0
   - name: com.unity.collections
     version: 2.2.1
   - name: com.unity.services.qos
-    version: 1.3.0
+    version: 1.4.1
   - name: com.unity.services.core
-    version: 1.15.1
+    version: 1.16.0
   - name: com.unity.services.wire
-    version: 1.4.0
+    version: 1.4.1
   - name: com.unity.services.deployment
-    version: 1.6.2
+    version: 1.7.1
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
+    version: 3.2.2
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.5.1
+    version: 3.6.0
   resolvedDependencies:
   - name: com.unity.transport
     version: 6.5.0
@@ -142,7 +142,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.5.2
+    version: 3.7.3
   - name: com.unity.ugui
     version: 2.5.0
   - name: com.unity.modules.ui
@@ -178,13 +178,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638998621766250000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.multiplayer@2.0/manual/index.html
+  datePublishedTicks: 639074775520370000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.multiplayer@2.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 39e37d6fb55a965c77fc1f41ebcd2d7c0c13bf74
+    revision: 952bbcae49f6da6753bc2ae78a4e02165513d3de
     path: 
   unityLifecycle:
     version: 2.3.0
@@ -198,12 +198,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n- Local matchmaker queue and environment
-    files have a new `Fetch from Remote` command in the Deployment Window that will
-    override the local configuration with the content from the Cloud Dashboard configuration.\n\n###
-    Fixed\n- Fixed an issue where Matchmaker configuration assets would not deploy
-    with their latest changes from the Deployment Window.\n- Fixed Lobby events being
-    raised before re-subscribing when joining the same Lobby again.","gameService":{}}'
+  upmReserved: '{"changelog":"### Fixed\n- Dependency update: Bump `com.unity.services.deployment`
+    to version 1.7.1 to pick up an editor compatibility fix (InstanceID deprecation).","gameService":{}}'
   signature:
     status: 1
     reason: Signature is ok
@@ -217,173 +213,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8d17beeef99f8a9acc220284c5ae2437f2d96c60
+  fingerprint: 01ce6abde85b9dd6aa366b43bbaaee1e84b2a188
   editorCompatibility:
     compatibilityLevel: 1
     minimumPackageVersion: 2.3.0
-    minimumUnityVersion: 6000.3.0b10
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.services.authentication@3.5.2
-  testable: 0
-  isDirectDependency: 1
-  isInstalled: 1
-  version: 3.5.2
-  source: 1
-  resolvedPath: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.services.authentication@fe59e82b6d55
-  assetPath: Packages/com.unity.services.authentication
-  name: com.unity.services.authentication
-  displayName: Authentication
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'Client SDK offering player identity management for Unity Gaming Services.
-
-
-    Identity
-    providers can be configured from the editor or the Unity Dashboard.
-
-
-    Player
-    management is available in the Unity Dashboard.'
-  errors: []
-  versions:
-    all:
-    - 1.0.0-pre.4
-    - 1.0.0-pre.6
-    - 1.0.0-pre.37
-    - 2.0.0
-    - 2.1.1
-    - 2.2.0
-    - 2.3.1
-    - 2.4.0
-    - 2.5.0-pre.3
-    - 2.5.0
-    - 2.6.1
-    - 2.7.1
-    - 2.7.2
-    - 2.7.4
-    - 3.0.0
-    - 3.1.0
-    - 3.2.0
-    - 3.3.0
-    - 3.3.1
-    - 3.3.3
-    - 3.4.0
-    - 3.4.1
-    - 3.5.1
-    - 3.5.2
-    - 3.6.0
-    - 3.6.1
-    - 3.7.0
-    - 3.7.1
-    - 3.7.2
-    - 3.7.3
-    compatible:
-    - 3.7.3
-    recommended: 3.7.3
-    deprecated: []
-  dependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.services.core
-    version: 1.15.1
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 2.5.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
-  - name: com.unity.modules.physics2d
-    version: 1.0.0
-  - name: com.unity.modules.physicscore2d
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.services.core
-    version: 1.18.0
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.2
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    isUnityRegistry: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638938918271930000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.authentication@3.5/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 09780e68ffae81ddcda923c77243b12f7814cf13
-    path: 
-  unityLifecycle:
-    version: 3.7.3
-    nextVersion: 
-    recommendedVersion: 3.7.0
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Added\n- Added event `IAuthenticationService.PlayerInfoChanged`
-    for when the instance of `PlayerInfo` is set.\n- Added event `PlayerInfo.Changed`
-    for when the values within `PlayerInfo` are updated.\n- Added event `IAuthenticationService.PlayerNameChanged`
-    for when the player name changes.\n- Added event `IAuthenticationService.PlayerIdChanged`
-    for when the player id changes.\n- Added more details to server exception messages.","gameService":{"configurePath":"Project/Services/Authentication","genericDashboardUrl":"https://cloud.unity3d.com/player-authentication","projectDashboardUrl":"https://cloud.unity3d.com/organizations/{0}/projects/{1}/player-authentication/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"}}'
-  signature:
-    status: 1
-    reason: Signature is ok
-    attestation:
-      format: archive
-      publishingChannel: unity
-      entitlementKeys: []
-      ownerOrgName: 
-      ownerOrgId: 
-      publisherName: 
-    errorCode: 
-  assetStore:
-    productId: 
-  fingerprint: fe59e82b6d55f0014e06bb765deb7239c5b5eced
-  editorCompatibility:
-    compatibilityLevel: 1
-    minimumPackageVersion: 3.7.3
-    minimumUnityVersion: 2021.3
+    minimumUnityVersion: 2022.3
   compliance:
     status: 0
     violation:
@@ -1749,7 +1583,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.5.2
+    version: 3.7.3
   - name: com.unity.ugui
     version: 2.5.0
   - name: com.unity.modules.ui
@@ -1891,7 +1725,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.5.2
+    version: 3.7.3
   - name: com.unity.ugui
     version: 2.5.0
   - name: com.unity.modules.ui
@@ -2091,6 +1925,168 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.7.2
     minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.services.authentication@3.7.3
+  testable: 0
+  isDirectDependency: 1
+  isInstalled: 1
+  version: 3.7.3
+  source: 1
+  resolvedPath: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.services.authentication@4e591ebe4d6b
+  assetPath: Packages/com.unity.services.authentication
+  name: com.unity.services.authentication
+  displayName: Authentication
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'Client SDK offering player identity management for Unity Gaming Services.
+
+
+    Identity
+    providers can be configured from the editor or the Unity Dashboard.
+
+
+    Player
+    management is available in the Unity Dashboard.'
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.4
+    - 1.0.0-pre.6
+    - 1.0.0-pre.37
+    - 2.0.0
+    - 2.1.1
+    - 2.2.0
+    - 2.3.1
+    - 2.4.0
+    - 2.5.0-pre.3
+    - 2.5.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 2.7.4
+    - 3.0.0
+    - 3.1.0
+    - 3.2.0
+    - 3.3.0
+    - 3.3.1
+    - 3.3.3
+    - 3.4.0
+    - 3.4.1
+    - 3.5.1
+    - 3.5.2
+    - 3.6.0
+    - 3.6.1
+    - 3.7.0
+    - 3.7.1
+    - 3.7.2
+    - 3.7.3
+    compatible:
+    - 3.7.3
+    recommended: 3.7.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.18.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 2.5.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  - name: com.unity.modules.physicscore2d
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.18.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639190994985180000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.authentication@3.7/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: 71b9186dd9e19e3818cb51788b8a8162743dee4e
+    path: 
+  unityLifecycle:
+    version: 3.7.3
+    nextVersion: 
+    recommendedVersion: 3.7.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fixed the Authentication SDK leaking low-level
+    exceptions (such as `NullReferenceException`) instead of `RequestFailedException`
+    under hostile or blocked network conditions. Sign-in failures now consistently
+    surface as a `RequestFailedException`; a null or empty response is reported as
+    `CommonErrorCodes.TransportError`.\n- Fixed UI samples to use the new input system","gameService":{"configurePath":"Project/Services/Authentication","genericDashboardUrl":"https://cloud.unity3d.com/player-authentication","projectDashboardUrl":"https://cloud.unity3d.com/organizations/{0}/projects/{1}/player-authentication/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"}}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 4e591ebe4d6b8d7e815a6261184d8f8723e93706
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 3.7.3
+    minimumUnityVersion: 2022.3
   compliance:
     status: 0
     violation:

@@ -10,7 +10,7 @@ public static class WarboardMultiplayerBootstrap
     {
         EnsureNetworkManager();
 
-        if (Object.FindFirstObjectByType<
+        if (Object.FindAnyObjectByType<
                 WarboardSessionService>() != null)
         {
             return;
@@ -38,12 +38,17 @@ public static class WarboardMultiplayerBootstrap
         if (NetworkManager.Singleton != null)
             return;
 
+        // NetworkManager.NetworkConfig is not automatically constructed
+        // when NetworkManager is added dynamically at runtime.
+        //
+        // Build it while the GameObject is inactive so NetworkManager.Awake
+        // sees a fully configured NetworkConfig when the object is activated.
         GameObject go =
             new GameObject(
                 "Warboard NetworkManager"
             );
 
-        Object.DontDestroyOnLoad(go);
+        go.SetActive(false);
 
         UnityTransport transport =
             go.AddComponent<UnityTransport>();
@@ -51,12 +56,31 @@ public static class WarboardMultiplayerBootstrap
         NetworkManager manager =
             go.AddComponent<NetworkManager>();
 
-        manager.NetworkConfig.NetworkTransport =
-            transport;
+        manager.NetworkConfig =
+            new NetworkConfig
+            {
+                NetworkTransport =
+                    transport,
 
-        // Warboard currently runs a single gameplay scene and builds the
-        // battlefield at runtime. State replication handles world state.
-        manager.NetworkConfig.EnableSceneManagement =
-            false;
+                // Warboard owns its scene/world reconstruction through the
+                // snapshot bridge rather than NGO scene management.
+                EnableSceneManagement =
+                    false,
+
+                // Warboard miniatures are normal runtime GameObjects and are
+                // synchronized by snapshots, not NetworkPrefab spawning.
+                ForceSamePrefabs =
+                    false,
+
+                ConnectionApproval =
+                    false,
+
+                TickRate =
+                    30
+            };
+
+        go.SetActive(true);
+
+        Object.DontDestroyOnLoad(go);
     }
 }

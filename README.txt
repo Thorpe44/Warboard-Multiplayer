@@ -1,38 +1,26 @@
-WARBOARD MULTIPLAYER PACKAGE COMPATIBILITY FIX
-==============================================
+WARBOARD MULTIPLAYER START MENU FIX
 
-WHY
----
-The earlier source drop pinned:
-- Netcode for GameObjects 2.7.0
-- Multiplayer Services 1.2.0
-
-Those package builds compile against older Unity 6 editor APIs and fail under
-Unity 6000.5 with EntityId / EndNameEditAction errors.
-
-THIS FIX PINS
--------------
-- com.unity.netcode.gameobjects: 2.13.1
-- com.unity.services.multiplayer: 2.0.0
-- com.unity.services.authentication: 3.5.2
+Fixes:
+- NullReferenceException in WarboardMultiplayerBootstrap.EnsureNetworkManager
+- no multiplayer/single-player launch screen
 
 INSTALL
--------
-1. CLOSE UNITY.
+1. Extract into the Warboard-Multiplayer project root.
+2. Allow files under Assets/Scripts/Multiplayer to replace existing files.
+3. Return to Unity and let scripts recompile.
+4. Press Play.
 
-2. Extract this ZIP into the Warboard project root.
-   Allow it to replace:
-       Packages/manifest.json
+Expected startup screen:
+- SINGLE PLAYER
+- HOST MULTIPLAYER
+- JOIN code field + JOIN button
 
-3. Run:
-       RESET_MULTIPLAYER_PACKAGE_CACHE.bat
+WHY THE NULL REFERENCE HAPPENED
+NetworkManager was dynamically added at runtime. Its NetworkConfig field was
+null, so the old bootstrap immediately dereferenced it.
 
-4. Re-open the project in Unity.
+The replacement creates the NetworkManager on an inactive GameObject, assigns
+a new NetworkConfig and UnityTransport, then activates the object. This ensures
+NetworkManager.Awake runs with valid configuration.
 
-5. Wait for Package Manager and script compilation to finish.
-
-DO NOT EDIT FILES INSIDE Library/PackageCache.
-They are generated package files.
-
-The CS0618 warnings in Warboard source are separate deprecation warnings and
-do not stop compilation. Fix package errors first.
+F8 toggles the small multiplayer status panel after multiplayer is selected.

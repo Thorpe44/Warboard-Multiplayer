@@ -268,9 +268,7 @@ public partial class GameController
         }
 
         TerrainFeature[] terrain =
-            FindObjectsByType<TerrainFeature>(
-                FindObjectsSortMode.None
-            )
+            FindObjectsByType<TerrainFeature>()
             .OrderBy(
                 value =>
                     value.MissionTerrainId ??
@@ -639,9 +637,7 @@ public partial class GameController
             }
 
             TerrainFeature[] localTerrain =
-                FindObjectsByType<TerrainFeature>(
-                    FindObjectsSortMode.None
-                )
+                FindObjectsByType<TerrainFeature>()
                 .OrderBy(
                     value =>
                         value.MissionTerrainId ??

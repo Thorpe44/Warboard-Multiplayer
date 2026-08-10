@@ -155,7 +155,7 @@ public class WarboardNetworkBridge : MonoBehaviour
         if (game == null)
         {
             game =
-                FindFirstObjectByType<
+                FindAnyObjectByType<
                     GameController>();
         }
     }
@@ -234,7 +234,7 @@ public class WarboardNetworkBridge : MonoBehaviour
     {
         if (manager != null &&
             manager.IsServer &&
-            clientId != manager.ServerClientId)
+            clientId != NetworkManager.ServerClientId)
         {
             SendCurrentState(clientId);
         }
@@ -312,7 +312,7 @@ public class WarboardNetworkBridge : MonoBehaviour
 
         SendChunked(
             ProposalMessage,
-            manager.ServerClientId,
+            NetworkManager.ServerClientId,
             json
         );
     }
@@ -355,7 +355,7 @@ public class WarboardNetworkBridge : MonoBehaviour
             manager.CustomMessagingManager
                 .SendNamedMessage(
                     RequestStateMessage,
-                    manager.ServerClientId,
+                    NetworkManager.ServerClientId,
                     writer
                 );
         }
@@ -367,7 +367,7 @@ public class WarboardNetworkBridge : MonoBehaviour
     {
         if (manager == null ||
             manager.IsServer ||
-            senderId != manager.ServerClientId)
+            senderId != NetworkManager.ServerClientId)
         {
             return;
         }
@@ -386,7 +386,7 @@ public class WarboardNetworkBridge : MonoBehaviour
     {
         if (manager == null ||
             !manager.IsServer ||
-            senderId == manager.ServerClientId)
+            senderId == NetworkManager.ServerClientId)
         {
             return;
         }
@@ -627,7 +627,7 @@ public class WarboardNetworkBridge : MonoBehaviour
             in manager.ConnectedClientsIds)
         {
             if (clientId ==
-                manager.ServerClientId)
+                NetworkManager.ServerClientId)
             {
                 continue;
             }

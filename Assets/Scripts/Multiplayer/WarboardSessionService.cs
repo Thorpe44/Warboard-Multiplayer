@@ -156,7 +156,9 @@ public class WarboardSessionService : MonoBehaviour
 
         if (string.IsNullOrWhiteSpace(code))
         {
-            LastError = "Enter a session join code.";
+            LastError =
+                "Enter a session join code.";
+
             return false;
         }
 

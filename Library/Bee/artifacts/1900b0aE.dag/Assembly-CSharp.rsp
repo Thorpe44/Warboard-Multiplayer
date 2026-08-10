@@ -408,7 +408,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Netcode.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Networking.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Networking.Transport.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Authentication.Editor.Shared.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Authentication.PlayerAccounts.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Authentication.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"

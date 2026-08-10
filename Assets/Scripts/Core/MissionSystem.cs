@@ -509,7 +509,7 @@ public static class MissionRegistry
     }
 }
 
-public class MissionSystem
+public partial class MissionSystem
 {
     private readonly GameController game;
     private readonly List<SquadController> squads;

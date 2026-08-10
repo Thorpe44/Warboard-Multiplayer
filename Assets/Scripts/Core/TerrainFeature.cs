@@ -7,7 +7,7 @@ public enum TerrainTrait
     Traversable
 }
 
-public class TerrainFeature : MonoBehaviour
+public partial class TerrainFeature : MonoBehaviour
 {
     public TerrainTrait Trait
     {
