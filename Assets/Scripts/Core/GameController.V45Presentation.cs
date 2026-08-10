@@ -15,6 +15,15 @@ public partial class GameController : MonoBehaviour
             return;
         }
 
+        // WARBOARD_V51_CLICKED_MODEL_IDENTITY
+        // Keep gameplay actions on the joined unit, but show the actual
+        // physical model/datasheet identity the player clicked.
+        SquadController cardSquad =
+            selectedModel != null &&
+            selectedModel.Squad != null
+            ? selectedModel.Squad
+            : selectedSquad;
+
         float width =
             Mathf.Min(
                 570f,
@@ -54,7 +63,7 @@ public partial class GameController : MonoBehaviour
                 245f,
                 24f
             ),
-            selectedSquad.DisplayName,
+            cardSquad.DisplayName,
             WarboardV45Presentation
                 .SelectedTitleStyle
         );
@@ -67,10 +76,16 @@ public partial class GameController : MonoBehaviour
                 : "READY";
 
         string modelText =
-            selectedSquad.LivingModels +
+            cardSquad.LivingModels +
             "/" +
-            selectedSquad.StartingModels +
-            " MODELS";
+            cardSquad.StartingModels +
+            " MODELS" +
+            (cardSquad != selectedSquad
+                ? " | JOINED " +
+                  selectedSquad.LivingModels +
+                  "/" +
+                  selectedSquad.StartingModels
+                : "");
 
         string selectedModelText =
             selectedModel != null &&
@@ -86,12 +101,12 @@ public partial class GameController : MonoBehaviour
             modelText +
             selectedModelText +
             " | M " +
-            selectedSquad.GetMove()
+            cardSquad.GetMove()
                 .ToString("0.#") +
             "  T " +
-            selectedSquad.Toughness +
+            cardSquad.Toughness +
             "  SV " +
-            selectedSquad.BaseSave +
+            cardSquad.BaseSave +
             "+ | " +
             state;
 

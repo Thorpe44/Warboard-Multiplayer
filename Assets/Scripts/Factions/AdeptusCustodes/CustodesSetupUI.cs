@@ -638,18 +638,33 @@ public sealed class CustodesSetupUI : MonoBehaviour
                     : "") +
                 " • LOCKED";
 
-            float width =
-                Mathf.Min(
-                    760f,
-                    Screen.width - 24f);
+            // WARBOARD_V51_SIDE_BY_SIDE_CUSTODES_BADGE
+            float badgeMargin = 12f;
+            float badgeGap = 8f;
+            float badgeSlotWidth =
+                Mathf.Max(
+                    220f,
+                    (Screen.width -
+                     badgeMargin * 2f -
+                     badgeGap) *
+                    0.5f);
+
+            bool badgePlayerTwo =
+                (controller.FactionId ?? "")
+                    .EndsWith("2");
+
+            float badgeX =
+                badgePlayerTwo
+                ? badgeMargin +
+                  badgeSlotWidth +
+                  badgeGap
+                : badgeMargin;
 
             Rect badge =
                 new Rect(
-                    Screen.width - width - 12f,
-                    48f +
-                    (occupiedRows + custodesRow) *
-                    36f,
-                    width - 74f,
+                    badgeX,
+                    48f,
+                    badgeSlotWidth,
                     30f);
 
             GUI.Box(

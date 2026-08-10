@@ -587,16 +587,35 @@ public sealed class AeldariSetupUI : MonoBehaviour
                 : " • " +
                   controller.ForceDisposition;
 
-            float width =
-                Mathf.Min(
-                    760f,
-                    Screen.width - 24f);
+            // WARBOARD_V51_SIDE_BY_SIDE_FACTION_BADGES
+            float badgeMargin = 12f;
+            float badgeGap = 8f;
+            float badgeSlotWidth =
+                Mathf.Max(
+                    220f,
+                    (Screen.width -
+                     badgeMargin * 2f -
+                     badgeGap) *
+                    0.5f);
+
+            bool badgePlayerTwo =
+                (controller.FactionId ?? "")
+                    .EndsWith("2");
+
+            float badgeX =
+                badgePlayerTwo
+                ? badgeMargin +
+                  badgeSlotWidth +
+                  badgeGap
+                : badgeMargin;
 
             Rect badge =
                 new Rect(
-                    Screen.width - width - 12f,
-                    48f + index * 36f,
-                    width - 74f,
+                    badgeX,
+                    48f,
+                    Mathf.Max(
+                        146f,
+                        badgeSlotWidth - 74f),
                     30f);
 
             GUI.Box(

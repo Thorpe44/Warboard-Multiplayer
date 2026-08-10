@@ -366,7 +366,11 @@ public static class YellowScribeImporter
                     if (convertedWeapon == null)
                         continue;
 
-                    int copies =
+                    // WARBOARD_V51_GROUP_LOADOUT_DISTRIBUTION
+                    // YellowScribe's weapon quantity is per model in this
+                    // model-profile group, not a single aggregate copy for
+                    // the entire group.
+                    int copiesPerModel =
                         Mathf.Max(
                             1,
                             IntValue(
@@ -374,20 +378,23 @@ public static class YellowScribeImporter
                                     weaponEntry,
                                     "number"
                                 ),
-                                count
+                                1
                             )
                         );
+
+                    int copies =
+                        copiesPerModel *
+                        count;
 
                     bool melee =
                         IsMeleeWeapon(
                             weaponProfile
                         );
 
-                    // YellowScribe's model group gives a count plus aggregate
-                    // weapon copy counts. Round-robin distribution gives the
-                    // expected result for the common case:
-                    // 5 models + 5 rifles => one rifle each;
-                    // 1 model + 2 guns => both guns on that model.
+                    // Expand the per-model quantity by the model-group count,
+                    // then round-robin it across those models. This preserves
+                    // multiple weapons per model while ensuring common
+                    // wargear appears on every model in the profile group.
                     for (int copy = 0;
                          copy < copies;
                          copy++)

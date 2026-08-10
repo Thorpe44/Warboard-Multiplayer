@@ -2,7 +2,8 @@
 {
     // Mandatory visible build identity.
     // Every Warboard release updates this value.
-    public const string CurrentVersion = "v52";
+    public const string CurrentVersion = "v53";
 }
+
 
 

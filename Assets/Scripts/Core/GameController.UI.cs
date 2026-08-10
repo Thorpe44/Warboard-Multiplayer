@@ -4446,7 +4446,7 @@ public partial class GameController : MonoBehaviour
                 panel.width - 32f,
                 28f
             ),
-            "MISSION  -  ROUND " +
+            "MISSION INFO / RULES  -  ROUND " +
             round +
             "  |  LAYOUT " +
             missionLayoutIndex,
@@ -5365,8 +5365,9 @@ public partial class GameController : MonoBehaviour
                 80f,
                 34f
             ),
-            "MISSION"))
+            "MISSION INFO"))
         {
+            // WARBOARD_V51_MISSION_INFO_TAB
             showMissionPanel =
                 !showMissionPanel;
 
@@ -6639,9 +6640,9 @@ public partial class GameController : MonoBehaviour
             return;
         }
 
+        // WARBOARD_V51_TRADITIONAL_CHARGE_PROMPT
         if (traditionalChargePending &&
-            traditionalChargeAttacker != null &&
-            traditionalChargeTarget != null)
+            traditionalChargeAttacker != null)
         {
             GUI.Label(
                 new Rect(
@@ -6662,8 +6663,10 @@ public partial class GameController : MonoBehaviour
                     58f
                 ),
                 traditionalChargeAttacker.DisplayName +
-                "  ->  " +
-                traditionalChargeTarget.DisplayName +
+                (traditionalChargeTarget != null
+                    ? "  ->  " +
+                      traditionalChargeTarget.DisplayName
+                    : "  |  choose target(s) after this roll") +
                 "\nRoll 2D6 yourself and apply any tabletop rerolls yourself. Enter only the final total.",
                 wrap
             );

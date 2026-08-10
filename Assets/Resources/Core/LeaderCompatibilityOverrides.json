@@ -32,6 +32,13 @@
         "Ynnari Kabalite Warriors",
         "Ynnari Wyches"
       ]
+    },
+    {
+      "leaderName": "Blade Champion",
+      "bodyguardNames": [
+        "Custodian Guard",
+        "Custodian Wardens"
+      ]
     }
   ]
 }

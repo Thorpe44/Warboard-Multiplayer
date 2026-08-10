@@ -1416,8 +1416,12 @@ public static class CustodesFactionPack11
                     attacker,
                     6f))
             {
+                // WARBOARD_V51_LIONS_AGAINST_ALL_ODDS
                 state.hitRollModifier += 1;
                 state.woundRollModifier += 1;
+                state.notes.Add(
+                    "Against All Odds: +1 Hit, +1 Wound"
+                );
             }
 
             if (Has(
