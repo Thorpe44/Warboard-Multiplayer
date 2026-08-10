@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-10T20:07:36.9816957Z"
 Built from '6000.5/staging' branch; Version is '6000.5.7f1 (017862109af0) revision 96354'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-10T19:28:45.0829982Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 15681 MB
 BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-10T19:28:45Z
+Date: 2026-08-10T20:07:36Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Unity.exe
@@ -60,33 +60,38 @@ C:/Users/elli0/Documents/GitHub/Multiplayer
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [36212]  Target information:
+Player connection [34424]  Target information:
 
-Player connection [36212]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 1385256026 [EditorId] 1385256026 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [34424]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 2459221008 [EditorId] 2459221008 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [36212] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [36212] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [34424] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [34424] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-25748" after 0.5 seconds.
+[Package Manager] Connected to IPC stream "Upm-29692" after 0.3 seconds.
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-elli0"
 [Licensing::IpcConnector] LicenseClient-elli0 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-10T19:28:46.9564872Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 30132, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Channel LicenseClient-elli0-6000.5.7 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 24992)
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-elli0-6000.5.7, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-10T20:07:38.6141408Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 24992, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              7e441c7f922f45e8abd9c6b912638fc4
-  Correlation Id:          0ff4e6f36f38ec5f6a3fcc0514562298
-  External correlation Id: 1210894036576291940
+  Session Id:              28df3c7719064cc881174abad4c5cd22
+  Correlation Id:          b2d3e4d80beaf27aa7548d719f63cc5c
+  External correlation Id: 15869498873788008
   Machine Id:              JOUP1U45KtUV8sm1s/K3HmNb45Q=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-10T19:28:46.968452Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 0.37s, validation: 0.20s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-10T20:07:38.8225175Z"
+[Licensing::Module] Connected to LicensingClient (PId: 24992, launch time: 0.01, total connection time: 0.58s)
 [Licensing::Client] Successfully updated the access token
 [Licensing::Module] Successfully updated the access token 3B8JsUazaX...
 [Licensing::Client] Successfully resolved entitlement details
@@ -95,10 +100,10 @@ Input System module state changed to: Initialized.
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 1.90s
-[Licensing::Module] Licensing is initialized (took 0.94s).
+[Licensing::Module] Licensing Background thread has ended after 1.89s
+[Licensing::Module] Licensing is initialized (took 1.25s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -108,7 +113,6 @@ Library Redirect Path: Library/
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
 Active build profile path: `Assets/Settings/Build Profiles/Windows.asset`
-Artifact Garbage Collection - Removed 6 unused hashed content files
 Got setting from build profile YAML, name `m_BuildTarget`, value `19`
 Got setting from build profile YAML, name `m_Subtarget`, value `2`
 Initialize engine version: 6000.5.7f1 (017862109af0)
@@ -134,7 +138,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -142,30 +146,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004580 seconds.
+Registered in 0.002381 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.802 seconds
-Domain Reload Profiling: 1683ms
-	BeginReloadAssembly (269ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (9ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (111ms)
-	LoadAllAssembliesAndSetupDomain (459ms)
-		LoadAssemblies (232ms)
-		AnalyzeDomain (330ms)
-			TypeCache.Refresh (328ms)
-				TypeCache.ScanAssembly (304ms)
-	FinalizeReload (808ms)
+- Finished resetting the current domain, in  0.481 seconds
+Domain Reload Profiling: 1061ms
+	BeginReloadAssembly (154ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (6ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (326ms)
+		LoadAssemblies (137ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (220ms)
+	FinalizeReload (484ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (175ms)
-			ProcessInitializeOnLoadMethodAttributes (333ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -220,7 +224,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 58.9667ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 32.2850ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -238,16 +242,26 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 1042.0006ms
-ExitCode: 4 Duration: 8s716ms
-[410/821    0s] WriteResponseFile Library/Bee/artifacts/rsp/4747638433968585886.rsp
-Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
-[647/821    1s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-[BUSY       7s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
-*** Tundra requires additional run (8.63 seconds), 3 items updated, 646 evaluated
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 259.6048ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
-ExitCode: 0 Duration: 1s853ms
+ExitCode: 4 Duration: 4s557ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[647/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[648/821    4s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
+*** Tundra requires additional run (4.51 seconds), 2 items updated, 646 evaluated
+ExitCode: 0 Duration: 1s156ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -259,474 +273,735 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 5.0173ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 141 defines and 283 references
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Jobs.CodeGen.JobsILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aE.dag\Unity.Collections.dll
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved Unity.Scripting, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\Unity.Scripting.dll
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved Unity.Netcode.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aE.dag\Unity.Netcode.Runtime.dll
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved Mono.Cecil.Rocks, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.Rocks.dll
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
-      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@2f3d916873ea\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 4203.0429ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 139 defines and 330 references
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Jobs.CodeGen.JobsILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 773.0134ms
-ExitCode: 0 Duration: 12s
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 2.0140ms
+ExitCode: 3 Duration: 3s610ms
 Finished compiling graph: 824 nodes, 14698 flattened edges (11826 ToBuild, 124 ToUse), maximum node priority 953
 [468/821    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
 [647/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-[813/821    4s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[813/821    3s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+##### CommandLine
+"C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\DotNetSdk\dotnet.exe" exec "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/DotNetSdk/sdk/8.0.318/Roslyn/bincore/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp" "@Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2"
+##### Contents of Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.rsp
+-target:library
+-out:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll"
+-refout:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
+-define:UNITY_6000_5_7
+-define:UNITY_6000_5
+-define:UNITY_6000
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2017_4_OR_NEWER
+-define:UNITY_2018_1_OR_NEWER
+-define:UNITY_2018_2_OR_NEWER
+-define:UNITY_2018_3_OR_NEWER
+-define:UNITY_2018_4_OR_NEWER
+-define:UNITY_2019_1_OR_NEWER
+-define:UNITY_2019_2_OR_NEWER
+-define:UNITY_2019_3_OR_NEWER
+-define:UNITY_2019_4_OR_NEWER
+-define:UNITY_2020_1_OR_NEWER
+-define:UNITY_2020_2_OR_NEWER
+-define:UNITY_2020_3_OR_NEWER
+-define:UNITY_2021_1_OR_NEWER
+-define:UNITY_2021_2_OR_NEWER
+-define:UNITY_2021_3_OR_NEWER
+-define:UNITY_2022_1_OR_NEWER
+-define:UNITY_2022_2_OR_NEWER
+-define:UNITY_2022_3_OR_NEWER
+-define:UNITY_2023_1_OR_NEWER
+-define:UNITY_2023_2_OR_NEWER
+-define:UNITY_2023_3_OR_NEWER
+-define:UNITY_6000_0_OR_NEWER
+-define:UNITY_6000_1_OR_NEWER
+-define:UNITY_6000_2_OR_NEWER
+-define:UNITY_6000_3_OR_NEWER
+-define:UNITY_6000_4_OR_NEWER
+-define:UNITY_6000_5_OR_NEWER
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_INCLUDE_TESTS
+-define:ENABLE_AR
+-define:ENABLE_AUDIO
+-define:ENABLE_AUDIO_SCRIPTABLE_PIPELINE
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_TEXTURE_STREAMING
+-define:ENABLE_VIRTUALTEXTURING
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_UNITY_CONSENT
+-define:ENABLE_UNITY_CLOUD_IDENTIFIERS
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_EDITOR_GAME_SERVICES
+-define:ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_MANAGED_JOBS
+-define:ENABLE_MANAGED_TRANSFORM_JOBS
+-define:ENABLE_MANAGED_ANIMATION_JOBS
+-define:ENABLE_MANAGED_AUDIO_JOBS
+-define:ENABLE_MANAGED_UNITYTLS
+-define:INCLUDE_DYNAMIC_GI
+-define:ENABLE_SCRIPTING_GC_WBARRIERS
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_MARSHALLING_TESTS
+-define:ENABLE_VIDEO
+-define:ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK
+-define:ENABLE_ACCELERATOR_CLIENT_DEBUGGING
+-define:ENABLE_ACCESSIBILITY_SCREEN_READER
+-define:TEXTCORE_1_0_OR_NEWER
+-define:EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_NVIDIA
+-define:ENABLE_AMD
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS
+-define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-define:ENABLE_CLUSTER_SYNC
+-define:ENABLE_CLUSTERINPUT
+-define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+-define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+-define:PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER
+-define:PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION
+-define:PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS
+-define:PLATFORM_USES_VULKAN_OLD_SWAPCHAIN
+-define:USE_READ_ASYNC_MANAGED_API
+-define:ENABLE_MONO
+-define:NET_STANDARD_2_0
+-define:NET_STANDARD
+-define:NET_STANDARD_2_1
+-define:NETSTANDARD
+-define:NETSTANDARD2_1
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_UNITY_COLLECTIONS_CHECKS
+-define:ENABLE_BURST_AOT
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_DIRECTOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_TILEMAP
+-define:ENABLE_TIMELINE
+-define:ENABLE_LEGACY_INPUT_MANAGER
+-define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
+-define:TEXTCORE_FONT_ENGINE_1_6_OR_NEWER
+-define:CSHARP_7_OR_LATER
+-define:CSHARP_7_3_OR_NEWER
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/Microsoft.Bcl.AsyncInterfaces.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/Microsoft.Extensions.Logging.Abstractions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Collections.Immutable.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Diagnostics.DiagnosticSource.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.IO.Hashing.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Reflection.Metadata.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Runtime.CompilerServices.Unsafe.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Text.Encodings.Web.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/ref/System.Text.Json.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/Unity.Scripting.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.AssetComplianceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ClothModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ContentLoadModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreBusinessMetricsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.EmbreeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GenericRemoteModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphToolkitModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphicsStateCollectionSerializerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.HierarchyModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.LightingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MathematicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MediaModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.MultiplayerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.Physics2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsCore2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PlayModeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ProjectAuditorModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.PropertiesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickInstallModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SafeModeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderBuildSettingsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderCompilationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SketchUpModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.SubstanceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TerrainModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TilemapModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.TreeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.U2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIToolkitAuthoringModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UmbraModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VFXModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VectorGraphicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.VideoModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GraphicsStateCollectionSerializerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.IdentifiersModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputForUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.InsightsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MarshallingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MathematicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsBackendPhysXModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsCore2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.RenderAs2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScriptingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.ShaderVariantAnalyticsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.U2DRuntimeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConsentModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"Library/PackageCache/com.unity.collections@ec2c217e4cb2/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
+-r:"Library/PackageCache/com.unity.ext.nunit@44f7d31723bd/net472/unity-custom/nunit.framework.dll"
+-r:"Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll"
+-r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll"
+-r:"Library/PackageCache/com.unity.services.wire@aba8a6fb1fe2/Plugins/websocket-sharp.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEngineBridge.004.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Netcode.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Netcode.PackageChecker.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Netcode.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Networking.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Networking.Transport.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.Assistant.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Authentication.PlayerAccounts.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Authentication.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Components.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Multiplayer.Editor.Matchmaker.Authoring.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Multiplayer.Editor.Shared.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Multiplayer.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.QoS.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.Analytics.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/TargetingPacks/netstandard2.1/analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Tools/BuildPipeline/Unity.Analyzers.Common/Unity.Analyzers.Common.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Tools/BuildPipeline/Unity.Analyzers.LongLiving/Unity.Analyzers.LongLiving.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/Core/AbilitySystem.cs"
+"Assets/Scripts/Core/AeldariRulesSystem.cs"
+"Assets/Scripts/Core/BattleFlowTypes.cs"
+"Assets/Scripts/Core/BattlefieldWorldUI.cs"
+"Assets/Scripts/Core/CoreRules11Completion.cs"
+"Assets/Scripts/Core/CoreRules11Geometry.cs"
+"Assets/Scripts/Core/CustodesModelPackResolver.cs"
+"Assets/Scripts/Core/DataModels.cs"
+"Assets/Scripts/Core/DiceRoller.cs"
+"Assets/Scripts/Core/FactionControllerRuntime.cs"
+"Assets/Scripts/Core/FactionControllerSystem.cs"
+"Assets/Scripts/Core/FactionRuleSystem.cs"
+"Assets/Scripts/Core/GameController.AeldariFaction11.cs"
+"Assets/Scripts/Core/GameController.Charge.cs"
+"Assets/Scripts/Core/GameController.Combat.cs"
+"Assets/Scripts/Core/GameController.Core.cs"
+"Assets/Scripts/Core/GameController.CoreCompletion11.cs"
+"Assets/Scripts/Core/GameController.CoreRules11.cs"
+"Assets/Scripts/Core/GameController.CustodesFaction11.cs"
+"Assets/Scripts/Core/GameController.Fight.cs"
+"Assets/Scripts/Core/GameController.Fight11.cs"
+"Assets/Scripts/Core/GameController.Missions.cs"
+"Assets/Scripts/Core/GameController.Movement.cs"
+"Assets/Scripts/Core/GameController.NecronsFaction11.cs"
+"Assets/Scripts/Core/GameController.Rules.cs"
+"Assets/Scripts/Core/GameController.RuntimeApi.cs"
+"Assets/Scripts/Core/GameController.Setup.cs"
+"Assets/Scripts/Core/GameController.StandardFactionApi.cs"
+"Assets/Scripts/Core/GameController.Traditional.cs"
+"Assets/Scripts/Core/GameController.UI.cs"
+"Assets/Scripts/Core/GameController.V45Presentation.cs"
+"Assets/Scripts/Core/GameController.V47Api.cs"
+"Assets/Scripts/Core/GameController.V48CoreAlignment.cs"
+"Assets/Scripts/Core/GameController.V49TerrainObjectives.cs"
+"Assets/Scripts/Core/GameController.V50TerrainAreaBattlefield.cs"
+"Assets/Scripts/Core/GameController.V52PlacementGhost.cs"
+"Assets/Scripts/Core/GameController.cs"
+"Assets/Scripts/Core/InteractiveAttackController.V48Alignment.cs"
+"Assets/Scripts/Core/InteractiveAttackController.cs"
+"Assets/Scripts/Core/LeaderCompatibilityRegistry.cs"
+"Assets/Scripts/Core/MiniJson.cs"
+"Assets/Scripts/Core/MissionBattlefieldDefinition.cs"
+"Assets/Scripts/Core/MissionSystem.cs"
+"Assets/Scripts/Core/ModelToken.cs"
+"Assets/Scripts/Core/ModelVisualRegistry.cs"
+"Assets/Scripts/Core/ObjectiveController.V49TerrainObjectives.cs"
+"Assets/Scripts/Core/ObjectiveController.cs"
+"Assets/Scripts/Core/ObjectiveTerrainLink49.cs"
+"Assets/Scripts/Core/RosterImportMetadataStore.cs"
+"Assets/Scripts/Core/RosterTextManifestStore.cs"
+"Assets/Scripts/Core/RulesEngine.cs"
+"Assets/Scripts/Core/SquadController.V49TerrainObjectives.cs"
+"Assets/Scripts/Core/SquadController.cs"
+"Assets/Scripts/Core/StratagemSystem.cs"
+"Assets/Scripts/Core/TerrainAreaFootprint50.cs"
+"Assets/Scripts/Core/TerrainFeature.V49TerrainObjectives.cs"
+"Assets/Scripts/Core/TerrainFeature.cs"
+"Assets/Scripts/Core/TraditionalDiceTray3D.Polish.cs"
+"Assets/Scripts/Core/TraditionalDiceTray3D.cs"
+"Assets/Scripts/Core/UniversalRuleEngine.cs"
+"Assets/Scripts/Core/WarboardAttackDieState47.cs"
+"Assets/Scripts/Core/WarboardBattleLog.cs"
+"Assets/Scripts/Core/WarboardBootstrap.cs"
+"Assets/Scripts/Core/WarboardBuildInfo.cs"
+"Assets/Scripts/Core/WarboardDatasheetChoice47.cs"
+"Assets/Scripts/Core/WarboardEnhancementRegistry47.cs"
+"Assets/Scripts/Core/WarboardEnhancementUI47.cs"
+"Assets/Scripts/Core/WarboardFactionExtensionHub.cs"
+"Assets/Scripts/Core/WarboardMarkerSystem47.cs"
+"Assets/Scripts/Core/WarboardResolutionMode.cs"
+"Assets/Scripts/Core/WarboardRuleEventBus47.cs"
+"Assets/Scripts/Core/WarboardRuleState47.cs"
+"Assets/Scripts/Core/WarboardSpecialPlacement47.cs"
+"Assets/Scripts/Core/WarboardV45EnvironmentTable.cs"
+"Assets/Scripts/Core/WarboardV45HudOverlay.cs"
+"Assets/Scripts/Core/WarboardV45PhysicalSideTrays.cs"
+"Assets/Scripts/Core/WarboardV45Presentation.cs"
+"Assets/Scripts/Core/WarboardV47StratagemAutomation.cs"
+"Assets/Scripts/Core/WeaponRuleParser.cs"
+"Assets/Scripts/Core/WoundDisplayBillboard.cs"
+"Assets/Scripts/Core/YellowScribeImporter.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesDetachmentControllerSystem.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesDetachmentRuntime.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesFactionPack11.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesFactionPack11Runtime.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesGameController.cs"
+"Assets/Scripts/Factions/AdeptusCustodes/CustodesSetupUI.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariBattleFocusController.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariDetachmentControllers.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariDetachmentRuntime.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariFactionModule.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariFactionPack11.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariFactionPack11Runtime.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariGameController.cs"
+"Assets/Scripts/Factions/Aeldari/AeldariSetupUI.cs"
+"Assets/Scripts/Factions/Necrons/NecronDetachmentControllerSystem.cs"
+"Assets/Scripts/Factions/Necrons/NecronDetachmentRuntime.cs"
+"Assets/Scripts/Factions/Necrons/NecronFactionModule.cs"
+"Assets/Scripts/Factions/Necrons/NecronGameController.cs"
+"Assets/Scripts/Factions/Necrons/NecronsFactionPack11.cs"
+"Assets/Scripts/Factions/Necrons/NecronsFactionPack11Runtime.cs"
+"Assets/Scripts/Factions/Necrons/NecronsSetupUI.cs"
+"Assets/Scripts/Factions/Standard11/StandardFactionGameController.V47.cs"
+"Assets/Scripts/Factions/Standard11/StandardFactionGameController.cs"
+"Assets/Scripts/Factions/Standard11/StandardFactionPack11.cs"
+"Assets/Scripts/Factions/Standard11/StandardFactionSetupUI.cs"
+"Assets/Scripts/Multiplayer/GameController.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/MissionSystem.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/ModelToken.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/ObjectiveController.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/SquadController.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/TerrainFeature.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/TraditionalDiceTray3D.Multiplayer.cs"
+"Assets/Scripts/Multiplayer/WarboardDiceNetworkBridge.cs"
+"Assets/Scripts/Multiplayer/WarboardMultiplayerBootstrap.cs"
+"Assets/Scripts/Multiplayer/WarboardMultiplayerUI.cs"
+"Assets/Scripts/Multiplayer/WarboardNetState.cs"
+"Assets/Scripts/Multiplayer/WarboardNetworkBridge.cs"
+"Assets/Scripts/Multiplayer/WarboardSessionService.cs"
+-langversion:9.0
+/deterministic
+/optimize+
+/debug:portable
+/nologo
+/RuntimeMetadataVersion:v4.0.30319
+/nowarn:0169
+/nowarn:0649
+/nowarn:0282
+/nowarn:1701
+/nowarn:1702
+/utf8output
+/preferreduilang:en-US
+/additionalfile:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt"
+##### Custom Environment Variables
+DOTNET_HOST_PATH=C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\DotNetSdk\dotnet.exe
+DOTNET_MULTILEVEL_LOOKUP=0
+##### ExitCode
+1
+##### Output
 Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 
 Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
 
 Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
 
-Assets\Scripts\Core\GameController.V49TerrainObjectives.cs(19,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
 
-Assets\Scripts\Core\GameController.V49TerrainObjectives.cs(16,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Core\GameController.V52PlacementGhost.cs(1015,15): error CS0619: 'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'
 
 Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
-[814/821    4s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
-[815/821    4s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
-Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 141 defines and 283 references
-
-processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-
-running Unity.Jobs.CodeGen.JobsILPostProcessor
-
-running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
-
-running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
-
-running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
-
-running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
-
-running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[816/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
-[817/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
-[818/821    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
-Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 139 defines and 330 references
-
-processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-
-running Unity.Jobs.CodeGen.JobsILPostProcessor
-
-running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
-
-running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
-
-running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
-
-running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
-
-running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[819/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
-[820/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-*** Tundra build success (11.94 seconds), 10 items updated, 821 evaluated
+*** Tundra build failed (3.57 seconds), 3 items updated, 821 evaluated
+## Script Compilation Error for: Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+## CmdLine: "C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\DotNetSdk\dotnet.exe" exec "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/DotNetSdk/sdk/8.0.318/Roslyn/bincore/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp" "@Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2"
+## Output:
 Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
 Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
 Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
-Assets\Scripts\Core\GameController.V49TerrainObjectives.cs(19,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
-Assets\Scripts\Core\GameController.V49TerrainObjectives.cs(16,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V52PlacementGhost.cs(1015,15): error CS0619: 'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'
 Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
+
+Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
+Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V52PlacementGhost.cs(1015,15): error CS0619: 'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'
+Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
+AssetDatabase: script compilation time: 9.803549s
 Total cache size 69356940
-Total cache size after purge 69356940, took 00:00:00.1423609
-AssetDatabase: script compilation time: 24.693962s
+Total cache size after purge 69356940, took 00:00:00.1093471
+Safe Mode: Only loading a subset of assemblies
+[Licensing::Client] Successfully resolved entitlement details
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 9.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.99 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.340 seconds
-Domain Reload Profiling: 4464ms
-	BeginReloadAssembly (306ms)
-		DisableScriptedObjects (45ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (12ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (109ms)
-	LoadAllAssembliesAndSetupDomain (674ms)
-		LoadAssemblies (461ms)
-		AnalyzeDomain (208ms)
-			TypeCache.Refresh (160ms)
-				TypeCache.ScanAssembly (145ms)
-			BuildScriptInfoCaches (45ms)
-	FinalizeReload (3342ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 1146ms
+	BeginReloadAssembly (277ms)
+		DisableScriptedObjects (32ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (205ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (7ms)
+			BuildScriptInfoCaches (6ms)
+	FinalizeReload (530ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (138ms)
-			ProcessInitializeOnLoadAttributes (2403ms)
-			ProcessInitializeOnLoadMethodAttributes (454ms)
-			AfterProcessingInitializeOnLoad (9ms)
-		AwakeInstancesAfterBackupRestoration (85ms)
-Starting new worker id: 0 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW0.log
-Refreshing native plugins compatible for Editor in 4.00 ms, found 3 plugins.
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
 
-Asset Pipeline Refresh (id=26196ecabb5e7eb45b144a827bcc57a0): Total: 30.568 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=01dab4a8a4b29f94282aea22f1c9c170): Total: 213.464 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	(Values over 0.05ms)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=4323 ms
-		Asset DB Callback time: managed=221 ms, native=48 ms
-		Scripting: domain reloads=1, domain reload time=1195 ms, compile time=24697 ms, other=81 ms
+		Asset DB Process Time: managed=0 ms, native=202912 ms
+		Asset DB Callback time: managed=0 ms, native=24 ms
+		Scripting: domain reloads=1, domain reload time=671 ms, compile time=9806 ms, other=48 ms
 		Project Asset Count: scripts=935, non-scripts=2196
-		Asset File Changes: new=5, changed=9, moved=0, deleted=0
+		Asset File Changes: new=1, changed=2, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 34.985ms
-	ApplyChangesToAssetFolders: 1.142ms
-	Scan: 331.613ms
-	Collect global state as custom dependencies: 27.507ms
-	OnSourceAssetsModified: 2.594ms
-	CategorizeScriptCompilationAssets: 106.033ms
-	ProcessAssetsWithTransientArtifactChanges: 69.590ms
-	CategorizeAssets: 40.371ms
-	CompileScripts: 24696.833ms
-	ImportOutOfDateAssets: 3436.113ms (3373.611ms without children)
-		UnloadImportedAssets: 1.929ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.727ms
-		ImportSchedulerStart: 59.828ms
-	PostProcessAllAssets: 227.750ms
-		VCAutoAddAssetPostprocess 3.627ms
-		XRBuildSystem.XRAssetImported 1.052ms
-		PostProcessCallbackCreateDeferredMaterials 0.272ms
-		Canvas.OnAllAssetImport 0.240ms
-		VersionControlSettings.HiddenFilePostprocess 0.231ms
-		WindowTitlePostprocess 0.222ms
-		MonoPostProcessAllAssets: 218.757ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 32.309ms
-			AssetPostprocessor.OnPostprocessAllAssets 31.154ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 27.237ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 19.313ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 12.897ms
-			AssetChangedListener.OnPostprocessAllAssets 8.942ms
-			NetworkPrefabProcessor.OnPostprocessAllAssets 7.710ms
-			SyncVS.PostprocessSyncProject 2.434ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.011ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 1.437ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.416ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 1.021ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.910ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.906ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.743ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.619ms
-			AssetEvents.OnPostprocessAllAssets 0.600ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.505ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.440ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.385ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.369ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.351ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.297ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.233ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.185ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.131ms
-	PostAssetChangesProfiler: 7.920ms
-	UnloadStreamsBegin: 3.064ms
-	PersistCurrentRevisions: 0.130ms
-	GenerateScriptTypeHashes: 1.930ms
-	GenerateScriptTypeSerializationHashes: 3.606ms
-	Untracked: 1572.926ms
+	InvokePackagesCallback: 26.809ms
+	ApplyChangesToAssetFolders: 0.539ms
+	Scan: 224.216ms
+	Collect global state as custom dependencies: 9.885ms
+	OnSourceAssetsModified: 0.861ms
+	CategorizeScriptCompilationAssets: 25.734ms
+	ProcessAssetsWithTransientArtifactChanges: 35.259ms
+	CategorizeAssets: 35.390ms
+	CompileScripts: 9806.311ms
+	ImportOutOfDateAssets: 547.194ms (546.495ms without children)
+		UnloadImportedAssets: 0.213ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.474ms
+	UnloadStreamsBegin: 1.638ms
+	PersistCurrentRevisions: 0.249ms
+	GenerateScriptTypeHashes: 1.719ms
+	GenerateScriptTypeSerializationHashes: 3.487ms
+	Untracked: 202743.781ms
 
 Application.AssetDatabase Initial Refresh End
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Scanning for USB devices : 8.509ms
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 4.889ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Warboard_Unity6_v26_1_ReservePlacementFix_FLAT
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-Loaded scene 'Assets/Working Version.unity'
-	Deserialize:            3.538 ms
-	Integration:            312.555 ms
-	Integration of assets:  0.005 ms
-	Thread Wait Time:       0.020 ms
-	Total Operation Time:   316.119 ms
-Unloading 4227 unused Assets / (2.2 MB). Loaded Objects now: 4847.
-Memory consumption went from 317.2 MB to 315.0 MB.
-Total: 16.050400 ms (FindLiveObjects: 0.792800 ms CreateObjectMapping: 1.930900 ms MarkObjects: 10.572500 ms  DeleteObjects: 2.538200 ms)
-
-[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
-[LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
-[LAYOUT] About to save layout C:/Users/elli0/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
-[MODES] ModeService[default].InitializeCurrentMode
-[MODES] ModeService[default].RaiseModeChanged(default, default)
-This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
+[MODES] ModeService[default].ChangeMode(safe_mode)
+[MODES] ModeService[safe_mode].RaiseModeChanged(default, safe_mode)
+[MODES] ModeService[safe_mode].OnModeChangeUpdate
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 D3D11 device created for Microsoft Media Foundation video decoding.
-[Project] Loading completed in 38.064 seconds
-	Project init time: 				35.674 seconds
+[Project] Loading completed in 218.105 seconds
+	Project init time: 				217.331 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		1.427 seconds
-		Asset Database init time: 		0.476 seconds
-		Global illumination init time: 	0.010 seconds
-		Assemblies load time: 			1.813 seconds
-		Unity extensions init time: 	0.030 seconds
-		Asset Database refresh time: 	30.569 seconds
-	Scene opening time: 			2.015 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786390163111,"processId":25748,"projectLoad":38.063847599999998,"projectInit":35.6736383,"templateInit":0.0,"packageManagerInit":1.4274574,"assetDatabaseInit":0.4762182,"globalIlluminationInit":0.0099702,"assembliesLoad":1.8133386,"unityExtensionsInit":0.0303367,"assetDatabaseRefresh":30.5688497,"sceneOpening":2.0154295}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786390163112,"processId":25748,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
-Worker ready: AssetImportWorkerHW0 0
-Asset Pipeline Refresh (id=34ff1358e86531b468a4a8ac28ccfb32): Total: 0.064 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
-Dynamic Batching is deprecated and will be removed in a future release. Use GPU Instancing instead. Disable Dynamic Batching in Project Settings > Player > Other Settings to remove this warning.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.PlayerSettingsBatchingWarning:WarnIfDynamicBatchingEnabled ()
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+		Package Manager init time: 		1.593 seconds
+		Asset Database init time: 		0.637 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			1.107 seconds
+		Unity extensions init time: 	0.026 seconds
+		Asset Database refresh time: 	213.464 seconds
+	Scene opening time: 			0.494 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786392675077,"processId":29692,"projectLoad":218.1050386,"projectInit":217.3306187,"templateInit":0.0,"packageManagerInit":1.5926524,"assetDatabaseInit":0.637351,"globalIlluminationInit":0.0024765,"assembliesLoad":1.1071447,"unityExtensionsInit":0.026405,"assetDatabaseRefresh":213.4644711,"sceneOpening":0.4944585}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786392675077,"processId":29692,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=e110a2abfd080fd43a0a9b57acfe8161): Total: 0.041 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+[Licensing::Client] Successfully resolved entitlement details
+Request Asset Garbage Collect because used heap size increased from 1.2 MB to 375.0 MB, exceeding the threshold of 256.0 MB.
+Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.016s, timestamps: [219.180 - 219.197]
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4280 unused Assets / (21.5 MB). Loaded Objects now: 5620.
+Memory consumption went from 374.7 MB to 353.2 MB.
+Total: 17.425000 ms (FindLiveObjects: 0.628800 ms CreateObjectMapping: 1.903100 ms MarkObjects: 7.913500 ms  DeleteObjects: 6.973000 ms)
 
-Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.037s, timestamps: [39.833 - 39.870]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully updated the access token
 [Licensing::Module] Successfully updated access token: "3B8JsUaz"... (expires: 2026-08-10T20:15:05Z)
-[Licensing::Client] Successfully resolved entitlement details
 UPID Received '850f50a1-7776-48ba-9d96-564e37f3acd9'.
 [Licensing::Client] Successfully resolved entitlement details
-Asset Pipeline Refresh (id=7fe2448b16b0290418427888bbc68408): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
-Start Indexing on Editor startup
-[Indexing] Starting Initial Indexing for Assets
-Starting new worker id: 1 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW1.log
-[Worker0] Imported GUID: 2e77894d8fef8994e82da123fcbf93a7 - Path: Assets/Scripts/Core/GameController.Core.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '6318c4f6cc08c301ad3ed3e459a8ee0d') in 0.1447459 seconds
-Starting new worker id: 2 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW2.log
-[Worker0] Imported GUID: 9f5371e7decbdf245b80a967fa81be59 - Path: Assets/Scripts/Core/GameController.V49TerrainObjectives.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'c8e7bee075dddcb8e6469f8ef87dc162') in 0.0157836 seconds
-[Worker0] Imported GUID: dcd6235622c24141927199ba267b3acf - Path: Assets/Scripts/Core/WarboardBuildInfo.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '8e620cd219b311a8ba83d17708e96960') in 0.0217322 seconds
-[Worker0] Imported GUID: 55506c1be86279f4294024151533bd96 - Path: Assets/Scripts/Core/ObjectiveController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '935f5f48a1b0dbdc4bd50e62e40240c7') in 0.0152539 seconds
-[Worker0] Imported GUID: d1d8d2b3313620346a2517f3f07f58fc - Path: Assets/Scripts/Core/ObjectiveTerrainLink49.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'b15ffe2c53b13d5eb7a9d69b664e93f9') in 0.011848 seconds
-[Worker0] Imported GUID: 4d90054cf14fec041b2b76c958f65630 - Path: Assets/Scripts/Core/TerrainFeature.V49TerrainObjectives.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '41a26b286c346a645c8d1c16ca08a099') in 0.0135685 seconds
-[Worker0] Imported GUID: 569802903c538d6438d2e5e0617aa053 - Path: Assets/Scripts/Core/GameController.Missions.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'afb0c5ec7968f7bbbe8d832eb8b29882') in 0.0096572 seconds
-[Worker0] Imported GUID: ff97d149bbee83c41ba1b407f7e0e13c - Path: Assets/Scripts/Core/ObjectiveController.V49TerrainObjectives.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '4917b25ff165ec167be2b8f49f66edb2') in 0.0092247 seconds
-[Worker0] Imported GUID: 3c13b13bbf7f4d24d9b1c82f3a256a12 - Path: Assets/Scripts/Core/SquadController.V49TerrainObjectives.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '52ebab85effef484efb5de1e7a94a8d5') in 0.0108094 seconds
-Reloading assemblies for play mode.
-Reloading assemblies after forced synchronous recompile.
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 6.46 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Worker ready: AssetImportWorkerHW1 1
-Worker ready: AssetImportWorkerHW2 2
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.667 seconds
-Domain Reload Profiling: 4865ms
-	BeginReloadAssembly (1561ms)
-		DisableScriptedObjects (179ms)
-		CreateAndSetChildDomain (724ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (46ms)
-	initialDomainReloadingComplete (227ms)
-	LoadAllAssembliesAndSetupDomain (340ms)
-		LoadAssemblies (341ms)
-		AnalyzeDomain (22ms)
-			TypeCache.Refresh (13ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (2669ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (164ms)
-			ProcessInitializeOnLoadAttributes (435ms)
-			ProcessInitializeOnLoadMethodAttributes (412ms)
-			AfterProcessingInitializeOnLoad (11ms)
-		AwakeInstancesAfterBackupRestoration (892ms)
-No restricted APIs configured; Validation skipped.
-Checking 20 assemblies for restricted APIs found 0 usage(s) in 7 ms
-Refreshing native plugins compatible for Editor in 5.14 ms, found 3 plugins.
-
-Asset Pipeline Refresh (id=d60ee875964f9f141b098bbbc5a793aa): Total: 6.118 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=3128 ms
-		Asset DB Callback time: managed=314 ms, native=339 ms
-		Scripting: domain reloads=1, domain reload time=2331 ms, compile time=4 ms, other=0 ms
-		Project Asset Count: scripts=935, non-scripts=2196
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 0
-	InvokePackagesCallback: 4.649ms
-	ApplyChangesToAssetFolders: 0.352ms
-	Collect global state as custom dependencies: 2.980ms
-	ProcessAssetsWithTransientArtifactChanges: 259.924ms
-	CategorizeAssets: 41.136ms
-	CompileScripts: 3.738ms
-	ImportOutOfDateAssets: 2729.326ms (2698.666ms without children)
-		CollectScriptTypesHashes: 0.664ms
-		ReloadNativeAssets: 0.329ms
-		UnloadImportedAssets: 3.597ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.223ms
-		ImportSchedulerStart: 25.485ms
-	PostProcessAllAssets: 645.696ms
-		AssemblyValidation.PostprocessAllAssets 27.867ms
-		PostProcessCallbackCreateDeferredMaterials 16.692ms
-		RaytracingShaderImportPostprocess 12.227ms
-		SpeedTreeImporter.PostprocessAllAssets 11.496ms
-		ComputeShaderImportPostprocess 9.953ms
-		ShaderAssetModifiedCallback 9.076ms
-		BlockShaderImporter.PostprocessAllAssets 5.058ms
-		LocalizationDatabase.AssetDatabasePostprocessCallback 3.325ms
-		XRBuildSystem.XRAssetImported 1.159ms
-		MonoPostProcessAllAssets: 312.779ms
-			AssetPostprocessor.OnPostprocessAllAssets 41.260ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 31.317ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 31.037ms
-			NetworkPrefabProcessor.OnPostprocessAllAssets 27.273ms
-			AssetChangedListener.OnPostprocessAllAssets 19.763ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 17.025ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 11.085ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 6.559ms
-			SyncVS.PostprocessSyncProject 3.766ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.238ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 1.229ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 1.061ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.869ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.797ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.716ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.659ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.612ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.577ms
-			AssetEvents.OnPostprocessAllAssets 0.545ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.390ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.314ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.288ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.256ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.241ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.240ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.136ms
-	PostAssetChangesProfiler: 7.567ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.363ms
-	UnloadStreamsBegin: 2.896ms
-	PersistCurrentRevisions: 0.154ms
-	GenerateScriptTypeHashes: 2.107ms
-	GenerateScriptTypeSerializationHashes: 3.596ms
-	Untracked: 2408.802ms
-
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            2.862 ms
-	Integration:            555.973 ms
-	Integration of assets:  0.004 ms
-	Thread Wait Time:       0.035 ms
-	Total Operation Time:   558.874 ms
-[Licensing::Client] Successfully resolved entitlement details
-TrimDiskCacheJob: Current cache size 0mb
-Warboard Custodes Model Pack loaded: 104 indexed objects.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-CustodesModelPackResolver:EnsureLoaded () (at Assets/Scripts/Core/CustodesModelPackResolver.cs:24)
-CustodesModelPackResolver:TryResolve (string,string,int) (at Assets/Scripts/Core/CustodesModelPackResolver.cs:119)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:771)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
-GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
-GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:485)
-GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3571)
-
-(Filename: Assets/Scripts/Core/CustodesModelPackResolver.cs Line: 24)
-
-Warboard Aeldari Model Pack loaded from Resources/Armies/Models/Aeldari: 209 indexed objects.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ModelVisualRegistry:EnsurePackLoaded () (at Assets/Scripts/Core/ModelVisualRegistry.cs:146)
-ModelVisualRegistry:TryResolvePack (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:404)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:781)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
-GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
-GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:485)
-GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3571)
-
-(Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 146)
-
-WARBOARD V49: bound 6 / 6 objectives to terrain areas.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GameController:BindObjectivesToTerrainAreas11 () (at Assets/Scripts/Core/GameController.V49TerrainObjectives.cs:115)
-GameController:ApplyMissionBattlefieldLayout (int) (at Assets/Scripts/Core/GameController.Missions.cs:116)
-GameController:FinishArmyLoading () (at Assets/Scripts/Core/GameController.Setup.cs:523)
-GameController:DrawMissionSetupPanel () (at Assets/Scripts/Core/GameController.UI.cs:4066)
-GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3406)
-
-(Filename: Assets/Scripts/Core/GameController.V49TerrainObjectives.cs Line: 115)
-
-Asset Pipeline Refresh (id=ce1d92f25b7a7cd4080521f4cd7a13b7): Total: 0.035 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-MonoPathRemapper: Attempts to remap: 46613; Successful remaps: 10334
+Asset Pipeline Refresh (id=953415455fac378418dda13a9112c4b2): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=86e768b8b396d2f44a4fbbb021a1d253): Total: 0.004 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+MonoPathRemapper: Attempts to remap: 5480; Successful remaps: 0
 Serialized file version minimum: 23, current 23
-[LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
-[LAYOUT] About to save layout C:/Users/elli0/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+Starting new worker id: 0 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW0.log
 [Physics::Module] Cleanup current backend.
 [Physics::Module] Id: 0xf2b8ea05
 Input System module state changed to: ShutdownInProgress.
@@ -735,18 +1010,15 @@ Input System module state changed to: Shutdown.
 [Licensing::IpcConnector] LicenseClient-elli0-6000.5.7-notifications channel disconnected successfully.
 [Licensing::IpcConnector] LicenseClient-elli0-6000.5.7 channel disconnected successfully.
 AcceleratorClientConnectionCallback - disconnected - :0
+Shut down.
 Cleanup mono
 CodeReloadManager destroyed
-abort_threads: Failed aborting id: 0000000000006EE4, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 00000000000082D8, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 00000000000093DC, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 00000000000082D8, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000006EE4, mono_thread_manage will ignore it
-
-abort_threads: Failed aborting id: 00000000000093DC, mono_thread_manage will ignore it
-
-debugger-agent: Unable to listen on 4320
+debugger-agent: Unable to listen on 5144
 Checking for leaked weakptr:
   Found no leaked weakptrs.
 [Package Manager] Server process was shutdown
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786390233253,"processId":25748,"allocatedMemory":50190770,"memoryLabels":[{"Default":196755},{"Permanent":15516},{"NewDelete":66769},{"Thread":4197560},{"Manager":32805},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1168},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":112808},{"Input":42840},{"JobScheduler":256},{"TextLib":32680},{"Mono":310},{"ScriptingNativeRuntime":1635940},{"BaseObject":1699786},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4009},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":10181},{"StaticString":3808},{"Utility":2673370},{"Curl":48},{"PoolAlloc":2216},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7352},{"WebRequest":9597},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33044128},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":185192},{"CoreStats":13688},{"Identifiers":6768},{"Gui":315},{"EditorUtility":213662},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4568447},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35345},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786392690451,"processId":29692,"allocatedMemory":48838403,"memoryLabels":[{"Default":186979},{"Permanent":15516},{"NewDelete":66177},{"Thread":4197640},{"Manager":32325},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1544},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":39472},{"Input":42840},{"JobScheduler":256},{"TextLib":8470},{"Mono":48},{"ScriptingNativeRuntime":674964},{"BaseObject":1669065},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":1032},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":10755},{"StaticString":3808},{"Utility":2673358},{"Curl":48},{"PoolAlloc":2168},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7208},{"WebRequest":5728},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33006992},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":16496},{"CoreStats":13688},{"Identifiers":6768},{"Gui":559},{"EditorUtility":148316},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4593387},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35345},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}
