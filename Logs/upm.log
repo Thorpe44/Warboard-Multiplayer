@@ -1,0 +1,30 @@
+[2026-08-10T13:20:05.491Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.7f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 37120 --ipc-path Unity-Upm-37120 -l 2 --log-file C:\\Users\\elli0\\Documents\\GitHub\\Multiplayer/Logs/upm.log
+[2026-08-10T13:20:05.558Z][INFO] IPC server started (IPC path=Unity-Upm-37120).
+[2026-08-10T13:20:05.558Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-37120.
+[2026-08-10T13:20:32.170Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-10T13:20:32.418Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-10T13:20:32.434Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-10T13:20:32.456Z][INFO] config:project:get-registries --> 200 (22 ms)
+[2026-08-10T13:20:32.553Z][INFO] project:resolve-packages <-- Request received
+params: {}
+[2026-08-10T13:20:32.972Z][INFO] project:list-packages --> 200 (803 ms)
+[2026-08-10T13:20:32.976Z][INFO] project:list-packages --> 200 (558 ms)
+[2026-08-10T13:20:35.039Z][INFO] Downloading package [com.unity.services.multiplayer@1.2.0] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.040Z][INFO] Downloading package [com.unity.services.authentication@3.5.2] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.042Z][INFO] Downloading package [com.unity.netcode.gameobjects@2.7.0] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.043Z][INFO] Downloading package [com.unity.services.qos@1.4.1] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.045Z][INFO] Downloading package [com.unity.services.core@1.18.0] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.046Z][INFO] Downloading package [com.unity.services.wire@1.4.4] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.047Z][INFO] Downloading package [com.unity.services.deployment.api@1.1.3] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.048Z][INFO] Downloading package [com.unity.services.deployment@1.7.2] from registry 'https://packages.unity.com'
+[2026-08-10T13:20:35.295Z][INFO] Finished downloading package [com.unity.services.deployment.api@1.1.3] from registry 'https://packages.unity.com' (size: 27.1 kB, time: 247ms)
+[2026-08-10T13:20:35.302Z][INFO] Finished downloading package [com.unity.services.qos@1.4.1] from registry 'https://packages.unity.com' (size: 78.8 kB, time: 258ms)
+[2026-08-10T13:20:35.344Z][INFO] Finished downloading package [com.unity.services.core@1.18.0] from registry 'https://packages.unity.com' (size: 267 kB, time: 299ms)
+[2026-08-10T13:20:35.349Z][INFO] Finished downloading package [com.unity.services.authentication@3.5.2] from registry 'https://packages.unity.com' (size: 216 kB, time: 309ms)
+[2026-08-10T13:20:35.351Z][INFO] Finished downloading package [com.unity.services.deployment@1.7.2] from registry 'https://packages.unity.com' (size: 215 kB, time: 303ms)
+[2026-08-10T13:20:35.395Z][INFO] Finished downloading package [com.unity.services.wire@1.4.4] from registry 'https://packages.unity.com' (size: 321 kB, time: 349ms)
+[2026-08-10T13:20:35.588Z][INFO] Finished downloading package [com.unity.services.multiplayer@1.2.0] from registry 'https://packages.unity.com' (size: 1.19 MB, time: 549ms)
+[2026-08-10T13:20:41.518Z][INFO] Finished downloading package [com.unity.netcode.gameobjects@2.7.0] from registry 'https://packages.unity.com' (size: 105 MB, time: 6.4s)

@@ -1,0 +1,36 @@
+REQUIRED EXISTING-FILE EDITS
+============================
+
+Make ONLY these five class declaration changes.
+
+1) Assets/Scripts/Core/ModelToken.cs
+
+- public class ModelToken : MonoBehaviour
++ public partial class ModelToken : MonoBehaviour
+
+
+2) Assets/Scripts/Core/SquadController.cs
+
+- public class SquadController : MonoBehaviour
++ public partial class SquadController : MonoBehaviour
+
+
+3) Assets/Scripts/Core/ObjectiveController.cs
+
+- public class ObjectiveController : MonoBehaviour
++ public partial class ObjectiveController : MonoBehaviour
+
+
+4) Assets/Scripts/Core/TerrainFeature.cs
+
+- public class TerrainFeature : MonoBehaviour
++ public partial class TerrainFeature : MonoBehaviour
+
+
+5) Assets/Scripts/Core/MissionSystem.cs
+
+- public class MissionSystem
++ public partial class MissionSystem
+
+
+DO NOT make GameController partial; it already is partial in Warboard.

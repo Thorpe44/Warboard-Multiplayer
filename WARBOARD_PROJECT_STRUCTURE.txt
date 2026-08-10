@@ -1,0 +1,38 @@
+WARBOARD v44 - CURRENT PROJECT STRUCTURE
+
+Warboard/
+  .gitignore
+  Assets/
+    Resources/
+      Armies/
+        Models/
+      Factions/
+    Scripts/
+      Core/
+      Factions/
+  Docs/
+    Audits/
+    Releases/
+  Packages/
+  ProjectSettings/
+  README_V44.md
+  V44_PATCH_MANIFEST.txt
+  BUILD_REPORT.json
+
+TRACK IN GIT
+  Assets/
+  Packages/
+  ProjectSettings/
+  Docs/
+  current release documentation
+
+DO NOT TRACK
+  Library/
+  Logs/
+  UserSettings/
+  Temp/
+  obj/
+  IDE caches
+  temporary *.bak / *.before_* source backups
+
+The cleanup does not delete Library locally. Git simply stops tracking it.
