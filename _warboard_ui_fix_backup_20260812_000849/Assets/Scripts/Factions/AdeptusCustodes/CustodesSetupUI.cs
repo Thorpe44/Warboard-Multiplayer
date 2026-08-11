@@ -4,15 +4,15 @@ using System.Linq;
 using UnityEngine;
 
 /// <summary>
-/// Necrons pre-game configuration UI. New Recruit text is the preferred
-/// authority; manual multi-detachment selection remains available.
+/// Adeptus Custodes pre-game configuration UI. New Recruit text is the
+/// preferred authority; manual multi-detachment selection remains available.
 /// </summary>
-[DefaultExecutionOrder(-31980)]
-public sealed class NecronsSetupUI : MonoBehaviour
+[DefaultExecutionOrder(-31990)]
+public sealed class CustodesSetupUI : MonoBehaviour
 {
-    private readonly Dictionary<string, HashSet<NecronDetachment>>
+    private readonly Dictionary<string, HashSet<CustodesDetachment>>
         selections =
-            new Dictionary<string, HashSet<NecronDetachment>>(
+            new Dictionary<string, HashSet<CustodesDetachment>>(
                 StringComparer.OrdinalIgnoreCase);
 
     private readonly Dictionary<string, string>
@@ -30,17 +30,19 @@ public sealed class NecronsSetupUI : MonoBehaviour
     private static void Install()
     {
         if (UnityEngine.Object
-            .FindAnyObjectByType<NecronsSetupUI>() != null)
+            .FindAnyObjectByType<CustodesSetupUI>() != null)
         {
             return;
         }
 
         GameObject go =
             new GameObject(
-                "WarboardNecronsSetupUI");
+                "WarboardCustodesSetupUI");
 
-        UnityEngine.Object.DontDestroyOnLoad(go);
-        go.AddComponent<NecronsSetupUI>();
+        UnityEngine.Object
+            .DontDestroyOnLoad(go);
+
+        go.AddComponent<CustodesSetupUI>();
     }
 
     private void OnGUI()
@@ -51,30 +53,38 @@ public sealed class NecronsSetupUI : MonoBehaviour
         if (host == null)
             return;
 
-        List<NecronGameController> controllers =
+        List<CustodesGameController> controllers =
             host.Controllers.Values
-                .OfType<NecronGameController>()
+                .OfType<CustodesGameController>()
                 .OrderBy(value => value.FactionId)
                 .ToList();
 
-        foreach (NecronGameController controller
+        foreach (CustodesGameController controller
             in controllers)
         {
-            if (controller != null &&
-                controller.ShouldShowDetachmentSelection())
+            if (controller == null)
+                continue;
+
+            if (controller.ShouldShowDetachmentSelection())
             {
                 DrawDetachmentModal(controller);
                 return;
             }
+
+            if (controller.RequiresSolarWalkerChoice)
+            {
+                DrawSolarWalkerModal(controller);
+                return;
+            }
         }
 
-        // WARBOARD_V62_SETUP_BADGE_REMOVED
+        DrawLockedBadges(controllers);
     }
 
-    private HashSet<NecronDetachment> SelectionFor(
-        NecronGameController controller)
+    private HashSet<CustodesDetachment> SelectionFor(
+        CustodesGameController controller)
     {
-        HashSet<NecronDetachment> selected;
+        HashSet<CustodesDetachment> selected;
 
         if (!selections.TryGetValue(
                 controller.FactionId,
@@ -82,7 +92,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
             selected == null)
         {
             selected =
-                new HashSet<NecronDetachment>();
+                new HashSet<CustodesDetachment>();
 
             selections[controller.FactionId] =
                 selected;
@@ -92,7 +102,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
     }
 
     private string PasteTextFor(
-        NecronGameController controller)
+        CustodesGameController controller)
     {
         string value;
 
@@ -119,7 +129,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
     }
 
     private void DrawDetachmentModal(
-        NecronGameController controller)
+        CustodesGameController controller)
     {
         int oldDepth = GUI.depth;
         GUI.depth = -20000;
@@ -145,7 +155,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
 
         float height =
             Mathf.Min(
-                800f,
+                780f,
                 Screen.height - 30f);
 
         Rect panel =
@@ -171,7 +181,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
                 panel.width - 40f,
                 34f),
             controller.FactionId +
-            " — NECRONS ROSTER CONFIGURATION",
+            " — ADEPTUS CUSTODES ROSTER CONFIGURATION",
             title);
 
         GUIStyle body =
@@ -223,8 +233,8 @@ public sealed class NecronsSetupUI : MonoBehaviour
                 y + 28f,
                 leftWidth,
                 Mathf.Max(
-                    300f,
-                    panel.height - 320f));
+                    280f,
+                    panel.height - 310f));
 
         text = GUI.TextArea(
             textRect,
@@ -269,7 +279,6 @@ public sealed class NecronsSetupUI : MonoBehaviour
         }
 
         string status;
-
         if (!pasteStatus.TryGetValue(
                 controller.FactionId,
                 out status))
@@ -297,25 +306,15 @@ public sealed class NecronsSetupUI : MonoBehaviour
             "MANUAL DETACHMENT SELECTION",
             section);
 
-        HashSet<NecronDetachment> selected =
+        HashSet<CustodesDetachment> selected =
             SelectionFor(controller);
 
         float rowY = y + 34f;
 
-        foreach (NecronDetachment detachment
+        foreach (CustodesDetachment detachment
             in controller.AvailableDetachments())
         {
             bool was = selected.Contains(detachment);
-
-            string tag =
-                NecronDetachmentRuntime.IsDynasty(
-                    detachment)
-                ? " [DYNASTY]"
-                : NecronDetachmentRuntime.IsHypercrypt(
-                    detachment)
-                    ? " [HYPERCRYPT]"
-                    : "";
-
             bool now = GUI.Toggle(
                 new Rect(
                     rightX,
@@ -329,7 +328,13 @@ public sealed class NecronsSetupUI : MonoBehaviour
                 controller.GetDetachmentPointCost(
                     detachment) +
                 "DP" +
-                tag);
+                (CustodesDetachmentRuntime.IsArmoury(
+                    detachment)
+                    ? " [ARMOURY]"
+                    : CustodesDetachmentRuntime.IsLions(
+                        detachment)
+                        ? " [LIONS]"
+                        : ""));
 
             if (now != was)
             {
@@ -339,17 +344,16 @@ public sealed class NecronsSetupUI : MonoBehaviour
                     selected.Remove(detachment);
             }
 
-            rowY += 30f;
+            rowY += 31f;
         }
 
         int spent =
-            NecronDetachmentRuntime.TotalCost(
+            CustodesDetachmentRuntime.TotalCost(
                 selected);
 
         int limit = controller.DetachmentPointLimit;
 
         string validation;
-
         bool valid =
             controller.TryValidateDetachmentSelection(
                 selected,
@@ -358,7 +362,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
         GUI.Label(
             new Rect(
                 rightX,
-                rowY + 6f,
+                rowY + 8f,
                 rightWidth,
                 26f),
             "Selected: " +
@@ -372,11 +376,11 @@ public sealed class NecronsSetupUI : MonoBehaviour
         GUI.Label(
             new Rect(
                 rightX,
-                rowY + 34f,
+                rowY + 38f,
                 rightWidth,
-                58f),
+                64f),
             valid
-                ? "Valid selection. DYNASTY and HYPERCRYPT tag conflicts are enforced."
+                ? "Valid selection. ARMOURY and LIONS tag conflicts are enforced."
                 : validation,
             body);
 
@@ -385,19 +389,19 @@ public sealed class NecronsSetupUI : MonoBehaviour
         if (GUI.Button(
                 new Rect(
                     rightX,
-                    panel.yMax - 62f,
+                    panel.yMax - 66f,
                     Mathf.Min(
                         330f,
                         rightWidth),
                     40f),
-                "CONFIRM NECRON DETACHMENTS"))
+                "CONFIRM CUSTODES DETACHMENTS"))
         {
             if (controller.TryLockDetachments(
                     selected,
                     "Manual pre-game selection"))
             {
                 pasteStatus[controller.FactionId] =
-                    "Necrons detachment configuration locked.";
+                    "Custodes detachment configuration locked.";
             }
         }
 
@@ -409,9 +413,9 @@ public sealed class NecronsSetupUI : MonoBehaviour
             GUI.Label(
                 new Rect(
                     rightX,
-                    panel.yMax - 110f,
+                    panel.yMax - 118f,
                     rightWidth,
-                    42f),
+                    46f),
                 controller.SelectionError,
                 body);
         }
@@ -420,7 +424,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
     }
 
     private void ApplyPastedRoster(
-        NecronGameController controller,
+        CustodesGameController controller,
         string text)
     {
         WarboardRosterManifest manifest;
@@ -440,10 +444,140 @@ public sealed class NecronsSetupUI : MonoBehaviour
         pasteStatus[controller.FactionId] =
             "Parsed: " +
             manifest.Summary();
+
+        // RefreshArmy is driven by the existing roster-changed notification;
+        // for a paste-only config change, resolving in OnGUI on the next frame
+        // also causes the controller to observe the new manifest revision.
+    }
+
+    private void DrawSolarWalkerModal(
+        CustodesGameController controller)
+    {
+        int oldDepth = GUI.depth;
+        GUI.depth = -20000;
+
+        Color oldColor = GUI.color;
+        GUI.color =
+            new Color(0f, 0f, 0f, 0.87f);
+
+        GUI.DrawTexture(
+            new Rect(
+                0f,
+                0f,
+                Screen.width,
+                Screen.height),
+            Texture2D.whiteTexture);
+
+        GUI.color = oldColor;
+
+        float width =
+            Mathf.Min(
+                720f,
+                Screen.width - 30f);
+
+        float height =
+            Mathf.Min(
+                560f,
+                Screen.height - 30f);
+
+        Rect panel =
+            new Rect(
+                (Screen.width - width) * 0.5f,
+                (Screen.height - height) * 0.5f,
+                width,
+                height);
+
+        GUI.Box(panel, "");
+
+        GUIStyle title =
+            new GUIStyle(GUI.skin.label);
+
+        title.fontSize = 21;
+        title.fontStyle = FontStyle.Bold;
+        title.alignment = TextAnchor.MiddleCenter;
+
+        GUIStyle body =
+            new GUIStyle(GUI.skin.label);
+
+        body.wordWrap = true;
+
+        GUI.Label(
+            new Rect(
+                panel.x + 18f,
+                panel.y + 14f,
+                panel.width - 36f,
+                30f),
+            "SOLAR SPEARHEAD — WALKER CHARACTERS",
+            title);
+
+        GUI.Label(
+            new Rect(
+                panel.x + 24f,
+                panel.y + 54f,
+                panel.width - 48f,
+                62f),
+            "Muster Armies: select up to two ADEPTUS CUSTODES WALKER models to gain CHARACTER. Selecting none is legal; confirm the choice before deployment.",
+            body);
+
+        List<SquadController> walkers =
+            controller.EligibleSolarWalkers();
+
+        float y = panel.y + 128f;
+
+        foreach (SquadController walker in walkers)
+        {
+            bool selected =
+                controller.IsSolarWalkerSelected(
+                    walker);
+
+            bool now = GUI.Toggle(
+                new Rect(
+                    panel.x + 34f,
+                    y,
+                    panel.width - 68f,
+                    30f),
+                selected,
+                walker.DisplayName +
+                (selected
+                    ? " — CHARACTER"
+                    : ""));
+
+            if (now != selected)
+                controller.ToggleSolarWalker(walker);
+
+            y += 34f;
+        }
+
+        if (!string.IsNullOrWhiteSpace(
+                controller.SelectionError))
+        {
+            GUI.Label(
+                new Rect(
+                    panel.x + 28f,
+                    panel.yMax - 116f,
+                    panel.width - 56f,
+                    42f),
+                controller.SelectionError,
+                body);
+        }
+
+        if (GUI.Button(
+                new Rect(
+                    panel.x +
+                        (panel.width - 310f) * 0.5f,
+                    panel.yMax - 62f,
+                    310f,
+                    40f),
+                "CONFIRM WALKER CHARACTER CHOICES"))
+        {
+            controller.ConfirmSolarWalkerSelection();
+        }
+
+        GUI.depth = oldDepth;
     }
 
     private void DrawLockedBadges(
-        List<NecronGameController> controllers)
+        List<CustodesGameController> controllers)
     {
         if (controllers == null ||
             controllers.Count == 0)
@@ -451,6 +585,8 @@ public sealed class NecronsSetupUI : MonoBehaviour
             return;
         }
 
+        // Share the same top-right status area used by Aeldari instead of
+        // drawing a faction badge in the middle of the battlefield.
         int occupiedRows = 0;
 
         FactionControllerHost host =
@@ -458,26 +594,19 @@ public sealed class NecronsSetupUI : MonoBehaviour
 
         if (host != null)
         {
-            occupiedRows +=
+            occupiedRows =
                 host.Controllers.Values
                     .OfType<AeldariGameController>()
                     .Count(
                         value =>
                             value != null &&
-                            value.DetachmentLocked);
-
-            occupiedRows +=
-                host.Controllers.Values
-                    .OfType<CustodesGameController>()
-                    .Count(
-                        value =>
-                            value != null &&
-                            value.DetachmentLocked);
+                            value.DetachmentLocked
+                    );
         }
 
-        int necronRow = 0;
+        int custodesRow = 0;
 
-        foreach (NecronGameController controller
+        foreach (CustodesGameController controller
             in controllers)
         {
             if (controller == null ||
@@ -494,7 +623,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
 
             string text =
                 controller.FactionId +
-                " • NECRONS • " +
+                " • ADEPTUS CUSTODES • " +
                 controller.DetachmentName +
                 " • " +
                 spent +
@@ -509,25 +638,41 @@ public sealed class NecronsSetupUI : MonoBehaviour
                     : "") +
                 " • LOCKED";
 
-            float width =
-                Mathf.Min(
-                    760f,
-                    Screen.width - 24f);
+            // WARBOARD_V51_SIDE_BY_SIDE_CUSTODES_BADGE
+            float badgeMargin = 12f;
+            float badgeGap = 8f;
+            float badgeSlotWidth =
+                Mathf.Max(
+                    220f,
+                    (Screen.width -
+                     badgeMargin * 2f -
+                     badgeGap) *
+                    0.5f);
 
+            bool badgePlayerTwo =
+                (controller.FactionId ?? "")
+                    .EndsWith("2");
+
+            float badgeX =
+                badgePlayerTwo
+                ? badgeMargin +
+                  badgeSlotWidth +
+                  badgeGap
+                : badgeMargin;
+
+            // WARBOARD_V55_CUSTODES_BADGE_BELOW_SCOREBOARD
             Rect badge =
                 new Rect(
-                    Screen.width - width - 12f,
-                    48f +
-                    (occupiedRows + necronRow) *
-                    36f,
-                    width - 74f,
+                    badgeX,
+                    76f,
+                    badgeSlotWidth,
                     30f);
 
             GUI.Box(
                 badge,
                 text);
 
-            necronRow++;
+            custodesRow++;
         }
     }
 }

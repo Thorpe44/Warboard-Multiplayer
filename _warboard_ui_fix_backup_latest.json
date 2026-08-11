@@ -1,0 +1,16 @@
+﻿{
+    "RepoRoot":  "C:\\Users\\elli0\\Documents\\GitHub\\Multiplayer",
+    "BackupRoot":  "C:\\Users\\elli0\\Documents\\GitHub\\Multiplayer\\_warboard_ui_fix_backup_20260812_000849",
+    "BackedUpFiles":  [
+                          "Assets/Scripts/Core/GameController.UI.cs",
+                          "Assets/Scripts/Factions/Aeldari/AeldariSetupUI.cs",
+                          "Assets/Scripts/Factions/AdeptusCustodes/CustodesSetupUI.cs",
+                          "Assets/Scripts/Factions/Necrons/NecronsSetupUI.cs"
+                      ],
+    "CreatedFiles":  [
+                         "Assets/Scripts/Core/GameController.V62UILifecycle.cs",
+                         "Assets/Scripts/Factions/WarboardBespokeFactionRulesUI.cs"
+                     ],
+    "AppliedAt":  "2026-08-12T00:08:49.6603445+01:00",
+    "Target":  "Thorpe44/Warboard-Multiplayer main V61"
+}

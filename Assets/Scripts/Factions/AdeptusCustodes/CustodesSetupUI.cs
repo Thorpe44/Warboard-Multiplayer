@@ -78,7 +78,7 @@ public sealed class CustodesSetupUI : MonoBehaviour
             }
         }
 
-        DrawLockedBadges(controllers);
+        // WARBOARD_V62_SETUP_BADGE_REMOVED
     }
 
     private HashSet<CustodesDetachment> SelectionFor(

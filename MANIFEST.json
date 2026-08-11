@@ -1,0 +1,37 @@
+[
+  {
+    "path": "APPLY_UI_FIXES.bat",
+    "bytes": 1696,
+    "sha256": "a20737d7a5db51c48f15537f5c5478ce5a375ee31bc69abc52056d2b3deb2a84"
+  },
+  {
+    "path": "Apply-UIFixes.ps1",
+    "bytes": 15109,
+    "sha256": "6567525f7495fdcae0c66305a97ad4fbc877ff70992f6c67bd3f202f4e5b1f2c"
+  },
+  {
+    "path": "Payload/Assets/Scripts/Core/GameController.V62UILifecycle.cs",
+    "bytes": 1382,
+    "sha256": "a029154c3f855691f3058952aaa8e5bdef90667b9ea520c219a48814ab1adcac"
+  },
+  {
+    "path": "Payload/Assets/Scripts/Factions/WarboardBespokeFactionRulesUI.cs",
+    "bytes": 18230,
+    "sha256": "f8ce1de8f4c2e38ab22a9709fde73c950a0cc0ff109b836177f20d24245fddb2"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 2874,
+    "sha256": "acacede2649d7563c513dd6c5d8112eec4352214cee9bb27fbb97c10d92bfd77"
+  },
+  {
+    "path": "UNDO_UI_FIXES.bat",
+    "bytes": 1319,
+    "sha256": "52d63d6dbd3503d3823cd1ed43955537222b6d77172104842cdf6fcee2d46a13"
+  },
+  {
+    "path": "Undo-UIFixes.ps1",
+    "bytes": 1795,
+    "sha256": "fbf8a9335dedefcb88ea6f7d394f865a7200f7d81f6c0b0c59b969634b4f0b6d"
+  }
+]

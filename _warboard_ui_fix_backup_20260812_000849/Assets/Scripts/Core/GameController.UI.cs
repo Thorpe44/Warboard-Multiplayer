@@ -3670,8 +3670,7 @@ public partial class GameController : MonoBehaviour
         // WARBOARD_V45_5_MERGED_CONTEXT_BAR
         // WARBOARD_V54_FIGHT_CONTEXT_VISIBLE
         V54DrawFightControls();
-        if (selectedSquad != null)
-            DrawV45SelectedUnitCard();
+        DrawV45SelectedUnitCard();
         DrawStatusToast();
         DrawDiceTray();
     }
@@ -5234,9 +5233,9 @@ public partial class GameController : MonoBehaviour
         // WARBOARD_V45_7_TOP_BAR
         Rect bar =
             new Rect(
-                14f,
+                8f,
                 6f,
-                Screen.width - 28f,
+                Screen.width - 16f,
                 76f
             );
 
@@ -5290,7 +5289,7 @@ public partial class GameController : MonoBehaviour
         );
 
         float leftMetaX =
-            bar.x + 18f;
+            bar.x + 12f;
 
         GUI.Label(
             new Rect(
@@ -5319,7 +5318,7 @@ public partial class GameController : MonoBehaviour
         );
 
         float leftX =
-            bar.x + 138f;
+            bar.x + 120f;
 
         const float leftGap = 8f;
 
@@ -5327,7 +5326,7 @@ public partial class GameController : MonoBehaviour
             new Rect(
                 leftX,
                 bar.y + 8f,
-                96f,
+                86f,
                 34f
             ),
             "WARBOARD"))
@@ -5345,13 +5344,13 @@ public partial class GameController : MonoBehaviour
             }
         }
 
-        leftX += 96f + leftGap;
+        leftX += 86f + leftGap;
 
         if (GUI.Button(
             new Rect(
                 leftX,
                 bar.y + 8f,
-                108f,
+                80f,
                 34f
             ),
             "MISSION INFO"))
@@ -5370,7 +5369,7 @@ public partial class GameController : MonoBehaviour
             }
         }
 
-        leftX += 108f + leftGap;
+        leftX += 80f + leftGap;
 
         if (GUI.Button(
             new Rect(
@@ -7731,32 +7730,15 @@ public partial class GameController : MonoBehaviour
 
     private void DrawStatusToast()
     {
-        // WARBOARD_V62_TRANSIENT_STATUS_TOAST
-        bool showTransientToast =
-            ShouldDrawTransientStatusToast(
-                status
-            );
-
-        if (battleSetupMode ||
-            armyImportMode ||
-            missionSetupMode ||
-            battleOver ||
-            deploymentMode ||
-            showBattleLog ||
-            showMissionPanel ||
-            showDatasheet ||
-            showRuleChoiceWindow ||
-            interactiveAttack != null ||
-            showStratagemReaction ||
-            showStratagemMenu ||
-            !showTransientToast)
+        if (string.IsNullOrWhiteSpace(
+            status))
         {
             return;
         }
 
         float width =
             Mathf.Min(
-                620f,
+                760f,
                 Screen.width - 40f
             );
 
@@ -7765,9 +7747,9 @@ public partial class GameController : MonoBehaviour
                 (Screen.width -
                  width) *
                     0.5f,
-                Screen.height - 52f,
+                Screen.height - 66f,
                 width,
-                36f
+                46f
             );
 
         DrawTintedBox(
@@ -7776,7 +7758,7 @@ public partial class GameController : MonoBehaviour
                 0.035f,
                 0.04f,
                 0.055f,
-                0.92f
+                0.90f
             )
         );
 
@@ -7787,16 +7769,13 @@ public partial class GameController : MonoBehaviour
 
         style.alignment =
             TextAnchor.MiddleCenter;
-        style.fontStyle =
-            FontStyle.Bold;
-        style.fontSize = 12;
 
         GUI.Label(
             new Rect(
                 panel.x + 12f,
-                panel.y + 4f,
+                panel.y + 6f,
                 panel.width - 24f,
-                panel.height - 8f
+                panel.height - 12f
             ),
             status,
             style

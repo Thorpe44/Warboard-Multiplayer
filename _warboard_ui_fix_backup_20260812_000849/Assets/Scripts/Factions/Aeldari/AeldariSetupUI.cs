@@ -90,7 +90,7 @@ public sealed class AeldariSetupUI : MonoBehaviour
             }
         }
 
-        // WARBOARD_V62_SETUP_BADGE_REMOVED
+        DrawLockedDetachmentBadges(aeldari);
     }
 
     private HashSet<AeldariDetachment>

@@ -68,7 +68,7 @@ public sealed class NecronsSetupUI : MonoBehaviour
             }
         }
 
-        // WARBOARD_V62_SETUP_BADGE_REMOVED
+        DrawLockedBadges(controllers);
     }
 
     private HashSet<NecronDetachment> SelectionFor(
