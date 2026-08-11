@@ -618,6 +618,15 @@ public static class ModelVisualRegistry
                 continue;
             }
 
+            // R25: raw TTS root/base wrappers must not become detached
+            // "ghost bases" beside the actual miniature.
+            if (AeldariPackSkipTtsGhostComponent(
+                    selected,
+                    component))
+            {
+                continue;
+            }
+
             components.Add(
                 new ModelVisualComponentDefinition(
                     ResolvePackResourcePath(
@@ -629,9 +638,9 @@ public static class ModelVisualRegistry
                     ResolvePackResourcePath(
                         component.normalResource ?? ""
                     ),
-                    V(
-                        component.position,
-                        Vector3.zero
+                    AeldariPackSafeLocalPosition(
+                        selected,
+                        component
                     ),
                     V(
                         component.rotation,
@@ -721,6 +730,196 @@ public static class ModelVisualRegistry
             );
     }
 
+    // WARBOARD_R25_AELDARI_TTS_ROOT_SANITISATION
+    private static bool AeldariPackHasChildComponents(
+        ModelPackUnitData selected)
+    {
+        if (selected == null ||
+            selected.components == null)
+        {
+            return false;
+        }
+
+        foreach (ModelPackComponentData candidate
+            in selected.components)
+        {
+            if (candidate != null &&
+                !string.IsNullOrWhiteSpace(
+                    candidate.childPath))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static Vector3 AeldariPackFirstChildPosition(
+        ModelPackUnitData selected)
+    {
+        if (selected == null ||
+            selected.components == null)
+        {
+            return Vector3.zero;
+        }
+
+        foreach (ModelPackComponentData candidate
+            in selected.components)
+        {
+            if (candidate != null &&
+                !string.IsNullOrWhiteSpace(
+                    candidate.childPath))
+            {
+                return
+                    V(
+                        candidate.position,
+                        Vector3.zero
+                    );
+            }
+        }
+
+        return Vector3.zero;
+    }
+
+    private static bool AeldariPackSkipTtsGhostComponent(
+        ModelPackUnitData selected,
+        ModelPackComponentData component)
+    {
+        if (selected == null ||
+            component == null)
+        {
+            return false;
+        }
+
+        bool hasChildren =
+            AeldariPackHasChildComponents(
+                selected
+            );
+
+        bool root =
+            string.IsNullOrWhiteSpace(
+                component.childPath
+            );
+
+        Vector3 raw =
+            V(
+                component.position,
+                Vector3.zero
+            );
+
+        if (hasChildren &&
+            root)
+        {
+            Vector2 horizontal =
+                new Vector2(
+                    raw.x,
+                    raw.z
+                );
+
+            // Wraithknight-style TTS entries contain an untextured/world-
+            // positioned parent wrapper plus correctly-local child meshes.
+            if (string.IsNullOrWhiteSpace(
+                    component.diffuseResource) ||
+                horizontal.magnitude >
+                    4.0f)
+            {
+                Debug.Log(
+                    "Warboard R25 Aeldari: skipped TTS root/wrapper '" +
+                    component.nickname +
+                    "' from '" +
+                    selected.name +
+                    "'."
+                );
+
+                return true;
+            }
+        }
+
+        if (hasChildren &&
+            !root)
+        {
+            Vector3 reference =
+                AeldariPackFirstChildPosition(
+                    selected
+                );
+
+            Vector2 delta =
+                new Vector2(
+                    raw.x - reference.x,
+                    raw.z - reference.z
+                );
+
+            if (delta.magnitude >
+                8.0f)
+            {
+                Debug.LogWarning(
+                    "Warboard R25 Aeldari: skipped detached child component '" +
+                    component.nickname +
+                    "' from '" +
+                    selected.name +
+                    "' (offset " +
+                    delta.magnitude.ToString("F2") +
+                    ")."
+                );
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static Vector3 AeldariPackSafeLocalPosition(
+        ModelPackUnitData selected,
+        ModelPackComponentData component)
+    {
+        Vector3 raw =
+            V(
+                component != null
+                ? component.position
+                : null,
+                Vector3.zero
+            );
+
+        if (component == null)
+            return raw;
+
+        bool root =
+            string.IsNullOrWhiteSpace(
+                component.childPath
+            );
+
+        bool hasChildren =
+            AeldariPackHasChildComponents(
+                selected
+            );
+
+        if (root &&
+            !hasChildren)
+        {
+            Vector2 horizontal =
+                new Vector2(
+                    raw.x,
+                    raw.z
+                );
+
+            // Yvraine-style single-component TTS objects contain their source
+            // tabletop X/Z. The mesh itself is valid; only its placement is
+            // not. Keep the normal local Y and anchor X/Z to the model token.
+            if (horizontal.magnitude >
+                4.0f)
+            {
+                return
+                    new Vector3(
+                        0f,
+                        raw.y,
+                        0f
+                    );
+            }
+        }
+
+        return raw;
+    }
     private static string N(string value)
     {
         if (string.IsNullOrWhiteSpace(value))
@@ -1067,4 +1266,5 @@ public static class ModelVisualRegistry
         );
     }
 }
+
 

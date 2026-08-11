@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.5/staging' branch; Version is '6000.5.7f1 (017862109af0) revision 96354'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-11T08:47:18.5440882Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-11T10:07:20.8751037Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 15681 MB
 BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-11T08:47:18Z
+Date: 2026-08-11T10:07:20Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Unity.exe
@@ -21,7 +21,7 @@ LicenseClient-elli0
 -hubSessionId
 0b4f232c-1762-4864-b0d6-9d5283ca21f2
 -accessToken
-fuSupsUC9OzxF_2gSWal45dcAo1OIUEJYdJY4ogaNmQ005f
+zbPmLS7BmMF195TvWPKPNvTDU8f8B1r5nMPhRfD_ubk005f
 Successfully changed project path to: C:\Users\elli0\Documents\GitHub\Multiplayer
 C:/Users/elli0/Documents/GitHub/Multiplayer
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -60,50 +60,50 @@ C:/Users/elli0/Documents/GitHub/Multiplayer
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [36596]  Target information:
+Player connection [39460]  Target information:
 
-Player connection [36596]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 35709796 [EditorId] 35709796 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [39460]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 3901782634 [EditorId] 3901782634 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [36596] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [36596] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [39460] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [39460] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-38480" after 0.6 seconds.
-[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-elli0"
 [Licensing::IpcConnector] LicenseClient-elli0 channel disconnected successfully.
 [Licensing::IpcConnector] Channel LicenseClient-elli0-6000.5.7 doesn't exist
-[Licensing::Module] Successfully launched the LicensingClient (PId: 40568)
+[Licensing::Module] Successfully launched the LicensingClient (PId: 13500)
+[Package Manager] Connected to IPC stream "Upm-35832" after 0.3 seconds.
+[Licensing::Module] Licensing is not yet initialized.
 Starting IPC server.
 Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-elli0-6000.5.7, press Ctrl-C to exit.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-11T08:47:21.9069963Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 40568, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-11T10:07:29.1609042Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 13500, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              f05e75519f2d40ca8314c4392909d720
-  Correlation Id:          573188ef36d18e4c255d98a8a4f9502a
-  External correlation Id: 4096119917345177155
+  Session Id:              06159eee60214b5e87e65118a82ddd2f
+  Correlation Id:          37ed59f00c8054f0397cc8a51d46d990
+  External correlation Id: 7575303890881028715
   Machine Id:              JOUP1U45KtUV8sm1s/K3HmNb45Q=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 0.85s, validation: 0.25s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-11T08:47:22.1668316Z"
-[Licensing::Module] Connected to LicensingClient (PId: 40568, launch time: 0.01, total connection time: 1.11s)
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 6.56s, validation: 0.61s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-11T10:07:29.7928547Z"
+[Licensing::Module] Connected to LicensingClient (PId: 13500, launch time: 0.05, total connection time: 7.19s)
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated the access token fuSupsUC9O...
+[Licensing::Module] Successfully updated the access token zbPmLS7BmM...
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 5774099461094-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 3.74s
-[Licensing::Module] Licensing is initialized (took 2.58s).
+[Licensing::Module] Licensing Background thread has ended after 8.96s
+[Licensing::Module] Licensing is initialized (took 7.03s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -113,7 +113,6 @@ Library Redirect Path: Library/
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
 Active build profile path: `Assets/Settings/Build Profiles/Windows.asset`
-Artifact Garbage Collection - Removed 1 unused hashed content files
 Got setting from build profile YAML, name `m_BuildTarget`, value `19`
 Got setting from build profile YAML, name `m_Subtarget`, value `2`
 Initialize engine version: 6000.5.7f1 (017862109af0)
@@ -139,7 +138,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -147,30 +146,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005034 seconds.
+Registered in 0.634076 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.036 seconds
-Domain Reload Profiling: 2215ms
-	BeginReloadAssembly (298ms)
-		CreateAndSetChildDomain (6ms)
-	RebuildCommonClasses (11ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (156ms)
-	LoadAllAssembliesAndSetupDomain (670ms)
-		LoadAssemblies (287ms)
-		AnalyzeDomain (487ms)
-			TypeCache.Refresh (485ms)
-				TypeCache.ScanAssembly (456ms)
-	FinalizeReload (1043ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 4014ms
+	BeginReloadAssembly (375ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (277ms)
+	initialDomainReloadingComplete (894ms)
+	LoadAllAssembliesAndSetupDomain (1930ms)
+		LoadAssemblies (370ms)
+		AnalyzeDomain (1835ms)
+			TypeCache.Refresh (1834ms)
+				TypeCache.ScanAssembly (1473ms)
+	FinalizeReload (530ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			BeforeProcessingInitializeOnLoad (223ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (388ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (202ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -208,7 +207,8 @@ Application.AssetDatabase Initial Refresh Start
     com.unity.ext.nunit@2.1.0 (location: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
     com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\elli0\Documents\GitHub\Multiplayer\Library\PackageCache\com.unity.modules.physicscore2d)
 [Subsystems] No new subsystems found in resolved package list.
-[Package Manager] Done registering packages in 0.05 seconds
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:80
 info: Microsoft.Hosting.Lifetime[0]
@@ -224,7 +224,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 69.4188ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 32.3165ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -242,104 +242,265 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 131.3670ms
-ExitCode: 0 Duration: 0s649ms
-[649/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra build success (0.55 seconds), 1 items updated, 821 evaluated
-AssetDatabase: script compilation time: 1.633015s
-Begin MonoManager ReloadAssembly
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 1488.8070ms
+ExitCode: 4 Duration: 6s653ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[647/821    1s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (6.60 seconds), 2 items updated, 646 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
+ExitCode: 0 Duration: 3s897ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 1.7224ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 141 defines and 283 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aE.dag\Unity.Collections.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Scripting, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Managed\UnityEngine\Unity.Scripting.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 139 defines and 330 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Netcode.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aE.dag\Unity.Netcode.Runtime.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil.Rocks, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.Rocks.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@2f3d916873ea\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 2039.7225ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 5350.9752ms
+ExitCode: 0 Duration: 10s
+Finished compiling graph: 824 nodes, 14698 flattened edges (11826 ToBuild, 124 ToUse), maximum node priority 953
+[468/821    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[647/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[813/821    3s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
+[814/821    3s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[815/821    2s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 139 defines and 330 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
+
+running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
+
+running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
+
+running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[816/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[817/821    5s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 141 defines and 283 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running Unity.Netcode.Editor.CodeGen.INetworkMessageILPP
+
+running Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP
+
+running Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP
+
+running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[818/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[819/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[820/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (10.30 seconds), 10 items updated, 821 evaluated
+Assets\Scripts\Core\CoreRules11Completion.cs(46,16): warning CS0618: 'Object.FindObjectsOfType<T>()' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(146,19): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\WarboardV45PhysicalSideTrays.cs(142,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(33,17): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Core\GameController.V50TerrainAreaBattlefield.cs(30,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Core\GameController.V48CoreAlignment.cs(12,18): warning CS0414: The field 'GameController.v48ChargeCommandRerolled' is assigned but its value is never used
 Total cache size 69356940
-Total cache size after purge 69356940, took 00:00:00.2697083
+Total cache size after purge 69356940, took 00:00:00.1085128
+AssetDatabase: script compilation time: 22.414912s
+Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 6.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 166.01 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 7.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.846 seconds
-Domain Reload Profiling: 7678ms
-	BeginReloadAssembly (533ms)
-		DisableScriptedObjects (80ms)
-		CreateAndSetChildDomain (83ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (196ms)
-	LoadAllAssembliesAndSetupDomain (1045ms)
-		LoadAssemblies (657ms)
-		AnalyzeDomain (366ms)
-			TypeCache.Refresh (279ms)
-				TypeCache.ScanAssembly (251ms)
-			BuildScriptInfoCaches (81ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (5849ms)
+- Finished resetting the current domain, in  3.639 seconds
+Domain Reload Profiling: 7014ms
+	BeginReloadAssembly (268ms)
+		DisableScriptedObjects (36ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (2992ms)
+		LoadAssemblies (2555ms)
+		AnalyzeDomain (422ms)
+			TypeCache.Refresh (380ms)
+				TypeCache.ScanAssembly (367ms)
+			BuildScriptInfoCaches (38ms)
+	FinalizeReload (3641ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (219ms)
-			ProcessInitializeOnLoadAttributes (4281ms)
-			ProcessInitializeOnLoadMethodAttributes (871ms)
-			AfterProcessingInitializeOnLoad (18ms)
-		AwakeInstancesAfterBackupRestoration (52ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (2851ms)
+			ProcessInitializeOnLoadMethodAttributes (452ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
 Starting new worker id: 0 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
 
-Asset Pipeline Refresh (id=c59818b0a41244f4c9eceb6f700b752e): Total: 10.690 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=675f76f3840ee194b915179b388e23bf): Total: 40.869 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	(Values over 0.05ms)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=6710 ms
-		Asset DB Callback time: managed=215 ms, native=50 ms
-		Scripting: domain reloads=1, domain reload time=1966 ms, compile time=1639 ms, other=107 ms
+		Asset DB Process Time: managed=0 ms, native=14701 ms
+		Asset DB Callback time: managed=206 ms, native=56 ms
+		Scripting: domain reloads=1, domain reload time=3435 ms, compile time=22417 ms, other=51 ms
 		Project Asset Count: scripts=937, non-scripts=2201
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Asset File Changes: new=1, changed=3, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 55.380ms
-	ApplyChangesToAssetFolders: 1.046ms
-	Scan: 236.367ms
-	Collect global state as custom dependencies: 21.354ms
-	CategorizeScriptCompilationAssets: 66.752ms
-	ProcessAssetsWithTransientArtifactChanges: 108.617ms
-	CategorizeAssets: 61.241ms
-	CompileScripts: 1638.711ms
-	ImportOutOfDateAssets: 5967.330ms (5886.701ms without children)
-		UnloadImportedAssets: 2.755ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.035ms
-		ImportSchedulerStart: 76.820ms
-	PostProcessAllAssets: 216.030ms
-		MonoPostProcessAllAssets: 215.875ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 50.833ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 27.072ms
-			SyncVS.PostprocessSyncProject 4.759ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 2.842ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.933ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.864ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.764ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.725ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.206ms
-	UnloadStreamsBegin: 3.529ms
-	PersistCurrentRevisions: 0.165ms
-	GenerateScriptTypeHashes: 3.110ms
-	GenerateScriptTypeSerializationHashes: 5.607ms
-	Untracked: 2300.746ms
+	InvokePackagesCallback: 50.541ms
+	ApplyChangesToAssetFolders: 0.572ms
+	Scan: 141.037ms
+	Collect global state as custom dependencies: 9.620ms
+	OnSourceAssetsModified: 0.913ms
+	CategorizeScriptCompilationAssets: 2301.222ms
+	ProcessAssetsWithTransientArtifactChanges: 56.839ms
+	CategorizeAssets: 32.813ms
+	CompileScripts: 22417.381ms
+	ImportOutOfDateAssets: 3871.273ms (3825.178ms without children)
+		UnloadImportedAssets: 1.783ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.716ms
+		ImportSchedulerStart: 43.574ms
+	PostProcessAllAssets: 208.294ms
+		VCAutoAddAssetPostprocess 1.546ms
+		XRBuildSystem.XRAssetImported 0.837ms
+		VersionControlSettings.HiddenFilePostprocess 0.064ms
+		MonoPostProcessAllAssets: 205.008ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 30.194ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 23.684ms
+			AssetPostprocessorProxy.OnPostprocessAllAssets 21.844ms
+			AssetPostprocessor.OnPostprocessAllAssets 19.693ms
+			NetworkPrefabProcessor.OnPostprocessAllAssets 13.747ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.267ms
+			AssetChangedListener.OnPostprocessAllAssets 6.442ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.962ms
+			SyncVS.PostprocessSyncProject 1.549ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.345ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.343ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.663ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.488ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.466ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.435ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.355ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.349ms
+			AssetEvents.OnPostprocessAllAssets 0.347ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.304ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.297ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.263ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.195ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.185ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.160ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.114ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.093ms
+	PostAssetChangesProfiler: 5.600ms
+	UnloadStreamsBegin: 1.588ms
+	PersistCurrentRevisions: 0.097ms
+	GenerateScriptTypeHashes: 1.576ms
+	GenerateScriptTypeSerializationHashes: 2.971ms
+	Untracked: 11764.098ms
 
 Application.AssetDatabase Initial Refresh End
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Scanning for USB devices : 2.747ms
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Scanning for USB devices : 1.768ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Warboard_Unity6_v26_1_ReservePlacementFix_FLAT
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
 Loaded scene 'Assets/Ghost model.unity'
-	Deserialize:            1.333 ms
-	Integration:            450.092 ms
-	Integration of assets:  0.003 ms
-	Thread Wait Time:       0.033 ms
-	Total Operation Time:   451.462 ms
-Unloading 4240 unused Assets / (2.3 MB). Loaded Objects now: 4858.
-Memory consumption went from 316.7 MB to 314.4 MB.
-Total: 22.177900 ms (FindLiveObjects: 1.176800 ms CreateObjectMapping: 4.027100 ms MarkObjects: 13.572100 ms  DeleteObjects: 3.394700 ms)
+	Deserialize:            10.008 ms
+	Integration:            494.039 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.023 ms
+	Total Operation Time:   504.074 ms
+Unloading 4242 unused Assets / (295.1 KB). Loaded Objects now: 4862.
+Memory consumption went from 316.2 MB to 315.9 MB.
+Total: 13.893300 ms (FindLiveObjects: 1.025300 ms CreateObjectMapping: 2.189500 ms MarkObjects: 8.272600 ms  DeleteObjects: 2.400500 ms)
 
 [LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+Worker ready: AssetImportWorkerHW0 0
 [LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
 [LAYOUT] About to save layout C:/Users/elli0/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
 [MODES] ModeService[default].InitializeCurrentMode
@@ -349,19 +510,20 @@ This project uses Input Manager, which is marked for deprecation. To manage inpu
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 D3D11 device created for Microsoft Media Foundation video decoding.
-[Project] Loading completed in 21.679 seconds
-	Project init time: 				18.115 seconds
+[Project] Loading completed in 70.137 seconds
+	Project init time: 				67.559 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		3.197 seconds
-		Asset Database init time: 		0.937 seconds
-		Global illumination init time: 	0.005 seconds
-		Assemblies load time: 			2.301 seconds
-		Unity extensions init time: 	0.029 seconds
-		Asset Database refresh time: 	10.691 seconds
-	Scene opening time: 			3.096 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786438060202,"processId":38480,"projectLoad":21.6789684,"projectInit":18.114561,"templateInit":0.0,"packageManagerInit":3.1970301,"assetDatabaseInit":0.9373218,"globalIlluminationInit":0.005006,"assembliesLoad":2.3012815,"unityExtensionsInit":0.0288501,"assetDatabaseRefresh":10.6905709,"sceneOpening":3.0960588000000004}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786438060202,"processId":38480,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
-Asset Pipeline Refresh (id=96cdd45404378004c9a3800610d6e741): Total: 0.133 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+		Package Manager init time: 		7.332 seconds
+		Asset Database init time: 		1.010 seconds
+		Global illumination init time: 	0.006 seconds
+		Assemblies load time: 			14.997 seconds
+		Unity extensions init time: 	0.018 seconds
+		Asset Database refresh time: 	40.869 seconds
+	Scene opening time: 			1.860 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786442910976,"processId":35832,"projectLoad":70.136746,"projectInit":67.5586863,"templateInit":0.0,"packageManagerInit":7.3321285,"assetDatabaseInit":1.0100871,"globalIlluminationInit":0.0059059,"assembliesLoad":14.9966802,"unityExtensionsInit":0.0176875,"assetDatabaseRefresh":40.8691164,"sceneOpening":1.8601689}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786442910977,"processId":35832,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+[Licensing::Client] Successfully resolved entitlement details
+Asset Pipeline Refresh (id=596a0bd8afb552741aed2d7839370cfa): Total: 0.052 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
 Dynamic Batching is deprecated and will be removed in a future release. Use GPU Instancing instead. Disable Dynamic Batching in Project Settings > Player > Other Settings to remove this warning.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -372,139 +534,133 @@ UnityEngine.Debug:LogWarning (object)
 UnityEditor.PlayerSettingsBatchingWarning:WarnIfDynamicBatchingEnabled ()
 UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
-Start Indexing on Editor startup
-Worker ready: AssetImportWorkerHW0 0
-[Indexing] Starting Initial Indexing for Assets
-Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.035s, timestamps: [21.882 - 21.917]
-[Licensing::Client] Successfully resolved entitlement details
+Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.013s, timestamps: [73.990 - 74.002]
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated access token: "fuSupsUC"... (expires: 2026-08-11T09:49:36Z)
+[Licensing::Module] Successfully updated access token: "zbPmLS7B"... (expires: 2026-08-11T11:49:26Z)
+[Licensing::Client] Successfully resolved entitlement details
 UPID Received '850f50a1-7776-48ba-9d96-564e37f3acd9'.
 [Licensing::Client] Successfully resolved entitlement details
+TrimDiskCacheJob: Current cache size 0mb
+Asset Pipeline Refresh (id=caa6565fba3a2174485b79470ed2c860): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Starting new worker id: 1 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW1.log
+[Worker0] Imported GUID: 6fa08679180b9c6459f659157be3f2ad - Path: Assets/Scripts/Core/SquadController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'bb12f9689ada547cfe3b7ebaf4778825') in 0.0962339 seconds
+[Worker0] Imported GUID: c66d90bb4caadf3449a6ebe8295848bd - Path: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '1d064fda3f9ceb50c14338f7049dd39d') in 0.0089852 seconds
+[Worker0] Imported GUID: 4d101aef33f0fb14c893768f12b97bd2 - Path: Assets/Scripts/Core/WarboardV55MissionCardsWorld.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '0a52c0093064ff8c399e42324e6a368a') in 0.0050712 seconds
 Reloading assemblies for play mode.
 Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
 Begin MonoManager ReloadAssembly
+Worker ready: AssetImportWorkerHW1 1
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 6.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.138 seconds
-Domain Reload Profiling: 4944ms
-	BeginReloadAssembly (1221ms)
-		DisableScriptedObjects (197ms)
-		CreateAndSetChildDomain (637ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (187ms)
-	LoadAllAssembliesAndSetupDomain (339ms)
-		LoadAssemblies (311ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (12ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (3141ms)
+- Finished resetting the current domain, in  1.770 seconds
+Domain Reload Profiling: 2899ms
+	BeginReloadAssembly (781ms)
+		DisableScriptedObjects (116ms)
+		CreateAndSetChildDomain (452ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (208ms)
+		LoadAssemblies (180ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (9ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (1772ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (209ms)
-			ProcessInitializeOnLoadAttributes (534ms)
-			ProcessInitializeOnLoadMethodAttributes (498ms)
-			AfterProcessingInitializeOnLoad (20ms)
-		AwakeInstancesAfterBackupRestoration (1089ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (276ms)
+			ProcessInitializeOnLoadMethodAttributes (301ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (614ms)
 No restricted APIs configured; Validation skipped.
-Checking 20 assemblies for restricted APIs found 0 usage(s) in 9 ms
-Refreshing native plugins compatible for Editor in 8.90 ms, found 3 plugins.
+Checking 20 assemblies for restricted APIs found 0 usage(s) in 5 ms
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
 
-Asset Pipeline Refresh (id=91a5e8a49db06c94e930f9df42860217): Total: 6.221 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+Asset Pipeline Refresh (id=9bbe9b7eea4ae9c448945a38db68ba0e): Total: 3.728 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
 	(Values over 0.05ms)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=3585 ms
-		Asset DB Callback time: managed=331 ms, native=389 ms
-		Scripting: domain reloads=1, domain reload time=1911 ms, compile time=4 ms, other=0 ms
+		Asset DB Process Time: managed=0 ms, native=2046 ms
+		Asset DB Callback time: managed=188 ms, native=300 ms
+		Scripting: domain reloads=1, domain reload time=1189 ms, compile time=3 ms, other=0 ms
 		Project Asset Count: scripts=937, non-scripts=2201
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 4.736ms
-	ApplyChangesToAssetFolders: 0.324ms
-	Collect global state as custom dependencies: 2.254ms
-	ProcessAssetsWithTransientArtifactChanges: 227.704ms
-	CategorizeAssets: 49.625ms
-	CompileScripts: 3.520ms
-	ImportOutOfDateAssets: 3214.885ms (3173.057ms without children)
-		CollectScriptTypesHashes: 0.537ms
-		ReloadNativeAssets: 0.267ms
-		UnloadImportedAssets: 2.898ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.144ms
-		ImportSchedulerStart: 37.493ms
-	PostProcessAllAssets: 707.157ms
-		AssemblyValidation.PostprocessAllAssets 37.184ms
-		PostProcessCallbackCreateDeferredMaterials 30.424ms
-		ShaderAssetModifiedCallback 13.298ms
-		RaytracingShaderImportPostprocess 11.279ms
-		ComputeShaderImportPostprocess 10.819ms
-		SpeedTreeImporter.PostprocessAllAssets 10.405ms
-		BlockShaderImporter.PostprocessAllAssets 6.856ms
-		LocalizationDatabase.AssetDatabasePostprocessCallback 6.465ms
-		XRBuildSystem.XRAssetImported 2.490ms
-		MonoPostProcessAllAssets: 328.458ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 39.654ms
-			AssetPostprocessor.OnPostprocessAllAssets 36.677ms
-			NetworkPrefabProcessor.OnPostprocessAllAssets 32.841ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 28.624ms
-			AssetChangedListener.OnPostprocessAllAssets 23.998ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 16.993ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 13.311ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 6.557ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.706ms
-			SyncVS.PostprocessSyncProject 3.118ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.225ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 1.037ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 1.022ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 1.021ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.963ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.753ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.727ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.606ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.573ms
-			AssetEvents.OnPostprocessAllAssets 0.514ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.411ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.346ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.309ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.286ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.232ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.201ms
-	PostAssetChangesProfiler: 12.771ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.290ms
-	UnloadStreamsBegin: 2.811ms
-	PersistCurrentRevisions: 0.164ms
-	GenerateScriptTypeHashes: 2.335ms
-	GenerateScriptTypeSerializationHashes: 4.201ms
-	Untracked: 1983.737ms
-
-ArgumentException: You can only call GUI functions from inside OnGUI.
-  at UnityEngine.GUIUtility.CheckOnGUI () [0x00008] in <c9d7e00919f0460c88d57fd35c5274f5>:0 
-  at UnityEngine.GUI.get_skin () [0x00000] in <c9d7e00919f0460c88d57fd35c5274f5>:0 
-  at WarboardTerrainTooltipR2.Awake () [0x00000] in C:\Users\elli0\Documents\GitHub\Multiplayer\Assets\Scripts\Core\WarboardTerrainTooltipR2.cs:46 
-UnityEngine.GameObject:Internal_AddComponentWithType_Injected(IntPtr, Type)
-UnityEngine.GameObject:Internal_AddComponentWithType(Type)
-UnityEngine.GameObject:AddComponent(Type)
-UnityEngine.GameObject:AddComponent()
-WarboardTerrainTooltipR2:Install() (at Assets\Scripts\Core\WarboardTerrainTooltipR2.cs:39)
-
-(Filename: Assets/Scripts/Core/WarboardTerrainTooltipR2.cs Line: 39)
+	InvokePackagesCallback: 2.517ms
+	ApplyChangesToAssetFolders: 0.230ms
+	Collect global state as custom dependencies: 1.264ms
+	ProcessAssetsWithTransientArtifactChanges: 142.669ms
+	CategorizeAssets: 34.890ms
+	CompileScripts: 3.412ms
+	ImportOutOfDateAssets: 1814.161ms (1791.864ms without children)
+		CollectScriptTypesHashes: 0.418ms
+		ReloadNativeAssets: 0.231ms
+		UnloadImportedAssets: 2.291ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.684ms
+		ImportSchedulerStart: 19.071ms
+	PostProcessAllAssets: 483.298ms
+		AssemblyValidation.PostprocessAllAssets 22.718ms
+		PostProcessCallbackCreateDeferredMaterials 12.638ms
+		ShaderAssetModifiedCallback 7.154ms
+		RaytracingShaderImportPostprocess 7.012ms
+		ComputeShaderImportPostprocess 5.991ms
+		SpeedTreeImporter.PostprocessAllAssets 5.114ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 3.028ms
+		BlockShaderImporter.PostprocessAllAssets 2.624ms
+		XRBuildSystem.XRAssetImported 0.980ms
+		MonoPostProcessAllAssets: 187.953ms
+			AssetPostprocessorProxy.OnPostprocessAllAssets 27.247ms
+			AssetPostprocessor.OnPostprocessAllAssets 26.817ms
+			NetworkPrefabProcessor.OnPostprocessAllAssets 17.429ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 16.290ms
+			AssetChangedListener.OnPostprocessAllAssets 11.298ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 9.138ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 7.845ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.675ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.180ms
+			SyncVS.PostprocessSyncProject 1.710ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 1.108ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.754ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.613ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.599ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.550ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.512ms
+			AssetEvents.OnPostprocessAllAssets 0.509ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.412ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.368ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.345ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.217ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.189ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.179ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.164ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.120ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.118ms
+	PostAssetChangesProfiler: 5.649ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.292ms
+	UnloadStreamsBegin: 1.895ms
+	PersistCurrentRevisions: 0.111ms
+	GenerateScriptTypeHashes: 2.124ms
+	GenerateScriptTypeSerializationHashes: 3.842ms
+	Untracked: 1231.351ms
 
 Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            1.073 ms
-	Integration:            652.501 ms
+	Deserialize:            0.754 ms
+	Integration:            399.912 ms
 	Integration of assets:  0.003 ms
-	Thread Wait Time:       0.023 ms
-	Total Operation Time:   653.601 ms
+	Thread Wait Time:       0.042 ms
+	Total Operation Time:   400.711 ms
 [Licensing::Client] Successfully resolved entitlement details
-TrimDiskCacheJob: Current cache size 0mb
 Warboard Custodes Model Pack loaded: 104 indexed objects.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -543,6 +699,872 @@ GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
 
 (Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 146)
 
+Warboard Necron Model Pack R2.2 loaded: 105 indexed objects.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:EnsureLoaded () (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:192)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:53)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 192)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_1 (offset (12.41, 0.00, -17.92)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_2 (offset (12.48, 0.00, -17.18)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_3 (offset (14.50, 0.00, -17.12)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_4 (offset (15.43, 0.00, -17.16)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_5 (offset (12.41, 0.00, -17.92)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_6 (offset (12.48, 0.00, -17.18)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warriors with gauss flayer' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior_7 (offset (14.50, 0.00, -17.12)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior Reaper_8 (offset (12.48, 0.00, -17.18)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior Reaper_9 (offset (12.48, 0.00, -17.18)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Warriors' -> 'necron warrior reaper' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Warrior Reaper_10 (offset (12.48, 0.00, -17.18)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortals' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortals' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Immortal_1 (offset (12.19, 0.00, -16.44)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortals' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Immortal_2 (offset (12.86, 0.00, -15.92)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Immortal_3 (offset (12.19, 0.00, -16.44)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortals' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Immortal_4 (offset (12.86, 0.00, -15.92)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Immortals' -> 'immortal' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Immortal_5 (offset (12.19, 0.00, -16.44)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
+Warboard Necron Model Pack R2.2: 'Necron Overlord' -> 'necron overlord' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard Necron Model Pack R2.2: 'Necron Overlord' -> 'necron overlord' [Main].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronModelPackResolverR22:BuildVisual (NecronPackUnitR22,string) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:283)
+NecronModelPackResolverR22:TryResolve (string,string,string,int) (at Assets/Scripts/Core/NecronModelPackResolverR22.cs:163)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronModelPackResolverR22.cs Line: 283)
+
+Warboard R2.3: repaired displaced Necron OBJ origin for Overlord_1 (offset (3.31, 0.00, -19.65)).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+NecronVisualOriginRepairR23:Reanchor (string,ModelToken) (at Assets/Scripts/Core/NecronVisualOriginRepairR23.cs:101)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:481)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (string,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:455)
+GameController:LoadArmy (string) (at Assets/Scripts/Core/GameController.Setup.cs:222)
+GameController:LoadBuiltInTestArmies () (at Assets/Scripts/Core/GameController.Core.cs:489)
+GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3572)
+
+(Filename: Assets/Scripts/Core/NecronVisualOriginRepairR23.cs Line: 101)
+
 WARBOARD V50: built 16 standard 11e terrain-area footprints; 6 are terrain objectives.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -558,11 +1580,8 @@ GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3407)
 
 (Filename: Assets/Scripts/Core/GameController.V50TerrainAreaBattlefield.cs Line: 239)
 
-Asset Pipeline Refresh (id=220376d9c5612e34cb521e07c041c499): Total: 0.036 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=b0c0d2023a447c74783b6e74c4181894): Total: 0.006 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=bac3cfc61423fb74b8320c311d505a8e): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=04cf21d3d5fcc894ebac42c12e051402): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-MonoPathRemapper: Attempts to remap: 38545; Successful remaps: 10334
+Asset Pipeline Refresh (id=af9adbe487ff6c04087efc263af811c4): Total: 0.018 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+MonoPathRemapper: Attempts to remap: 38652; Successful remaps: 10334
 Serialized file version minimum: 23, current 23
 [LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
 [LAYOUT] About to save layout C:/Users/elli0/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
@@ -577,16 +1596,16 @@ Shut down.
 AcceleratorClientConnectionCallback - disconnected - :0
 Cleanup mono
 CodeReloadManager destroyed
-abort_threads: Failed aborting id: 0000000000005BB8, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 00000000000013E4, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000985C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000001D10, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000005BB8, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 00000000000013E4, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000985C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000001D10, mono_thread_manage will ignore it
 
-debugger-agent: Unable to listen on 6040
+debugger-agent: Unable to listen on 4624
 Checking for leaked weakptr:
   Found no leaked weakptrs.
 [Package Manager] Server process was shutdown
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786438177990,"processId":38480,"allocatedMemory":50170867,"memoryLabels":[{"Default":198499},{"Permanent":15516},{"NewDelete":66697},{"Thread":4197560},{"Manager":32805},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1168},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":94888},{"Input":42840},{"JobScheduler":256},{"TextLib":19030},{"Mono":310},{"ScriptingNativeRuntime":1619556},{"BaseObject":1699786},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4005},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":10173},{"StaticString":3808},{"Utility":2673450},{"Curl":48},{"PoolAlloc":2216},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7352},{"WebRequest":6328},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33042928},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":201616},{"CoreStats":13688},{"Identifiers":6768},{"Gui":315},{"EditorUtility":228018},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4568447},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35345},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786443015702,"processId":35832,"allocatedMemory":50169988,"memoryLabels":[{"Default":198440},{"Permanent":15516},{"NewDelete":66689},{"Thread":4197560},{"Manager":32805},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":1168},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":94888},{"Input":42840},{"JobScheduler":256},{"TextLib":19030},{"Mono":310},{"ScriptingNativeRuntime":1635940},{"BaseObject":1698250},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4005},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":10174},{"StaticString":3808},{"Utility":2673426},{"Curl":48},{"PoolAlloc":2216},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7352},{"WebRequest":7284},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33042880},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":185192},{"CoreStats":13688},{"Identifiers":6768},{"Gui":315},{"EditorUtility":227897},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4568447},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35345},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}

@@ -309,7 +309,7 @@ public partial class SquadController : MonoBehaviour
                 : "Model";
 
             ModelVisualDefinition previewVisual =
-                NecronModelPackResolverR22.TryResolve(
+                ExtendedFactionModelPackResolverR25.TryResolve(
                     FactionId,
                     DisplayName,
                     previewRoleName,
@@ -456,7 +456,7 @@ public partial class SquadController : MonoBehaviour
             );
 
             ModelVisualDefinition visual =
-                NecronModelPackResolverR22.TryResolve(
+                ExtendedFactionModelPackResolverR25.TryResolve(
                     FactionId,
                     DisplayName,
                     roleName,
@@ -470,19 +470,10 @@ public partial class SquadController : MonoBehaviour
 
             if (visual != null)
             {
-                bool visualAttached =
-                    token.AttachVisual(
-                        visual,
-                        baseColor
-                    );
-
-                if (visualAttached)
-                {
-                    NecronVisualOriginRepairR23.Reanchor(
-                        FactionId,
-                        token
-                    );
-                }
+                token.AttachVisual(
+                    visual,
+                    baseColor
+                );
             }
 
             models.Add(token);
@@ -2546,6 +2537,8 @@ public partial class SquadController : MonoBehaviour
     }
 
 }
+
+
 
 
 

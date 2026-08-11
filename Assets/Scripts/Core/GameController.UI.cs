@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -3994,7 +3994,7 @@ public partial class GameController : MonoBehaviour
             new Rect(
                 settings.x + 14f,
                 settings.y + 48f,
-                210f,
+                300f,
                 34f
             ),
             "LAYOUT " +
@@ -4011,9 +4011,9 @@ public partial class GameController : MonoBehaviour
 
         if (GUI.Button(
             new Rect(
-                settings.x + 238f,
+                settings.x + 328f,
                 settings.y + 48f,
-                290f,
+                250f,
                 34f
             ),
             missionAttackerIndex == 0
@@ -7777,3 +7777,4 @@ public partial class GameController : MonoBehaviour
     }
 
 }
+

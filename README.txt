@@ -1,43 +1,43 @@
-WARBOARD R2.2 - UI + NECRON MODEL FIX
+WARBOARD R25.1 - ORK/NID + AELDARI GHOST BASE + MISSION UI FIX
 
-Fixes the three issues visible after Terrain R2:
+Install:
+1. Extract into Warboard-Multiplayer project root.
+2. Run INSTALL_WARBOARD_R25_1_MODELS_UI_FIX.bat
+3. Let Unity compile.
+4. START A FRESH BATTLE.
 
-1. TERRAIN HOVER ERROR
-The old R2 tooltip created GUIStyles from GUI.skin in Awake(), causing:
-ArgumentException: You can only call GUI functions from inside OnGUI.
-R2.2 creates/caches those GUI styles only from OnGUI.
+MODEL FIX
 
-2. SCOREBOARD + MISSION CARD LAYOUT
-The physical row is now:
-[P1 PRIMARY] [P1 SECONDARY] [MATCH SCOREBOARD] [P2 PRIMARY] [P2 SECONDARY]
+Necrons / Orks / Tyranids:
+- use one resolver before ModelToken.AttachVisual
+- root-only TTS objects are re-anchored exactly like the successful Necron logic:
+  the first TTS table/world position becomes local zero
+- parent+child TTS objects discard the source-table parent/wrapper and retain the
+  child's local transforms
+- no renderer-bounds / after-spawn recenter hack
+- source order in each ModelIndex is preserved
 
-The existing scoreboard stays in the centre. All four mission cards use the same
-Y/Z and billboard behaviour as BattlefieldWorldUI's scoreboard. Each card has
-its own wooden frame/ledge and keeps the full existing mission text. Long card
-text automatically shrinks.
+Aeldari:
+- keeps the existing successful ModelVisualRegistry matcher
+- Wraithknight-style world-positioned root wrappers are skipped when proper
+  local child meshes exist
+- Yvraine-style single root meshes keep the mesh but discard source TTS X/Z
+- obviously detached child components are ignored
+- Custodes code is untouched
 
-3. NECRON MODELS
-The Necron pack was present under Resources/Armies/Models/Necrons, but the live
-model visual path only resolved Custodes and Aeldari. R2.2 adds a Necron resolver
-and wires it into both SquadController visual-resolution passes.
+MISSION SETUP UI
 
-The resolver:
-- reads Necrons/ModelIndex.json
-- matches canonical unit names
-- prefers source Main (the colourful/preferred source)
-- falls back to Backup when Main does not cover a unit
-- cycles available variants across models in the squad
-- re-anchors raw TTS world positions so the OBJ appears on its Warboard token
-- retains the gameplay capsule fallback if no loadable OBJ exists
+The Layout button was only 210px wide even though it contains text such as:
+LAYOUT A | SWEEPING ENGAGEMENT
 
-Terrain geometry from Terrain Overhaul R2 is NOT changed.
-WarboardBuildInfo.cs is NOT changed.
-
-INSTALL
-1. Extract into the Warboard-Multiplayer project root.
-2. Run INSTALL_WARBOARD_R2_2_UI_NECRON_FIX.bat
-3. Let Unity compile/reimport.
-4. Start a fresh battle (existing spawned squads will not magically rebuild their visuals).
+R25 widens it to 300px and moves the Attacker button beside it.
 
 Backup:
-Library/WarboardBackups/R2_2_UI_NECRON_FIX/<timestamp>
+Library/WarboardBackups/R25_1_MODEL_UI_FIX/<timestamp>
+
+R25.1 INSTALLER CORRECTION
+
+R25 itself restored its backup correctly on failure. The failure was in the
+installer's source-search code: it passed -1 as String.IndexOf(startIndex)
+before the fallback search could run. R25.1 validates the anchor first and
+uses a line-ending/whitespace tolerant regex fallback.
