@@ -66,3 +66,28 @@ desktop.ini
 *.mdb
 *.opendb
 *.VC.db
+
+# WARBOARD LOCAL PATCH ARTIFACTS
+# Local/versioned installer debris; never required by the Unity runtime.
+/R*_BACKUP_*/
+/R*_PAYLOAD/
+/V*_BACKUP_*/
+/V*_PAYLOAD/
+/WarboardV*_Backup_*/
+/WarboardV*/
+/INSTALL_WARBOARD_*.bat
+/INSTALL_WARBOARD_*.ps1
+/install_v*_*.bat
+/install_v*_*.ps1
+/V*_Apply.bat
+/V*_Apply.ps1
+/V*_preinstall_manifest.txt
+/V*_DIFF_SUMMARY.txt
+/V*_CLEANUP_NOTES.txt
+/after_v*_tree.txt
+/full_after_tree.txt
+/build_diff.txt
+/WARBOARD_R*.zip
+/WARBOARD_V*.zip
+/WarboardV*.zip
+/WarboardSessionService.cs
