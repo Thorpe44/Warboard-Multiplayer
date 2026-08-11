@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -27,11 +27,7 @@ public partial class GameController
         // Remove the old mission-terrain objects. ObjectiveController objects
         // are separate and are preserved.
         TerrainFeature[] oldTerrain =
-            Object.FindObjectsByType<
-                TerrainFeature
-            >(
-                FindObjectsSortMode.None
-            );
+            Object.FindObjectsByType<TerrainFeature>();
 
         foreach (TerrainFeature feature
             in oldTerrain)
@@ -811,3 +807,4 @@ public partial class GameController
         );
     }
 }
+

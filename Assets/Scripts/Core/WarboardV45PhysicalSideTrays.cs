@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -139,11 +139,7 @@ public class WarboardV45PhysicalSideTrays :
     private void EnsureLegacyScoreboardActive()
     {
         BattlefieldWorldUI[] worldUis =
-            UnityEngine.Object
-                .FindObjectsByType<
-                    BattlefieldWorldUI
-                >(FindObjectsInactive.Include,
-                  FindObjectsSortMode.None);
+            UnityEngine.Object.FindObjectsByType<BattlefieldWorldUI>(FindObjectsInactive.Include);
 
         foreach (BattlefieldWorldUI ui
             in worldUis)
@@ -1202,3 +1198,4 @@ public class WarboardV45PhysicalSideTrays :
         return material;
     }
 }
+

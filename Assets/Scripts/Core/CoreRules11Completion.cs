@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -44,7 +44,7 @@ public static class CoreRules11Terrain
     public static TerrainFeature[] AllTerrain()
     {
         return UnityEngine.Object
-            .FindObjectsOfType<TerrainFeature>();
+            .FindObjectsByType<TerrainFeature>(FindObjectsInactive.Exclude);
     }
 
     public static Collider TerrainCollider(
@@ -765,3 +765,4 @@ public static class CoreRules11Aircraft
         return true;
     }
 }
+

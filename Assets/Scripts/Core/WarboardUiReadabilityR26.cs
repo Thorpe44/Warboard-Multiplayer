@@ -32,11 +32,11 @@ public sealed class WarboardUiReadabilityR26 : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Install()
     {
-        if (Object.FindAnyObjectByType<WarboardUiReadabilityR26>() != null)
+        if (UnityEngine.Object.FindAnyObjectByType<WarboardUiReadabilityR26>() != null)
             return;
 
         GameObject root = new GameObject("Warboard UI Readability R2.6");
-        Object.DontDestroyOnLoad(root);
+        UnityEngine.Object.DontDestroyOnLoad(root);
         root.AddComponent<WarboardUiReadabilityR26>();
     }
 

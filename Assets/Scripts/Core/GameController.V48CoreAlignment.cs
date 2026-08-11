@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,7 +9,6 @@ public partial class GameController
 {
     private SquadController v48ChargeUnit;
     private int v48ChargeRawRoll;
-    private bool v48ChargeCommandRerolled;
     private bool v48ChargeFactionRerollResolved;
     private bool v48ChargeHeroic;
     private bool v48ChargeHeroicIntoFray;
@@ -127,7 +126,6 @@ public partial class GameController
 
         v48ChargeUnit = attacker;
         v48ChargeTargets.Clear();
-        v48ChargeCommandRerolled = false;
         v48ChargeFactionRerollResolved = false;
         v48ChargeHeroic = false;
         v48ChargeHeroicIntoFray = false;
@@ -184,7 +182,6 @@ public partial class GameController
         v48ChargeUnit = attacker;
         v48ChargeRawRoll = result;
         v48ChargeTargets.Clear();
-        v48ChargeCommandRerolled = true; // manual player already handled rerolls
         v48ChargeFactionRerollResolved = true;
         v48ChargeHeroic = false;
         v48ChargeHeroicIntoFray = false;
@@ -246,8 +243,6 @@ public partial class GameController
                         CloseRuleChoice();
                         int reroll = RollChargeDice();
                         v48ChargeRawRoll = reroll;
-                        v48ChargeCommandRerolled = true;
-
                         GameEventBus.Raise(
                             new GameEventContext
                             {
@@ -786,7 +781,6 @@ public partial class GameController
         v48ChargeUnit = null;
         v48ChargeTargets.Clear();
         v48ChargeRawRoll = 0;
-        v48ChargeCommandRerolled = false;
         v48ChargeFactionRerollResolved = false;
         v48ChargeHeroic = false;
         v48ChargeHeroicIntoFray = false;
@@ -869,7 +863,6 @@ public partial class GameController
         v48ChargeTargets.Clear();
         v48ChargeHeroic = true;
         v48ChargeHeroicIntoFray = intoFray;
-        v48ChargeCommandRerolled = true;
         v48ChargeFactionRerollResolved = true;
         core11EndChargeWindowResolved = true;
 
@@ -1477,3 +1470,4 @@ public static class WarboardV48CoreRules
             collider.bounds.size.y <= 2.001f;
     }
 }
+
