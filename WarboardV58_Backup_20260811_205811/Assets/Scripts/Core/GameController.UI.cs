@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6167,75 +6167,46 @@ public partial class GameController : MonoBehaviour
             }
         }
 
-        // WARBOARD_V58_TRANSIENT_STATUS_TOAST
-        // Status is assigned throughout the existing controller. Detecting a
-        // changed string here means those call sites do not need invasive
-        // rewrites just to drive a notification timer.
-        if (v58LastStatusToastText != status)
-        {
-            v58LastStatusToastText =
-                status ?? "";
-
-            v58StatusToastVisibleUntil =
-                Time.unscaledTime + 3.5f;
-        }
-
-        if (!string.IsNullOrWhiteSpace(status) &&
-            Time.unscaledTime <=
-                v58StatusToastVisibleUntil)
-        {
-            float toastWidth =
-                Mathf.Min(
-                    panel.width - 36f,
-                    620f
-                );
-
-            Rect statusPanel =
-                new Rect(
-                    panel.x +
-                        (panel.width -
-                         toastWidth) *
-                        0.5f,
-                    panel.y +
-                        panel.height -
-                        64f,
-                    toastWidth,
-                    46f
-                );
-
-            DrawTintedBox(
-                statusPanel,
-                new Color(
-                    0.055f,
-                    0.06f,
-                    0.075f,
-                    0.94f
-                )
+        Rect statusPanel =
+            new Rect(
+                panel.x + 18f,
+                panel.y +
+                    panel.height -
+                    64f,
+                panel.width - 36f,
+                46f
             );
 
-            GUIStyle statusStyle =
-                new GUIStyle(
-                    GUI.skin.label
-                );
+        DrawTintedBox(
+            statusPanel,
+            new Color(
+                0.055f,
+                0.06f,
+                0.075f,
+                1.0f
+            )
+        );
 
-            statusStyle.wordWrap = true;
-            statusStyle.alignment =
-                TextAnchor.MiddleCenter;
-            statusStyle.fontSize = 12;
-            statusStyle.fontStyle =
-                FontStyle.Bold;
-
-            GUI.Label(
-                new Rect(
-                    statusPanel.x + 12f,
-                    statusPanel.y + 5f,
-                    statusPanel.width - 24f,
-                    statusPanel.height - 10f
-                ),
-                status,
-                statusStyle
+        GUIStyle statusStyle =
+            new GUIStyle(
+                GUI.skin.label
             );
-        }
+
+        statusStyle.wordWrap = true;
+        statusStyle.alignment =
+            TextAnchor.MiddleLeft;
+        statusStyle.fontSize = 12;
+
+        GUI.Label(
+            new Rect(
+                statusPanel.x + 12f,
+                statusPanel.y + 5f,
+                statusPanel.width - 24f,
+                statusPanel.height - 10f
+            ),
+            status,
+            statusStyle
+        );
     }
 
     private void DrawTraditionalAttackPanel()

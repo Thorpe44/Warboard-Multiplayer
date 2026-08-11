@@ -398,10 +398,6 @@ public partial class GameController : MonoBehaviour
     private string activeFaction = "";
     private string status = "Ready.";
 
-    // WARBOARD_V58_TRANSIENT_STATUS_TOAST_STATE
-    private string v58LastStatusToastText = "";
-    private float v58StatusToastVisibleUntil = -1f;
-
     private void Start()
     {
         Core11Install();

@@ -135,94 +135,49 @@ public partial class GameController : MonoBehaviour
         return text.ToString();
     }
 
-    // WARBOARD_V58_SECONDARY_CARD_TEXT
     private string V55SecondarySummary(
         string card,
         bool fixedMode)
     {
         switch (card)
         {
-            case "A Grievous Blow":
-                return fixedMode
-                    ? "End of a turn: 4VP for each enemy unit with Starting Strength 13+ destroyed this turn."
-                    : "End of a turn: 5VP if one or more enemy units with Starting Strength 13+ were destroyed this turn.";
-
-            case "A Tempting Target":
-                return
-                    "End of your turn: control the objective your opponent selected as the Tempting Target for 5VP.";
-
-            case "Assassination":
-                return fixedMode
-                    ? "3VP for each enemy Character model destroyed this turn; +1VP for each such model with 4+ Wounds."
-                    : "End of either player's turn: 5VP if an enemy Character was destroyed this turn, or all enemy Characters have been destroyed.";
-
-            case "Beacon":
-                return
-                    "At the end of the opponent's turn or battle round 5: beacon unit on battlefield outside your deployment zone = 3VP; outside your territory = 5VP.";
-
             case "Behind Enemy Lines":
                 return
-                    "End of your turn: 3VP per eligible unit wholly in the enemy deployment zone, maximum 5VP.";
-
-            case "Bring it Down":
-                return fixedMode
-                    ? "End of a turn: 4VP for each enemy model with 10+ Wounds destroyed this turn."
-                    : "End of a turn: 5VP if one or more enemy models with 10+ Wounds were destroyed this turn.";
-
-            case "Burden of Trust":
-                return
-                    "End of the opponent's turn or battle round 5: 2VP per objective you are still guarding, maximum 5VP.";
-
-            case "Centre Ground":
-                return
-                    "End of your turn: eligible unit within 3\" of centre = 3VP if no enemy is within 3\"; 5VP if no enemy is within 6\".";
-
-            case "Cleanse":
-                return
-                    "Complete Cleanse actions on objectives: end of your turn, 1 cleansed objective = 2VP; 2+ cleansed objectives = 5VP.";
-
-            case "Defend Stronghold":
-                return
-                    "From round 2, end of the opponent's turn or battle round 5: control your home objective = 3VP; +2VP if no enemy units are in your deployment zone.";
-
-            case "Display of Might":
-                return
-                    "Have more eligible units than the enemy wholly in No Man's Land: end of your turn = 2VP; end of opponent's turn = 5VP.";
-
-            case "Engage on All Fronts":
-                return fixedMode
-                    ? "End of your turn: presence in 3 table quarters = 2VP; all 4 quarters = 4VP."
-                    : "End of your turn: presence in 3 table quarters = 3VP; all 4 quarters = 5VP.";
-
-            case "Forward Position":
-                return
-                    "End of your turn: control the opponent's home objective, all expansion objectives, or both for 5VP.";
-
-            case "No Prisoners":
-                return
-                    "End of a turn: 2VP per enemy unit destroyed this turn, maximum 5VP.";
-
-            case "Outflank":
-                return
-                    "End of your turn: eligible unit within 6\" of a battlefield edge and outside your territory = 3VP; eligible units at opposite edges, with one outside your territory = 5VP.";
-
-            case "Overwhelming Force":
-                return
-                    "End of a turn: 3VP per enemy unit destroyed that started the turn within range of an objective, maximum 5VP.";
-
-            case "Plunder":
-                return
-                    "Complete a Plunder action in terrain outside your territory; end of your turn, if terrain was plundered this turn = 5VP.";
+                    "End of your turn: 3VP per eligible unit wholly in the enemy deployment zone, max 5VP.";
 
             case "Secure No Man's Land":
                 return
-                    "End of your turn: control 2 or more objectives in No Man's Land, excluding your home objective, for 5VP.";
+                    "End of your turn: control at least 2 objectives in No Man's Land for 5VP.";
+
+            case "Engage on All Fronts":
+                return fixedMode
+                    ? "End of your turn: eligible units in 3 quarters = 2VP; 4 quarters = 4VP."
+                    : "End of your turn: eligible units in 3 quarters = 3VP; 4 quarters = 5VP.";
+
+            case "Centre Ground":
+                return
+                    "End of your turn: have an eligible unit within 3\" of centre. Score 5VP if no enemy is within 6\", or 3VP if none is within 3\".";
+
+            case "No Prisoners":
+                return
+                    "2VP per enemy unit destroyed this turn, to a maximum of 5VP.";
+
+            case "Assassination":
+                return fixedMode
+                    ? "3VP per enemy Character model destroyed; +1VP for each such model with 4+ Wounds."
+                    : "Score 5VP if an enemy Character was destroyed this turn, or all enemy Characters are destroyed.";
+
+            case "Bring it Down":
+                return fixedMode
+                    ? "4VP per enemy model with 10+ Wounds destroyed."
+                    : "Score 5VP if an enemy model with 10+ Wounds was destroyed this turn.";
 
             default:
                 return
-                    "Open MISSION INFO for this card's scoring condition.";
+                    "Manual scoring in the current build. Use the official card text; Warboard will not invent unverified scoring.";
         }
     }
+
     private string V55PrimarySummary(
         string mission)
     {

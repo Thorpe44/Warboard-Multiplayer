@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.5/staging' branch; Version is '6000.5.7f1 (017862109af0) revision 96354'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-11T18:36:40.0332252Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 15681 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0" at "2026-08-11T16:25:32.8419489Z"
 BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-11T16:25:32Z
+Date: 2026-08-11T18:36:40Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Unity.exe
@@ -21,7 +21,7 @@ LicenseClient-elli0
 -hubSessionId
 0b4f232c-1762-4864-b0d6-9d5283ca21f2
 -accessToken
-qM8CfP8rgWq53cZcMTrILdXkQ_olxm6iubnjbOlEMeU005f
+LQDdCxWxKd8d_NuR4CnuZTO5vHmgBM8Ddz12hjJDyU8005f
 Successfully changed project path to: C:\Users\elli0\Documents\GitHub\Multiplayer
 C:/Users/elli0/Documents/GitHub/Multiplayer
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -60,16 +60,16 @@ C:/Users/elli0/Documents/GitHub/Multiplayer
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [24360]  Target information:
+Player connection [40908]  Target information:
 
-Player connection [24360]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 1706888613 [EditorId] 1706888613 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [40908]  * "[IP] 192.168.1.228 [Port] 55504 [Flags] 2 [Guid] 37462726 [EditorId] 37462726 [Version] 1048832 [Id] WindowsEditor(7,Elliot_Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24360] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24360] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [40908] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [40908] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-44284" after 0.4 seconds.
+[Package Manager] Connected to IPC stream "Upm-15772" after 0.4 seconds.
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
@@ -77,23 +77,23 @@ Input System module state changed to: Initialized.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-elli0"
 [Licensing::IpcConnector] LicenseClient-elli0 channel disconnected successfully.
 [Licensing::IpcConnector] Channel LicenseClient-elli0-6000.5.7 doesn't exist
-[Licensing::Module] Successfully launched the LicensingClient (PId: 28492)
+[Licensing::Module] Successfully launched the LicensingClient (PId: 44760)
 Starting IPC server.
 Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-elli0-6000.5.7, press Ctrl-C to exit.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-11T16:25:34.6793925Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 28492, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7" at "2026-08-11T18:36:41.7847124Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 44760, path: "C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              0205e46dc0f54c84aa65c2cea0e91132
-  Correlation Id:          44a70a6d55cc89449a564128160817a2
-  External correlation Id: 326541093506066215
+  Session Id:              5ac3508143bb49bb9978833c68940240
+  Correlation Id:          a379e3fef96e3bfda6121b442ebbfea9
+  External correlation Id: 2823428769675151233
   Machine Id:              JOUP1U45KtUV8sm1s/K3HmNb45Q=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 0.37s, validation: 0.24s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-11T16:25:34.9287303Z"
-[Licensing::Module] Connected to LicensingClient (PId: 28492, launch time: 0.01, total connection time: 0.62s)
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-elli0-6000.5.7" (connect: 0.37s, validation: 0.23s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-elli0-6000.5.7-notifications" at "2026-08-11T18:36:42.024776Z"
+[Licensing::Module] Connected to LicensingClient (PId: 44760, launch time: 0.01, total connection time: 0.61s)
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated the access token qM8CfP8rgW...
+[Licensing::Module] Successfully updated the access token LQDdCxWxKd...
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 5774099461094-UnityPersXXXX
@@ -102,8 +102,8 @@ Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-elli0-6000.5.7, p
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 2.14s
-[Licensing::Module] Licensing is initialized (took 1.31s).
+[Licensing::Module] Licensing Background thread has ended after 2.05s
+[Licensing::Module] Licensing is initialized (took 1.20s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -138,7 +138,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -146,30 +146,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003335 seconds.
+Registered in 0.002868 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.567 seconds
-Domain Reload Profiling: 1229ms
-	BeginReloadAssembly (168ms)
-		CreateAndSetChildDomain (8ms)
-	RebuildCommonClasses (7ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (374ms)
-		LoadAssemblies (157ms)
-		AnalyzeDomain (275ms)
-			TypeCache.Refresh (274ms)
-				TypeCache.ScanAssembly (256ms)
-	FinalizeReload (570ms)
+- Finished resetting the current domain, in  0.528 seconds
+Domain Reload Profiling: 1163ms
+	BeginReloadAssembly (177ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (6ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (86ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (154ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (229ms)
+	FinalizeReload (532ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (117ms)
-			ProcessInitializeOnLoadAttributes (124ms)
-			ProcessInitializeOnLoadMethodAttributes (234ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (120ms)
+			ProcessInitializeOnLoadMethodAttributes (187ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -224,7 +224,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 39.1083ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 37.7399ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -242,14 +242,14 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 820.1991ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 72.3349ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
-ExitCode: 4 Duration: 6s70ms
+ExitCode: 4 Duration: 5s80ms
 Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
 [647/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra requires additional run (5.81 seconds), 2 items updated, 646 evaluated
-ExitCode: 0 Duration: 1s292ms
+*** Tundra requires additional run (5.00 seconds), 2 items updated, 646 evaluated
+ExitCode: 0 Duration: 1s266ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/elli0/Documents/GitHub/Multiplayer
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -261,7 +261,7 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 1.8554ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 2.2970ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -315,7 +315,7 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 2295.4532ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 762.8508ms
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
@@ -323,14 +323,14 @@ info: Unity.ILPP.Runner.PostProcessingPipeline[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 2694.1466ms
-ExitCode: 0 Duration: 7s499ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 1185.8019ms
+ExitCode: 0 Duration: 5s779ms
 Finished compiling graph: 824 nodes, 14698 flattened edges (11826 ToBuild, 124 ToUse), maximum node priority 953
 [468/821    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
 [647/821    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
 [813/821    3s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
 [814/821    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
-[815/821    2s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+[815/821    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
 Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 139 defines and 330 references
 
 processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
@@ -348,7 +348,7 @@ running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
 running zzzUnity.Burst.CodeGen.BurstILPostProcessor
 [816/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
 [817/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-[818/821    2s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+[818/821    1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
 Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 141 defines and 283 references
 
 processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Netcode.Editor.CodeGen.INetworkMessageILPP, Unity.Netcode.Editor.CodeGen.INetworkSerializableILPP, Unity.Netcode.Editor.CodeGen.NetworkBehaviourILPP, Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP, zzzUnity.Burst.CodeGen.BurstILPostProcessor
@@ -366,120 +366,115 @@ running Unity.Netcode.Editor.CodeGen.RuntimeAccessModifiersILPP
 running zzzUnity.Burst.CodeGen.BurstILPostProcessor
 [819/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
 [820/821    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
-*** Tundra build success (7.46 seconds), 10 items updated, 821 evaluated
+*** Tundra build success (5.74 seconds), 10 items updated, 821 evaluated
 Total cache size 69356940
-Total cache size after purge 69356940, took 00:00:00.1567076
-AssetDatabase: script compilation time: 16.515483s
+Total cache size after purge 69356940, took 00:00:00.1888393
+AssetDatabase: script compilation time: 13.426585s
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 4.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.06 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 4.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.72 ms, found 3 plugins.
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.020 seconds
-Domain Reload Profiling: 3997ms
-	BeginReloadAssembly (270ms)
-		DisableScriptedObjects (35ms)
-		CreateAndSetChildDomain (59ms)
+- Finished resetting the current domain, in  3.067 seconds
+Domain Reload Profiling: 4046ms
+	BeginReloadAssembly (286ms)
+		DisableScriptedObjects (55ms)
+		CreateAndSetChildDomain (56ms)
 	RebuildCommonClasses (10ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (102ms)
-	LoadAllAssembliesAndSetupDomain (576ms)
-		LoadAssemblies (384ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (140ms)
-				TypeCache.ScanAssembly (127ms)
-			BuildScriptInfoCaches (41ms)
-	FinalizeReload (3022ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (573ms)
+		LoadAssemblies (374ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (129ms)
+			BuildScriptInfoCaches (40ms)
+	FinalizeReload (3069ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (2224ms)
-			ProcessInitializeOnLoadMethodAttributes (459ms)
-			AfterProcessingInitializeOnLoad (8ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Importing 'GUID: 0ea50619545bece48856af5f343495fc - Path: Assets/Resources/Core/LeaderCompatibilityOverrides.json' with importer (TextScriptImporter)
-Imported 'GUID: 0ea50619545bece48856af5f343495fc' -> (Import Result ID: '0220c6ff4e8e7708531f60aa36633576') in 0.022 seconds [static dependencies only]. Details - ImportResultOutputID=58f964ad92ea83d8dc467bc15d779846 DependenciesID=9c0832233f4a1fd9d4d49f1ca6b6d8de StaticDependenciesID=18f075ca678fd47e9cb4740c8c7491d0 
+			ProcessInitializeOnLoadAttributes (2304ms)
+			ProcessInitializeOnLoadMethodAttributes (435ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
 Starting new worker id: 0 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW0.log
-Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.47 ms, found 3 plugins.
 
-Asset Pipeline Refresh (id=6abfd25d73c5a2c478815d3eee72c05f): Total: 21.368 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=78606e76be955d045be2eb8a9bee0b94): Total: 18.255 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	(Values over 0.05ms)
 	Summary:
-		Imports: total=1 (actual=1, local cache=0, cache server=0)
-		Asset DB Process Time: managed=2 ms, native=3553 ms
-		Asset DB Callback time: managed=160 ms, native=34 ms
-		Scripting: domain reloads=1, domain reload time=1040 ms, compile time=16518 ms, other=58 ms
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=3520 ms
+		Asset DB Callback time: managed=173 ms, native=33 ms
+		Scripting: domain reloads=1, domain reload time=1043 ms, compile time=13429 ms, other=55 ms
 		Project Asset Count: scripts=937, non-scripts=2201
-		Asset File Changes: new=1, changed=7, moved=0, deleted=0
+		Asset File Changes: new=1, changed=2, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 29.331ms
-	ApplyChangesToAssetFolders: 0.572ms
-	Scan: 149.333ms
-	Collect global state as custom dependencies: 9.658ms
-	OnSourceAssetsModified: 0.873ms
-	CategorizeScriptCompilationAssets: 37.030ms
-	ProcessAssetsWithTransientArtifactChanges: 54.384ms
-	CategorizeAssets: 31.988ms
-	CompileScripts: 16517.827ms
-	ImportOutOfDateAssets: 3134.457ms (3051.173ms without children)
-		ImportManagerImport: 24.376ms (1.947ms without children)
-			UpdateCategorizedAssets: 0.051ms
-		UnloadImportedAssets: 2.182ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.707ms
-		ImportSchedulerStart: 56.000ms
-	PostProcessAllAssets: 162.127ms
-		VCAutoAddAssetPostprocess 1.261ms
-		XRBuildSystem.XRAssetImported 0.879ms
-		PostProcessCallbackCreateDeferredMaterials 0.072ms
-		VersionControlSettings.HiddenFilePostprocess 0.063ms
-		MonoPostProcessAllAssets: 159.017ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 21.387ms
-			AssetPostprocessor.OnPostprocessAllAssets 20.873ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 20.028ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 14.952ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.711ms
-			AssetChangedListener.OnPostprocessAllAssets 7.045ms
-			NetworkPrefabProcessor.OnPostprocessAllAssets 5.672ms
-			SyncVS.PostprocessSyncProject 1.778ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.476ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.393ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 1.116ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.749ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.730ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.488ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.411ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.402ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.382ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.350ms
-			AssetEvents.OnPostprocessAllAssets 0.307ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.299ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.248ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.237ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.198ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.180ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.115ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.107ms
-	PostAssetChangesProfiler: 5.689ms
-	UnloadStreamsBegin: 1.574ms
-	PersistCurrentRevisions: 0.202ms
-	GenerateScriptTypeHashes: 1.567ms
-	GenerateScriptTypeSerializationHashes: 2.904ms
-	Untracked: 1226.287ms
+	InvokePackagesCallback: 27.203ms
+	ApplyChangesToAssetFolders: 0.595ms
+	Scan: 115.680ms
+	Collect global state as custom dependencies: 10.164ms
+	OnSourceAssetsModified: 0.920ms
+	CategorizeScriptCompilationAssets: 35.071ms
+	ProcessAssetsWithTransientArtifactChanges: 57.423ms
+	CategorizeAssets: 32.376ms
+	CompileScripts: 13428.964ms
+	ImportOutOfDateAssets: 3132.597ms (3091.563ms without children)
+		UnloadImportedAssets: 1.630ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.592ms
+		ImportSchedulerStart: 38.801ms
+	PostProcessAllAssets: 175.062ms
+		VCAutoAddAssetPostprocess 1.585ms
+		XRBuildSystem.XRAssetImported 0.927ms
+		VersionControlSettings.HiddenFilePostprocess 0.066ms
+		MonoPostProcessAllAssets: 171.516ms
+			AssetPostprocessorProxy.OnPostprocessAllAssets 34.158ms
+			AssetPostprocessor.OnPostprocessAllAssets 23.095ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 17.982ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 8.708ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.030ms
+			AssetChangedListener.OnPostprocessAllAssets 6.854ms
+			NetworkPrefabProcessor.OnPostprocessAllAssets 3.849ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.180ms
+			SyncVS.PostprocessSyncProject 1.619ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.541ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.033ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.603ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.588ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.515ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.415ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.378ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.355ms
+			AssetEvents.OnPostprocessAllAssets 0.335ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.334ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.226ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.217ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.180ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.176ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.149ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.148ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.087ms
+	PostAssetChangesProfiler: 6.228ms
+	UnloadStreamsBegin: 1.653ms
+	PersistCurrentRevisions: 0.116ms
+	GenerateScriptTypeHashes: 1.480ms
+	GenerateScriptTypeSerializationHashes: 2.766ms
+	Untracked: 1223.308ms
 
 Application.AssetDatabase Initial Refresh End
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Scanning for USB devices : 3.577ms
+Scanning for USB devices : 3.569ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Warboard_Unity6_v26_1_ReservePlacementFix_FLAT
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4242 unused Assets / (2.2 MB). Loaded Objects now: 4870.
-Memory consumption went from 331.2 MB to 329.0 MB.
-Total: 17.005300 ms (FindLiveObjects: 0.831600 ms CreateObjectMapping: 2.751600 ms MarkObjects: 9.646400 ms  DeleteObjects: 3.765300 ms)
+Unloading 4243 unused Assets / (2.3 MB). Loaded Objects now: 4869.
+Memory consumption went from 330.0 MB to 327.8 MB.
+Total: 12.891300 ms (FindLiveObjects: 0.608600 ms CreateObjectMapping: 1.734500 ms MarkObjects: 8.393500 ms  DeleteObjects: 2.147900 ms)
 
 [LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
 [LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
@@ -490,21 +485,21 @@ This project uses Input Manager, which is marked for deprecation. To manage inpu
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
-D3D11 device created for Microsoft Media Foundation video decoding.
-[Project] Loading completed in 27.959 seconds
-	Project init time: 				25.631 seconds
+[Project] Loading completed in 24.947 seconds
+	Project init time: 				22.594 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		1.667 seconds
-		Asset Database init time: 		0.653 seconds
+		Package Manager init time: 		1.556 seconds
+		Asset Database init time: 		0.616 seconds
 		Global illumination init time: 	0.004 seconds
-		Assemblies load time: 			1.291 seconds
-		Unity extensions init time: 	0.018 seconds
-		Asset Database refresh time: 	21.369 seconds
-	Scene opening time: 			1.860 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786465560785,"processId":44284,"projectLoad":27.9590683,"projectInit":25.6306717,"templateInit":0.0,"packageManagerInit":1.6666713,"assetDatabaseInit":0.6532163,"globalIlluminationInit":0.0037872,"assembliesLoad":1.2906764,"unityExtensionsInit":0.017504,"assetDatabaseRefresh":21.3686852,"sceneOpening":1.8598133}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786465560785,"processId":44284,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+		Assemblies load time: 			1.220 seconds
+		Unity extensions init time: 	0.014 seconds
+		Asset Database refresh time: 	18.255 seconds
+	Scene opening time: 			1.856 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1786473424966,"processId":15772,"projectLoad":24.9471401,"projectInit":22.5938843,"templateInit":0.0,"packageManagerInit":1.555641,"assetDatabaseInit":0.6160787,"globalIlluminationInit":0.0041071,"assembliesLoad":1.2197688,"unityExtensionsInit":0.0140404,"assetDatabaseRefresh":18.2550829,"sceneOpening":1.8558407}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1786473424966,"processId":15772,"editorVersion":"6000.5.7f1 (017862109af0)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+D3D11 device created for Microsoft Media Foundation video decoding.
 Worker ready: AssetImportWorkerHW0 0
-Asset Pipeline Refresh (id=385e3d37342ba4449a16e4a679b86695): Total: 0.058 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=17a7d0e7f831875408bdf968eb1561af): Total: 0.052 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
 Dynamic Batching is deprecated and will be removed in a future release. Use GPU Instancing instead. Disable Dynamic Batching in Project Settings > Player > Other Settings to remove this warning.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -517,194 +512,227 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
 Start Indexing on Editor startup
 [Indexing] Starting Initial Indexing for Assets
-Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.021s, timestamps: [29.338 - 29.359]
+Created GICache directory at C:/Users/elli0/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.012s, timestamps: [25.714 - 25.727]
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated access token: "qM8CfP8r"... (expires: 2026-08-11T17:27:24Z)
+[Licensing::Module] Successfully updated access token: "LQDdCxWx"... (expires: 2026-08-11T19:26:59Z)
 Starting new worker id: 1 with log in C:/Users/elli0/Documents/GitHub/Multiplayer/Logs/AssetImportWorkerHW1.log
 UPID Received '850f50a1-7776-48ba-9d96-564e37f3acd9'.
+[Worker0] Imported GUID: 3cdf1d09b604f5f48a4d8ecbbb273c68 - Path: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '91369c16f00b02540442c8c107bfff6e') in 0.0982898 seconds
+[Worker0] Imported GUID: 98e0b3f0154df1543aa1077bf38173dc - Path: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'b5f68d6d1756d8b154d8cd127b299ade') in 0.0110153 seconds
+[Licensing::Client] Successfully resolved entitlement details
+Worker ready: AssetImportWorkerHW1 1
 Reloading assemblies for play mode.
 Reloading assemblies after forced synchronous recompile.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.28 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Worker ready: AssetImportWorkerHW1 1
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.719 seconds
-Domain Reload Profiling: 2992ms
-	BeginReloadAssembly (950ms)
-		DisableScriptedObjects (107ms)
-		CreateAndSetChildDomain (484ms)
-	RebuildCommonClasses (14ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (106ms)
-	LoadAllAssembliesAndSetupDomain (183ms)
-		LoadAssemblies (171ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (7ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (1721ms)
+- Finished resetting the current domain, in  1.491 seconds
+Domain Reload Profiling: 2421ms
+	BeginReloadAssembly (642ms)
+		DisableScriptedObjects (91ms)
+		CreateAndSetChildDomain (365ms)
+	RebuildCommonClasses (11ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (157ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+	FinalizeReload (1492ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (104ms)
-			ProcessInitializeOnLoadAttributes (333ms)
-			ProcessInitializeOnLoadMethodAttributes (273ms)
-			AfterProcessingInitializeOnLoad (8ms)
-		AwakeInstancesAfterBackupRestoration (589ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (237ms)
+			ProcessInitializeOnLoadMethodAttributes (241ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (527ms)
 No restricted APIs configured; Validation skipped.
-Checking 20 assemblies for restricted APIs found 0 usage(s) in 4 ms
-Refreshing native plugins compatible for Editor in 4.00 ms, found 3 plugins.
+Checking 20 assemblies for restricted APIs found 0 usage(s) in 5 ms
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
 
-Asset Pipeline Refresh (id=16c102caa97aa7845bbdea77930a232a): Total: 3.741 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+Asset Pipeline Refresh (id=99e75223d7256a74199756892f7b76f2): Total: 3.108 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
 	(Values over 0.05ms)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=1992 ms
-		Asset DB Callback time: managed=168 ms, native=240 ms
-		Scripting: domain reloads=1, domain reload time=1336 ms, compile time=2 ms, other=0 ms
+		Asset DB Process Time: managed=0 ms, native=1728 ms
+		Asset DB Callback time: managed=178 ms, native=211 ms
+		Scripting: domain reloads=1, domain reload time=988 ms, compile time=2 ms, other=0 ms
 		Project Asset Count: scripts=937, non-scripts=2201
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 2.835ms
-	ApplyChangesToAssetFolders: 0.258ms
-	Collect global state as custom dependencies: 1.429ms
-	ProcessAssetsWithTransientArtifactChanges: 144.987ms
-	CategorizeAssets: 30.481ms
-	CompileScripts: 2.098ms
-	ImportOutOfDateAssets: 1764.569ms (1739.102ms without children)
-		CollectScriptTypesHashes: 0.381ms
-		ReloadNativeAssets: 0.226ms
-		UnloadImportedAssets: 2.051ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.771ms
-		ImportSchedulerStart: 22.399ms
-	PostProcessAllAssets: 402.814ms
-		AssemblyValidation.PostprocessAllAssets 22.013ms
-		PostProcessCallbackCreateDeferredMaterials 17.950ms
-		ComputeShaderImportPostprocess 10.148ms
-		ShaderAssetModifiedCallback 9.977ms
-		SpeedTreeImporter.PostprocessAllAssets 7.684ms
-		RaytracingShaderImportPostprocess 7.611ms
-		BlockShaderImporter.PostprocessAllAssets 3.820ms
-		LocalizationDatabase.AssetDatabasePostprocessCallback 3.211ms
-		XRBuildSystem.XRAssetImported 1.669ms
-		MonoPostProcessAllAssets: 167.698ms
-			AssetPostprocessor.OnPostprocessAllAssets 24.050ms
-			AssetPostprocessorProxy.OnPostprocessAllAssets 21.425ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 16.324ms
-			NetworkPrefabProcessor.OnPostprocessAllAssets 14.890ms
-			AssetChangedListener.OnPostprocessAllAssets 10.703ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.201ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.816ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.453ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.175ms
-			SyncVS.PostprocessSyncProject 1.800ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.790ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.593ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.489ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.423ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.418ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.344ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.343ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.315ms
-			AssetEvents.OnPostprocessAllAssets 0.271ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.208ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.202ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.164ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.152ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.139ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.133ms
+	InvokePackagesCallback: 2.550ms
+	ApplyChangesToAssetFolders: 0.212ms
+	Collect global state as custom dependencies: 1.253ms
+	ProcessAssetsWithTransientArtifactChanges: 131.059ms
+	CategorizeAssets: 25.659ms
+	CompileScripts: 1.941ms
+	ImportOutOfDateAssets: 1525.803ms (1508.162ms without children)
+		CollectScriptTypesHashes: 0.410ms
+		ReloadNativeAssets: 0.193ms
+		UnloadImportedAssets: 1.859ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.476ms
+		ImportSchedulerStart: 15.096ms
+	PostProcessAllAssets: 384.176ms
+		AssemblyValidation.PostprocessAllAssets 36.249ms
+		PostProcessCallbackCreateDeferredMaterials 11.387ms
+		ShaderAssetModifiedCallback 6.427ms
+		RaytracingShaderImportPostprocess 6.244ms
+		ComputeShaderImportPostprocess 5.533ms
+		SpeedTreeImporter.PostprocessAllAssets 4.638ms
+		BlockShaderImporter.PostprocessAllAssets 2.477ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 2.352ms
+		XRBuildSystem.XRAssetImported 0.894ms
+		MonoPostProcessAllAssets: 177.183ms
+			AssetPostprocessor.OnPostprocessAllAssets 25.684ms
+			AssetPostprocessorProxy.OnPostprocessAllAssets 21.676ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 18.996ms
+			NetworkPrefabProcessor.OnPostprocessAllAssets 15.047ms
+			AssetChangedListener.OnPostprocessAllAssets 11.790ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.467ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.821ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 4.341ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.230ms
+			SyncVS.PostprocessSyncProject 1.682ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.636ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.600ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.565ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.495ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.413ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.341ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.332ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.310ms
+			AssetEvents.OnPostprocessAllAssets 0.291ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.287ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.275ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.246ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.218ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.172ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.139ms
 			AudioContainerPostProcessor.OnPostprocessAllAssets 0.099ms
-	PostAssetChangesProfiler: 5.819ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.389ms
-	UnloadStreamsBegin: 2.616ms
-	PersistCurrentRevisions: 0.113ms
-	GenerateScriptTypeHashes: 1.635ms
-	GenerateScriptTypeSerializationHashes: 2.865ms
-	Untracked: 1377.702ms
+	PostAssetChangesProfiler: 5.099ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.213ms
+	UnloadStreamsBegin: 1.835ms
+	PersistCurrentRevisions: 0.106ms
+	GenerateScriptTypeHashes: 1.404ms
+	GenerateScriptTypeSerializationHashes: 2.490ms
+	Untracked: 1024.073ms
 
 Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            1.237 ms
-	Integration:            350.572 ms
+	Deserialize:            1.056 ms
+	Integration:            362.217 ms
 	Integration of assets:  0.002 ms
 	Thread Wait Time:       0.034 ms
-	Total Operation Time:   351.845 ms
+	Total Operation Time:   363.309 ms
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
-Asset Pipeline Refresh (id=96a5c6ce893f1494b87e36f3e9868864): Total: 0.019 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=8282be0eebc7c4b49b515a0097090f12): Total: 0.006 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=fe80233b698036b44a7a9fd2aa7262e4): Total: 0.019 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
 TrimDiskCacheJob: Current cache size 0mb
-Warboard Necrons R25 loaded: 105 indexed objects.
+Asset Pipeline Refresh (id=c2e093b9f59c0d74d813a5202a866541): Total: 0.005 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Warboard R28 model pack loaded: Aeldari (209 indexed objects).
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:EnsureLoaded (ExtendedFactionModelPackResolverR25/PackSpec) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:677)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:124)
+UnifiedModelVisualResolverR28:EnsureLoaded (UnifiedModelVisualResolverR28/PackSpec) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:1063)
+UnifiedModelVisualResolverR28:FindBestMatch (UnifiedModelVisualResolverR28/PackSpec,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:354)
+UnifiedModelVisualResolverR28:ResolveUncached (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:249)
+UnifiedModelVisualResolverR28:TryResolve (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:178)
+ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:19)
 SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
 SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
 GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
 GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
 UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
 
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 677)
+(Filename: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs Line: 1063)
 
-Warboard Orks R25 loaded: 148 indexed objects.
+Warboard R28 model pack loaded: Custodes (104 indexed objects).
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:EnsureLoaded (ExtendedFactionModelPackResolverR25/PackSpec) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:677)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:124)
+UnifiedModelVisualResolverR28:EnsureLoaded (UnifiedModelVisualResolverR28/PackSpec) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:1063)
+UnifiedModelVisualResolverR28:FindBestMatch (UnifiedModelVisualResolverR28/PackSpec,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:354)
+UnifiedModelVisualResolverR28:ResolveUncached (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:249)
+UnifiedModelVisualResolverR28:TryResolve (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:178)
+ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:19)
 SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
 SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
 GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
 GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
 UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
 
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 677)
+(Filename: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs Line: 1063)
 
-Warboard Tyranids R25 loaded: 102 indexed objects.
+Warboard R28 model pack loaded: Necrons (105 indexed objects).
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:EnsureLoaded (ExtendedFactionModelPackResolverR25/PackSpec) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:677)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:124)
+UnifiedModelVisualResolverR28:EnsureLoaded (UnifiedModelVisualResolverR28/PackSpec) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:1063)
+UnifiedModelVisualResolverR28:FindBestMatch (UnifiedModelVisualResolverR28/PackSpec,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:354)
+UnifiedModelVisualResolverR28:ResolveUncached (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:249)
+UnifiedModelVisualResolverR28:TryResolve (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:178)
+ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:19)
 SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
 SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
 GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
 GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
 UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
 
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 677)
+(Filename: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs Line: 1063)
 
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Yvraine' / role 'Yvraine' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
+Warboard R28 model pack loaded: Orks (148 indexed objects).
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
+UnityEngine.Debug:Log (object)
+UnifiedModelVisualResolverR28:EnsureLoaded (UnifiedModelVisualResolverR28/PackSpec) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:1063)
+UnifiedModelVisualResolverR28:FindBestMatch (UnifiedModelVisualResolverR28/PackSpec,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:354)
+UnifiedModelVisualResolverR28:ResolveUncached (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:249)
+UnifiedModelVisualResolverR28:TryResolve (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:178)
+ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:19)
 SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
 SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
 GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
 GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
 UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
 
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
+(Filename: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs Line: 1063)
+
+Warboard R28 model pack loaded: Tyranids (102 indexed objects).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnifiedModelVisualResolverR28:EnsureLoaded (UnifiedModelVisualResolverR28/PackSpec) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:1063)
+UnifiedModelVisualResolverR28:FindBestMatch (UnifiedModelVisualResolverR28/PackSpec,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:354)
+UnifiedModelVisualResolverR28:ResolveUncached (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:249)
+UnifiedModelVisualResolverR28:TryResolve (string,string,string,int) (at Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs:178)
+ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:19)
+SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
+SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
+GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
+GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/Core/UnifiedModelVisualResolverR28.cs Line: 1063)
 
 Warboard Custodes Model Pack loaded: 104 indexed objects.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -742,1568 +770,8 @@ UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr
 
 (Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 146)
 
-Warboard R25 Aeldari: skipped TTS root/wrapper 'Yvraine' from 'Yvraine'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ModelVisualRegistry:AeldariPackSkipTtsGhostComponent (ModelPackUnitData,ModelPackComponentData) (at Assets/Scripts/Core/ModelVisualRegistry.cs:826)
-ModelVisualRegistry:TryResolvePack (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:623)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:980)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 826)
-
-Warboard R25 Aeldari: skipped TTS root/wrapper 'Yvraine' from 'Yvraine'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ModelVisualRegistry:AeldariPackSkipTtsGhostComponent (ModelPackUnitData,ModelPackComponentData) (at Assets/Scripts/Core/ModelVisualRegistry.cs:826)
-ModelVisualRegistry:TryResolvePack (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:623)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:980)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 826)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Ynnari Kabalite Warriors' / role 'Sybarite' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Ynnari Kabalite Warriors' / role 'Kabalite Warrior' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Dire Avengers' / role 'Dire Avenger Exarch' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Dire Avengers' / role 'Dire Avenger' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Warp Spiders' / role 'Warp Spider Exarch' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Warp Spiders' / role 'Warp Spider' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Wraithblades' / role 'Wraithblade' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard extended model packs R25: no strong Necron/Ork/Tyranid match for 'Wraithknight' / role 'Wraithknight' / faction 'Player 1'. Existing Aeldari/Custodes/capsule fallback remains active.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:179)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 179)
-
-Warboard R25 Aeldari: skipped TTS root/wrapper 'Wraithknight' from 'Wraithknight'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ModelVisualRegistry:AeldariPackSkipTtsGhostComponent (ModelPackUnitData,ModelPackComponentData) (at Assets/Scripts/Core/ModelVisualRegistry.cs:826)
-ModelVisualRegistry:TryResolvePack (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:623)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:980)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 826)
-
-Warboard R25 Aeldari: skipped TTS root/wrapper 'Wraithknight' from 'Wraithknight'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ModelVisualRegistry:AeldariPackSkipTtsGhostComponent (ModelPackUnitData,ModelPackComponentData) (at Assets/Scripts/Core/ModelVisualRegistry.cs:826)
-ModelVisualRegistry:TryResolvePack (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:623)
-ModelVisualRegistry:Resolve (string,string,int) (at Assets/Scripts/Core/ModelVisualRegistry.cs:980)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ModelVisualRegistry.cs Line: 826)
-
-Warboard Orks R25: 'Ghazghkull Thraka' -> 'Ghazghkull Thraka' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Ghazghkull Thraka' -> 'Makari' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Ghazghkull Thraka' -> 'Ghazghkull Thraka' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Ghazghkull Thraka' -> 'Makari' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Painboss' -> 'Painboss' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Painboss' -> 'Painboss' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Beast Snagga Boyz' -> 'Beast Snagga Boyz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Gretchin' -> 'Gretchin' [New2] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Meganobz' -> 'Meganobz' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Morkanaut' -> 'Morkanaut' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:311)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Warboard Orks R25: 'Morkanaut' -> 'Morkanaut' [New1] with 1 local visual component(s).
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-ExtendedFactionModelPackResolverR25:BuildVisual (ExtendedFactionModelPackResolverR25/PackSpec,ExtendedFactionPackUnitR25,string) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:577)
-ExtendedFactionModelPackResolverR25:TryResolve (string,string,string,int) (at Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs:193)
-SquadController:CreateModels () (at Assets/Scripts/Core/SquadController.cs:458)
-SquadController:Initialize (UnitData) (at Assets/Scripts/Core/SquadController.cs:283)
-GameController:SpawnSquad (UnitData,UnityEngine.Vector3) (at Assets/Scripts/Core/GameController.Core.cs:477)
-GameController/<LoadYellowScribeRoster>d__673:MoveNext () (at Assets/Scripts/Core/GameController.Setup.cs:364)
-UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
-
-(Filename: Assets/Scripts/Core/ExtendedFactionModelPackResolverR25.cs Line: 577)
-
-Asset Pipeline Refresh (id=e3f0dce2e921b0d4a88f507c8d1c93d0): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=4145e52bc640cfa49927934d2709c6fc): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=b62418ad27cd9fb4f93e0026dd71bc2c): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=407336361807f5e47b162e54a6475d3e): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
 WARBOARD V50: built 16 standard 11e terrain-area footprints; 6 are terrain objectives.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -2319,9 +787,21 @@ GameController:OnGUI () (at Assets/Scripts/Core/GameController.UI.cs:3395)
 
 (Filename: Assets/Scripts/Core/GameController.V50TerrainAreaBattlefield.cs Line: 235)
 
-Asset Pipeline Refresh (id=65b7df73cebd3f44ab554859023b15b0): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=9417839af1b9a1347ba79072696d202f): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-MonoPathRemapper: Attempts to remap: 38616; Successful remaps: 10334
+Asset Pipeline Refresh (id=41e6ffe47ad26bb47802a29011daffaa): Total: 0.005 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=c885a02c0d500334bafb22472d3d96ae): Total: 0.006 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=87863587416978d4e98ade1669116bfd): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=f5022b2769951d8448e8f97cf94566c5): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=eff357c4a4621a441827a3c10d0439db): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=4d6a4222d90dbdd4893e42a0522a7107): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=a5e09e5d44748b443a5d460d81cb81bf): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=32e5bb5abcc036043b54b75e5c044239): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=386a206ec18ffff49b318a0b1df25939): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=8ec47180aced1214980d9bc4bec020ea): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=22b48d93cadb677448ab48e2924e17f1): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e820dbe9dbb473543b03df6226f854c7): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=3842db1708b13e44687ffa5fda175593): Total: 0.011 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=43c0660a3fae24b46ad5e4c409f3138e): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+MonoPathRemapper: Attempts to remap: 38657; Successful remaps: 10334
 Serialized file version minimum: 23, current 23
 [LAYOUT] About to save layout C:\Users\elli0\Documents\GitHub\Multiplayer\UserSettings\Layouts\default-6000.dwlt
 [LAYOUT] About to save layout C:/Users/elli0/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
@@ -2336,16 +816,16 @@ Shut down.
 AcceleratorClientConnectionCallback - disconnected - :0
 Cleanup mono
 CodeReloadManager destroyed
-abort_threads: Failed aborting id: 0000000000007E8C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 000000000000A534, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000AE64, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000009628, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000007E8C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 000000000000A534, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000AE64, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000009628, mono_thread_manage will ignore it
 
-debugger-agent: Unable to listen on 4228
+debugger-agent: Unable to listen on 4968
 Checking for leaked weakptr:
   Found no leaked weakptrs.
 [Package Manager] Server process was shutdown
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786465855758,"processId":44284,"allocatedMemory":50232762,"memoryLabels":[{"Default":198529},{"Permanent":15516},{"NewDelete":66731},{"Thread":4197560},{"Manager":32773},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":880},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":94600},{"Input":42840},{"JobScheduler":256},{"TextLib":19030},{"Mono":310},{"ScriptingNativeRuntime":1658172},{"BaseObject":1719530},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":1032},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":11940},{"StaticString":3808},{"Utility":2673402},{"Curl":1854},{"PoolAlloc":2216},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7352},{"WebRequest":9675},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33041920},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":201616},{"CoreStats":13688},{"Identifiers":6768},{"Gui":299},{"EditorUtility":228313},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4568487},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":36214},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1786474084405,"processId":15772,"allocatedMemory":50247827,"memoryLabels":[{"Default":198537},{"Permanent":15516},{"NewDelete":66697},{"Thread":4197560},{"Manager":32773},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":845495},{"Material":24},{"GfxDevice":55328},{"Animation":952},{"Audio":880},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":110984},{"Input":42840},{"JobScheduler":256},{"TextLib":19030},{"Mono":310},{"ScriptingNativeRuntime":1658172},{"BaseObject":1724010},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":1032},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":10157},{"StaticString":3808},{"Utility":2673402},{"Curl":48},{"PoolAlloc":2216},{"AI":80},{"TypeTree":17269},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7352},{"WebRequest":7829},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33041920},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":552},{"Hierarchy":1176},{"UIElements":201616},{"CoreStats":13688},{"Identifiers":6768},{"Gui":589},{"EditorUtility":228594},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4568447},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":35345},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":664},{"AssetReference":32},{"IPCStream":32}]}

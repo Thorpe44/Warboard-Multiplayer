@@ -148,7 +148,6 @@ public sealed partial class StandardFactionSetupUI :
         DrawFactionRulesButton(
             controllers);
 
-        // WARBOARD_V58_ACTIVE_FACTION_RULES_ONLY
         if (showRules)
         {
             StandardFactionGameController
@@ -158,19 +157,11 @@ public sealed partial class StandardFactionSetupUI :
                             string.Equals(
                                 value.FactionId,
                                 rulesFaction,
-                                StringComparison.OrdinalIgnoreCase));
+                                StringComparison.OrdinalIgnoreCase))
+                    ?? controllers.FirstOrDefault();
 
             if (controller != null)
-            {
                 DrawRulesPanel(controller);
-            }
-            else
-            {
-                // A stale rulesFaction must never fall through to an
-                // unrelated Standard11 army (for example Orks).
-                showRules = false;
-                rulesFaction = "";
-            }
         }
     }
 
@@ -1263,22 +1254,8 @@ public sealed partial class StandardFactionSetupUI :
                             string.Equals(
                                 value.FactionId,
                                 game.ActiveFactionId,
-                                StringComparison.OrdinalIgnoreCase));
-
-        // WARBOARD_V58_STANDARD_RULES_ACTIVE_FACTION_GUARD
-        if (active == null)
-        {
-            // The active player is handled by a bespoke faction controller
-            // (Aeldari, Custodes, Necrons, etc.) or there is no matching
-            // Standard11 controller. Do not show another army's rules.
-            if (showRules)
-            {
-                showRules = false;
-                rulesFaction = "";
-            }
-
-            return;
-        }
+                                StringComparison.OrdinalIgnoreCase))
+                ?? controllers[0];
 
         Rect button =
             new Rect(
