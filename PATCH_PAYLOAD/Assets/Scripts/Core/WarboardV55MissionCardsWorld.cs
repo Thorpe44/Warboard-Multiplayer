@@ -1,9 +1,10 @@
 using UnityEngine;
 
-// WARBOARD_MISSION_CARD_RACK_R2
+// WARBOARD_MISSION_CARD_ROW_R2_1
 //
-// Replaces the four giant billboard mission panels with four smaller physical
-// tabletop cards on one wooden rack beyond the far edge of the battlefield.
+// One horizontal command row:
+// [P1 PRIMARY] [P1 SECONDARY] [MATCH SCOREBOARD] [P2 PRIMARY] [P2 SECONDARY]
+// Each card has its own wood frame/ledge and faces the camera like the scoreboard.
 
 [DefaultExecutionOrder(-31880)]
 public sealed class WarboardV55MissionCardsWorld :
@@ -23,8 +24,6 @@ public sealed class WarboardV55MissionCardsWorld :
     private Card p1Secondary;
     private Card p2Primary;
     private Card p2Secondary;
-
-    private GameObject rackRoot;
 
     [RuntimeInitializeOnLoadMethod(
         RuntimeInitializeLoadType
@@ -119,23 +118,23 @@ public sealed class WarboardV55MissionCardsWorld :
         if (p1Primary != null)
             return;
 
+        // Match BattlefieldWorldUI scoreboard exactly:
+        // scoreboard centre = (0, 5.0, BoardDepth/2 + 4.0)
         float z =
             GameController.BoardDepth *
                 0.5f +
-            3.25f;
+            4.0f;
 
         float y =
-            2.02f;
+            5.0f;
 
-        BuildWoodRack(
-            z
-        );
-
+        // Existing scoreboard width is 15.5 (edges at +/-7.75).
+        // These card centres create one continuous row with a small gap.
         p1Primary =
             CreateCard(
                 "Player 1 Primary Card",
                 new Vector3(
-                    -6.20f,
+                    -13.72f,
                     y,
                     z
                 ),
@@ -150,7 +149,7 @@ public sealed class WarboardV55MissionCardsWorld :
             CreateCard(
                 "Player 1 Secondary Card",
                 new Vector3(
-                    -2.08f,
+                    -9.82f,
                     y,
                     z
                 ),
@@ -165,7 +164,7 @@ public sealed class WarboardV55MissionCardsWorld :
             CreateCard(
                 "Player 2 Primary Card",
                 new Vector3(
-                    2.08f,
+                    9.82f,
                     y,
                     z
                 ),
@@ -180,7 +179,7 @@ public sealed class WarboardV55MissionCardsWorld :
             CreateCard(
                 "Player 2 Secondary Card",
                 new Vector3(
-                    6.20f,
+                    13.72f,
                     y,
                     z
                 ),
@@ -190,154 +189,6 @@ public sealed class WarboardV55MissionCardsWorld :
                     0.62f
                 )
             );
-    }
-
-    private void BuildWoodRack(
-        float z)
-    {
-        rackRoot =
-            new GameObject(
-                "Mission Card Wooden Rack"
-            );
-
-        Color wood =
-            new Color(
-                0.29f,
-                0.17f,
-                0.085f,
-                1f
-            );
-
-        CreateRackPiece(
-            rackRoot.transform,
-            "Base",
-            new Vector3(
-                0f,
-                0.30f,
-                z + 0.72f
-            ),
-            new Vector3(
-                17.4f,
-                0.32f,
-                1.72f
-            ),
-            Vector3.zero,
-            wood
-        );
-
-        CreateRackPiece(
-            rackRoot.transform,
-            "Front Lip",
-            new Vector3(
-                0f,
-                0.72f,
-                z - 0.02f
-            ),
-            new Vector3(
-                17.2f,
-                0.44f,
-                0.32f
-            ),
-            Vector3.zero,
-            new Color(
-                0.35f,
-                0.21f,
-                0.10f,
-                1f
-            )
-        );
-
-        CreateRackPiece(
-            rackRoot.transform,
-            "Back Rail",
-            new Vector3(
-                0f,
-                1.48f,
-                z + 0.88f
-            ),
-            new Vector3(
-                17.2f,
-                0.36f,
-                0.36f
-            ),
-            Vector3.zero,
-            wood
-        );
-
-        for (int side = -1;
-             side <= 1;
-             side += 2)
-        {
-            CreateRackPiece(
-                rackRoot.transform,
-                "Side Support",
-                new Vector3(
-                    side * 8.12f,
-                    0.92f,
-                    z + 0.55f
-                ),
-                new Vector3(
-                    0.42f,
-                    1.65f,
-                    0.48f
-                ),
-                new Vector3(
-                    18f,
-                    0f,
-                    0f
-                ),
-                wood
-            );
-        }
-    }
-
-    private void CreateRackPiece(
-        Transform parent,
-        string name,
-        Vector3 position,
-        Vector3 scale,
-        Vector3 euler,
-        Color colour)
-    {
-        GameObject piece =
-            GameObject.CreatePrimitive(
-                PrimitiveType.Cube
-            );
-
-        piece.name =
-            "Card Rack " +
-            name;
-
-        piece.transform.SetParent(
-            parent,
-            true
-        );
-
-        piece.transform.position =
-            position;
-
-        piece.transform.eulerAngles =
-            euler;
-
-        piece.transform.localScale =
-            scale;
-
-        Collider collider =
-            piece.GetComponent<Collider>();
-
-        if (collider != null)
-            Object.Destroy(
-                collider
-            );
-
-        Renderer renderer =
-            piece.GetComponent<Renderer>();
-
-        if (renderer != null)
-        {
-            renderer.material.color =
-                colour;
-        }
     }
 
     private Card CreateCard(
@@ -354,13 +205,65 @@ public sealed class WarboardV55MissionCardsWorld :
         card.Root.transform.position =
             position;
 
-        // The card is a physical object on the rack, not a billboard.
-        card.Root.transform.rotation =
-            Quaternion.Euler(
-                62f,
-                0f,
-                0f
+        // Same camera-facing behaviour as the scoreboard so all five
+        // information panels stay visually aligned as one row.
+        card.Root.AddComponent<
+            WoundDisplayBillboard
+        >();
+
+        GameObject woodBack =
+            GameObject.CreatePrimitive(
+                PrimitiveType.Cube
             );
+
+        woodBack.name =
+            name +
+            " Wood Frame";
+
+        woodBack.transform.SetParent(
+            card.Root.transform,
+            false
+        );
+
+        woodBack.transform.localPosition =
+            new Vector3(
+                0f,
+                0f,
+                0.08f
+            );
+
+        woodBack.transform.localScale =
+            new Vector3(
+                3.82f,
+                4.48f,
+                0.10f
+            );
+
+        Collider woodCollider =
+            woodBack.GetComponent<
+                Collider
+            >();
+
+        if (woodCollider != null)
+            Object.Destroy(
+                woodCollider
+            );
+
+        Renderer woodRenderer =
+            woodBack.GetComponent<
+                Renderer
+            >();
+
+        if (woodRenderer != null)
+        {
+            woodRenderer.material.color =
+                new Color(
+                    0.30f,
+                    0.18f,
+                    0.085f,
+                    1f
+                );
+        }
 
         GameObject background =
             GameObject.CreatePrimitive(
@@ -481,6 +384,60 @@ public sealed class WarboardV55MissionCardsWorld :
                 0.97f,
                 1f
             );
+
+        GameObject ledge =
+            GameObject.CreatePrimitive(
+                PrimitiveType.Cube
+            );
+
+        ledge.name =
+            name +
+            " Wooden Ledge";
+
+        ledge.transform.SetParent(
+            card.Root.transform,
+            false
+        );
+
+        ledge.transform.localPosition =
+            new Vector3(
+                0f,
+                -2.25f,
+                -0.03f
+            );
+
+        ledge.transform.localScale =
+            new Vector3(
+                3.92f,
+                0.22f,
+                0.34f
+            );
+
+        Collider ledgeCollider =
+            ledge.GetComponent<
+                Collider
+            >();
+
+        if (ledgeCollider != null)
+            Object.Destroy(
+                ledgeCollider
+            );
+
+        Renderer ledgeRenderer =
+            ledge.GetComponent<
+                Renderer
+            >();
+
+        if (ledgeRenderer != null)
+        {
+            ledgeRenderer.material.color =
+                new Color(
+                    0.36f,
+                    0.22f,
+                    0.11f,
+                    1f
+                );
+        }
 
         return card;
     }
@@ -610,31 +567,75 @@ public sealed class WarboardV55MissionCardsWorld :
         string text)
     {
         if (card == null ||
-            card.Text == null ||
-            card.LastText == text)
+            card.Text == null)
         {
             return;
         }
 
-        card.LastText =
+        text =
             text ?? "";
 
+        if (card.LastText == text)
+            return;
+
+        card.LastText =
+            text;
+
         card.Text.text =
-            card.LastText;
+            text;
+
+        int lines = 1;
+        int longest = 0;
+        int current = 0;
+
+        for (int i = 0;
+             i < text.Length;
+             i++)
+        {
+            if (text[i] == '\n')
+            {
+                lines++;
+                longest =
+                    Mathf.Max(
+                        longest,
+                        current
+                    );
+                current = 0;
+            }
+            else
+            {
+                current++;
+            }
+        }
+
+        longest =
+            Mathf.Max(
+                longest,
+                current
+            );
+
+        if (lines >= 12 ||
+            longest >= 42)
+        {
+            card.Text.characterSize =
+                0.023f;
+        }
+        else if (lines >= 9 ||
+                 longest >= 34)
+        {
+            card.Text.characterSize =
+                0.026f;
+        }
+        else
+        {
+            card.Text.characterSize =
+                0.030f;
+        }
     }
 
     private void SetVisible(
         bool visible)
     {
-        if (rackRoot != null &&
-            rackRoot.activeSelf !=
-                visible)
-        {
-            rackRoot.SetActive(
-                visible
-            );
-        }
-
         SetCardVisible(
             p1Primary,
             visible
