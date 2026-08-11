@@ -38,14 +38,16 @@ public static class LeaderCompatibilityRegistry
         }
 
         string wanted =
-            Normalize(leaderName);
+            NormalizeComparable(
+                leaderName
+            );
 
         foreach (
             LeaderCompatibilityOverrideEntry entry
             in cached.entries)
         {
             if (entry == null ||
-                Normalize(
+                NormalizeComparable(
                     entry.leaderName
                 ) != wanted)
             {
@@ -68,11 +70,68 @@ public static class LeaderCompatibilityRegistry
             ).Count > 0;
     }
 
+    // WARBOARD_R27_LEADER_COMPATIBILITY
+    //
+    // Imported roster UnitIds are generated UUID IDs. The YellowScribe Leader
+    // description is not guaranteed to contain its legal bodyguard list, so an
+    // exact UnitId-only test is not sufficient. This method gives the runtime
+    // a conservative display-name fallback through the compatibility table.
+    public static bool AllowsBodyguard(
+        string leaderName,
+        string bodyguardName)
+    {
+        if (string.IsNullOrWhiteSpace(
+                leaderName) ||
+            string.IsNullOrWhiteSpace(
+                bodyguardName))
+        {
+            return false;
+        }
+
+        foreach (string legalName
+            in GetBodyguardNames(
+                leaderName))
+        {
+            if (NamesEquivalent(
+                    legalName,
+                    bodyguardName))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static bool NamesEquivalent(
+        string first,
+        string second)
+    {
+        string a =
+            NormalizeComparable(
+                first
+            );
+
+        string b =
+            NormalizeComparable(
+                second
+            );
+
+        return
+            !string.IsNullOrWhiteSpace(a) &&
+            !string.IsNullOrWhiteSpace(b) &&
+            string.Equals(
+                a,
+                b,
+                StringComparison.OrdinalIgnoreCase
+            );
+    }
+
     public static string Normalize(
         string value)
     {
         if (string.IsNullOrWhiteSpace(
-            value))
+                value))
         {
             return "";
         }
@@ -97,6 +156,62 @@ public static class LeaderCompatibilityRegistry
                         .RemoveEmptyEntries
                 )
         );
+    }
+
+    private static string NormalizeComparable(
+        string value)
+    {
+        string normalized =
+            Normalize(value);
+
+        if (string.IsNullOrWhiteSpace(
+                normalized))
+        {
+            return "";
+        }
+
+        string[] removablePrefixes =
+        {
+            "ynnari ",
+            "aeldari ",
+            "asuryani ",
+            "drukhari ",
+            "orks ",
+            "ork ",
+            "necrons ",
+            "necron ",
+            "tyranids ",
+            "tyranid ",
+            "adeptus custodes "
+        };
+
+        bool changed = true;
+
+        while (changed)
+        {
+            changed = false;
+
+            foreach (string prefix
+                in removablePrefixes)
+            {
+                if (normalized.StartsWith(
+                        prefix,
+                        StringComparison.OrdinalIgnoreCase) &&
+                    normalized.Length >
+                        prefix.Length)
+                {
+                    normalized =
+                        normalized.Substring(
+                            prefix.Length
+                        );
+
+                    changed = true;
+                    break;
+                }
+            }
+        }
+
+        return normalized.Trim();
     }
 
     private static void EnsureLoaded()

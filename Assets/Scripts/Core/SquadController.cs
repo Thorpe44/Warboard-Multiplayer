@@ -568,14 +568,30 @@ public partial class SquadController : MonoBehaviour
             return false;
         }
 
-        return CanAttachToIds.Any(
-            id =>
-                string.Equals(
-                    id,
-                    bodyguard.UnitId,
-                    System.StringComparison.OrdinalIgnoreCase
-                )
-        );
+                bool importedIdMatch =
+            CanAttachToIds.Any(
+                id =>
+                    string.Equals(
+                        id,
+                        bodyguard.UnitId,
+                        System.StringComparison.OrdinalIgnoreCase
+                    ) ||
+                    LeaderCompatibilityRegistry
+                        .NamesEquivalent(
+                            id,
+                            bodyguard.DisplayName
+                        )
+            );
+
+        if (importedIdMatch)
+            return true;
+
+        return
+            LeaderCompatibilityRegistry
+                .AllowsBodyguard(
+                    DisplayName,
+                    bodyguard.DisplayName
+                );
     }
 
     public bool AttachToBodyguard(
@@ -2537,6 +2553,7 @@ public partial class SquadController : MonoBehaviour
     }
 
 }
+
 
 
 

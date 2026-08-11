@@ -1162,22 +1162,10 @@ public partial class GameController : MonoBehaviour
             string raw =
                 weapon.rawAbilities ?? "";
 
-            string rules =
-                string.Join(
-                    " | ",
-                    new[]
-                    {
-                        keywordText,
-                        raw
-                    }
-                    .Where(
-                        value =>
-                            !string.IsNullOrWhiteSpace(
-                                value
-                            )
-                    )
-                    .Distinct()
-                    .ToArray()
+                        string rules =
+                R27WeaponRulesForUi(
+                    keywordText,
+                    raw
                 );
 
             if (!string.IsNullOrWhiteSpace(
@@ -5498,8 +5486,14 @@ public partial class GameController : MonoBehaviour
             }
         }
 
-        if (!deploymentMode &&
+                if (deploymentMode &&
             factions.Count >= 2)
+        {
+            R27DrawDeploymentPlayerSummaryBar(
+                bar
+            );
+        }
+        else if (factions.Count >= 2)
         {
             string p1 = factions[0];
             string p2 = factions[1];
@@ -7777,4 +7771,5 @@ public partial class GameController : MonoBehaviour
     }
 
 }
+
 

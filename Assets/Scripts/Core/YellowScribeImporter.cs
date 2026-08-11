@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -1006,8 +1006,13 @@ public static class YellowScribeImporter
                                 candidate.displayName
                             );
 
-                    if (candidateName ==
-                        wanted)
+                                        if (candidateName ==
+                            wanted ||
+                        LeaderCompatibilityRegistry
+                            .NamesEquivalent(
+                                candidate.displayName,
+                                wantedName
+                            ))
                     {
                         compatibleIds.Add(
                             candidate.id
@@ -1926,3 +1931,4 @@ public static class YellowScribeImporter
         return new string(chars);
     }
 }
+

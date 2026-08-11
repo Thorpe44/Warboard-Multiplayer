@@ -39,6 +39,18 @@
         "Custodian Guard",
         "Custodian Wardens"
       ]
+    },
+    {
+      "leaderName": "Painboss",
+      "bodyguardNames": [
+        "Beast Snagga Boyz"
+      ]
+    },
+    {
+      "leaderName": "Ghazghkull Thraka",
+      "bodyguardNames": [
+        "Meganobz"
+      ]
     }
   ]
 }
