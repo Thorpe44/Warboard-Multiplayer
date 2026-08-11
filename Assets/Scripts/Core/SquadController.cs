@@ -470,10 +470,19 @@ public partial class SquadController : MonoBehaviour
 
             if (visual != null)
             {
-                token.AttachVisual(
-                    visual,
-                    baseColor
-                );
+                bool visualAttached =
+                    token.AttachVisual(
+                        visual,
+                        baseColor
+                    );
+
+                if (visualAttached)
+                {
+                    NecronVisualOriginRepairR23.Reanchor(
+                        FactionId,
+                        token
+                    );
+                }
             }
 
             models.Add(token);
@@ -2537,5 +2546,6 @@ public partial class SquadController : MonoBehaviour
     }
 
 }
+
 
 

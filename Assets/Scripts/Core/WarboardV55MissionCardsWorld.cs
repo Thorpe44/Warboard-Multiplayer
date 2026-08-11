@@ -1,10 +1,10 @@
 using UnityEngine;
 
-// WARBOARD_MISSION_CARD_ROW_R2_2
-// One physical world-UI row:
-// [P1 PRIMARY] [P1 SECONDARY] [MATCH SCOREBOARD] [P2 PRIMARY] [P2 SECONDARY]
+// WARBOARD_MISSION_CARD_ROW_R2_3
+// Cards are parented directly to the live World Scoreboard so they share its
+// exact world position/orientation instead of trying to duplicate those values.
 
-[DefaultExecutionOrder(-31880)]
+[DefaultExecutionOrder(32000)]
 public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
 {
     private sealed class Card
@@ -15,6 +15,7 @@ public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
     }
 
     private GameController game;
+    private Transform scoreboardRoot;
 
     private Card p1Primary;
     private Card p1Secondary;
@@ -27,15 +28,9 @@ public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
         if (Object.FindAnyObjectByType<WarboardV55MissionCardsWorld>() != null)
             return;
 
-        GameObject root = new GameObject("Warboard Mission Card Row R2.2");
+        GameObject root = new GameObject("Warboard Mission Card Row R2.3");
         Object.DontDestroyOnLoad(root);
         root.AddComponent<WarboardV55MissionCardsWorld>();
-    }
-
-    private void Start()
-    {
-        game = GameController.Current;
-        BuildCards();
     }
 
     private void LateUpdate()
@@ -49,7 +44,19 @@ public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
             return;
         }
 
-        if (p1Primary == null)
+        if (scoreboardRoot == null)
+        {
+            scoreboardRoot = FindLiveScoreboard();
+            ClearDeadCardReferences();
+        }
+
+        if (scoreboardRoot == null)
+        {
+            SetVisible(false);
+            return;
+        }
+
+        if (p1Primary == null || p1Primary.Root == null)
             BuildCards();
 
         bool ready = game.WorldUiFactionCount >= 2;
@@ -64,55 +71,86 @@ public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
         UpdateCard(p2Secondary, game.WorldUiSecondaryCardText55(1));
     }
 
+    private Transform FindLiveScoreboard()
+    {
+        Transform[] transforms = Resources.FindObjectsOfTypeAll<Transform>();
+
+        foreach (Transform candidate in transforms)
+        {
+            if (candidate == null ||
+                candidate.name != "World Scoreboard" ||
+                !candidate.gameObject.scene.IsValid())
+            {
+                continue;
+            }
+
+            return candidate;
+        }
+
+        return null;
+    }
+
+    private void ClearDeadCardReferences()
+    {
+        if (p1Primary != null && p1Primary.Root == null) p1Primary = null;
+        if (p1Secondary != null && p1Secondary.Root == null) p1Secondary = null;
+        if (p2Primary != null && p2Primary.Root == null) p2Primary = null;
+        if (p2Secondary != null && p2Secondary.Root == null) p2Secondary = null;
+    }
+
     private void BuildCards()
     {
-        if (p1Primary != null)
+        if (scoreboardRoot == null)
             return;
 
-        // BattlefieldWorldUI scoreboard is centred at:
-        // (0, 5, BoardDepth/2 + 4), width 15.5, height 5.2.
-        // Cards deliberately use that exact Y/Z and height.
-        float z = GameController.BoardDepth * 0.5f + 4.0f;
-        float y = 5.0f;
+        // BattlefieldWorldUI creates a 15.5" scoreboard.
+        // R2.3 uses it as the parent transform, so local Y/Z are exactly zero.
+        const float scoreboardHalfWidth = 7.75f;
+        const float cardFrameWidth = 5.18f;
+        const float halfCard = cardFrameWidth * 0.5f;
+        const float gap = 0.28f;
 
-        p1Primary = CreateCard(
-            "Player 1 Primary Card",
-            new Vector3(-16.20f, y, z),
-            new Color(0.24f, 0.48f, 0.62f),
-            "PRIMARY");
+        float inner = scoreboardHalfWidth + gap + halfCard;
+        float outer = scoreboardHalfWidth + gap + cardFrameWidth + gap + halfCard;
 
         p1Secondary = CreateCard(
             "Player 1 Secondary Card",
-            new Vector3(-10.65f, y, z),
+            new Vector3(-inner, 0f, 0f),
             new Color(0.48f, 0.34f, 0.62f),
             "SECONDARY");
 
+        p1Primary = CreateCard(
+            "Player 1 Primary Card",
+            new Vector3(-outer, 0f, 0f),
+            new Color(0.24f, 0.48f, 0.62f),
+            "PRIMARY");
+
         p2Primary = CreateCard(
             "Player 2 Primary Card",
-            new Vector3(10.65f, y, z),
+            new Vector3(inner, 0f, 0f),
             new Color(0.24f, 0.48f, 0.62f),
             "PRIMARY");
 
         p2Secondary = CreateCard(
             "Player 2 Secondary Card",
-            new Vector3(16.20f, y, z),
+            new Vector3(outer, 0f, 0f),
             new Color(0.48f, 0.34f, 0.62f),
             "SECONDARY");
     }
 
     private Card CreateCard(
         string name,
-        Vector3 position,
+        Vector3 localPosition,
         Color accent,
         string typeLabel)
     {
         Card card = new Card();
 
         card.Root = new GameObject(name);
-        card.Root.transform.position = position;
-
-        // Match the scoreboard's camera-facing presentation exactly.
-        card.Root.AddComponent<WoundDisplayBillboard>();
+        card.Root.transform.SetParent(scoreboardRoot, false);
+        card.Root.transform.localPosition = localPosition;
+        card.Root.transform.localRotation = Quaternion.identity;
+        card.Root.transform.localScale = Vector3.one;
 
         CreateBlock(
             card.Root.transform,
