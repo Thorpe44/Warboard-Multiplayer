@@ -37,13 +37,13 @@ public partial class GameController : MonoBehaviour
                 ? 132f
                 : 96f;
 
-        // WARBOARD_V54_FIGHT_CARD_OFFSET
+        // WARBOARD_V55_SELECTED_CARD_BELOW_BADGES
         Rect card =
             new Rect(
                 12f,
                 phase == Phase.Fight
-                ? 134f
-                : 82f,
+                ? 164f
+                : 112f,
                 width,
                 height
             );

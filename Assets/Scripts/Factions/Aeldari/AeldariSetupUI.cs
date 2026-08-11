@@ -609,10 +609,11 @@ public sealed class AeldariSetupUI : MonoBehaviour
                   badgeGap
                 : badgeMargin;
 
+            // WARBOARD_V55_BADGE_BELOW_SCOREBOARD
             Rect badge =
                 new Rect(
                     badgeX,
-                    48f,
+                    76f,
                     Mathf.Max(
                         146f,
                         badgeSlotWidth - 74f),

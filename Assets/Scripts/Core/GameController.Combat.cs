@@ -1209,44 +1209,26 @@ public partial class GameController : MonoBehaviour
             return;
         }
 
-        if (selectedModel == null ||
-            selectedModel.Squad == null ||
-            selectedModel.Squad
-                .JoinedActionController() !=
-                attacker.JoinedActionController())
-        {
-            status =
-                "SHOOTING: click the specific model that will fire, then click its target.";
-            return;
-        }
-
+        // WARBOARD_V55_SQUAD_SHOOTING_ENTRY
         List<WeaponAttackSelection> eligibleWeapons =
             GetEligibleRangedWeapons(
                 attacker,
                 target,
                 engaged
-            )
-            .Where(
-                selection =>
-                    selection != null &&
-                    selection.model ==
-                        selectedModel
-            )
-            .ToList();
+            );
 
         if (eligibleWeapons.Count == 0)
         {
             status =
-                selectedModel.RoleName +
+                attacker.DisplayName +
                 " has no unused ranged weapon with legal range/line of sight to " +
                 target.DisplayName +
                 ".";
             return;
         }
 
-        OpenModelWeaponChoice(
+        V55OpenSquadWeaponChoice(
             attacker,
-            selectedModel,
             target,
             eligibleWeapons,
             engaged

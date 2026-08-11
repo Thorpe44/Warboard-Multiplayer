@@ -432,19 +432,22 @@ public sealed class TerrainAreaFootprint50 : MonoBehaviour
 
     private void ApplyVisualState()
     {
+        // WARBOARD_V55_WALKABLE_FOOTPRINT_VISUAL
+        // The tinted floor is the walkable Terrain Area. Only the solid
+        // scenery visibly sitting on it blocks a model's final base.
         Color fill =
             IsObjective
             ? new Color(
-                0.46f,
-                0.33f,
-                0.08f,
-                0.32f
+                0.16f,
+                0.25f,
+                0.27f,
+                0.28f
               )
             : new Color(
-                0.26f,
-                0.30f,
-                0.31f,
-                0.27f
+                0.11f,
+                0.22f,
+                0.25f,
+                0.23f
               );
 
         Color outline =
@@ -456,10 +459,10 @@ public sealed class TerrainAreaFootprint50 : MonoBehaviour
                 0.98f
               )
             : new Color(
-                0.46f,
-                0.55f,
-                0.58f,
-                0.78f
+                0.26f,
+                0.76f,
+                0.82f,
+                0.92f
               );
 
         if (fillRenderer != null &&

@@ -512,7 +512,8 @@ public partial class GameController
                 AttackMode.Melee);
         }
 
-        if (!V48SolveChargeMove(
+        // WARBOARD_V55_BOUNDED_CHARGE_CALL
+        if (!V55SolveChargeMoveBounded(
                 v48ChargeUnit,
                 v48ChargeTargets.ToList(),
                 maximum))

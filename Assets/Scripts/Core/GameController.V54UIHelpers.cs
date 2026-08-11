@@ -15,10 +15,11 @@ public partial class GameController : MonoBehaviour
             return;
         }
 
+        // WARBOARD_V55_FIGHT_BAR_BELOW_BADGES
         Rect bar =
             new Rect(
                 12f,
-                84f,
+                112f,
                 Screen.width - 24f,
                 44f
             );

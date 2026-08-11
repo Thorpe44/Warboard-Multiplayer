@@ -660,10 +660,11 @@ public sealed class CustodesSetupUI : MonoBehaviour
                   badgeGap
                 : badgeMargin;
 
+            // WARBOARD_V55_CUSTODES_BADGE_BELOW_SCOREBOARD
             Rect badge =
                 new Rect(
                     badgeX,
-                    48f,
+                    76f,
                     badgeSlotWidth,
                     30f);
 

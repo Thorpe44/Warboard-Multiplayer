@@ -687,7 +687,7 @@ public partial class GameController
                 ? TerrainTrait.Blocking
                 : TerrainTrait.Cover;
 
-            CreateTerrainFeatureVisual50(
+            V55CreateTerrainFeatureVisual(
                 areaRoot,
                 "Major Feature",
                 new Vector3(
@@ -704,7 +704,7 @@ public partial class GameController
                 seed
             );
 
-            CreateTerrainFeatureVisual50(
+            V55CreateTerrainFeatureVisual(
                 areaRoot,
                 "Minor Feature",
                 new Vector3(
@@ -731,7 +731,7 @@ public partial class GameController
                 ? TerrainTrait.Blocking
                 : TerrainTrait.Cover);
 
-        CreateTerrainFeatureVisual50(
+        V55CreateTerrainFeatureVisual(
             areaRoot,
             "Area Feature",
             Vector3.zero,
@@ -747,6 +747,7 @@ public partial class GameController
         );
     }
 
+    // WARBOARD_V55_CLEAN_TERRAIN_CALLS
     private void CreateTerrainFeatureVisual50(
         Transform areaRoot,
         string label,
