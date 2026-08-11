@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -309,6 +309,12 @@ public partial class SquadController : MonoBehaviour
                 : "Model";
 
             ModelVisualDefinition previewVisual =
+                NecronModelPackResolverR22.TryResolve(
+                    FactionId,
+                    DisplayName,
+                    previewRoleName,
+                    i
+                ) ??
                 ModelVisualRegistry.Resolve(
                     DisplayName,
                     previewRoleName,
@@ -450,6 +456,12 @@ public partial class SquadController : MonoBehaviour
             );
 
             ModelVisualDefinition visual =
+                NecronModelPackResolverR22.TryResolve(
+                    FactionId,
+                    DisplayName,
+                    roleName,
+                    i
+                ) ??
                 ModelVisualRegistry.Resolve(
                     DisplayName,
                     roleName,
@@ -2525,4 +2537,5 @@ public partial class SquadController : MonoBehaviour
     }
 
 }
+
 

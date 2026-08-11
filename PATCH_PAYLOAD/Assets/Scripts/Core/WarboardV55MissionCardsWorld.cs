@@ -1,20 +1,16 @@
 using UnityEngine;
 
-// WARBOARD_MISSION_CARD_ROW_R2_1
-//
-// One horizontal command row:
+// WARBOARD_MISSION_CARD_ROW_R2_2
+// One physical world-UI row:
 // [P1 PRIMARY] [P1 SECONDARY] [MATCH SCOREBOARD] [P2 PRIMARY] [P2 SECONDARY]
-// Each card has its own wood frame/ledge and faces the camera like the scoreboard.
 
 [DefaultExecutionOrder(-31880)]
-public sealed class WarboardV55MissionCardsWorld :
-    MonoBehaviour
+public sealed class WarboardV55MissionCardsWorld : MonoBehaviour
 {
     private sealed class Card
     {
         public GameObject Root;
         public TextMesh Text;
-        public Renderer Background;
         public string LastText = "";
     }
 
@@ -25,45 +21,27 @@ public sealed class WarboardV55MissionCardsWorld :
     private Card p2Primary;
     private Card p2Secondary;
 
-    [RuntimeInitializeOnLoadMethod(
-        RuntimeInitializeLoadType
-            .AfterSceneLoad)]
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Install()
     {
-        if (Object.FindAnyObjectByType<
-                WarboardV55MissionCardsWorld>() !=
-            null)
-        {
+        if (Object.FindAnyObjectByType<WarboardV55MissionCardsWorld>() != null)
             return;
-        }
 
-        GameObject root =
-            new GameObject(
-                "Warboard Mission Card Rack R2"
-            );
-
-        Object.DontDestroyOnLoad(
-            root
-        );
-
-        root.AddComponent<
-            WarboardV55MissionCardsWorld
-        >();
+        GameObject root = new GameObject("Warboard Mission Card Row R2.2");
+        Object.DontDestroyOnLoad(root);
+        root.AddComponent<WarboardV55MissionCardsWorld>();
     }
 
     private void Start()
     {
-        game =
-            GameController.Current;
-
+        game = GameController.Current;
         BuildCards();
     }
 
     private void LateUpdate()
     {
         if (game == null)
-            game =
-                GameController.Current;
+            game = GameController.Current;
 
         if (game == null)
         {
@@ -74,43 +52,16 @@ public sealed class WarboardV55MissionCardsWorld :
         if (p1Primary == null)
             BuildCards();
 
-        bool ready =
-            game.WorldUiFactionCount >= 2;
-
-        SetVisible(
-            ready
-        );
+        bool ready = game.WorldUiFactionCount >= 2;
+        SetVisible(ready);
 
         if (!ready)
             return;
 
-        UpdateCard(
-            p1Primary,
-            game.WorldUiPrimaryCardText55(
-                0
-            )
-        );
-
-        UpdateCard(
-            p1Secondary,
-            game.WorldUiSecondaryCardText55(
-                0
-            )
-        );
-
-        UpdateCard(
-            p2Primary,
-            game.WorldUiPrimaryCardText55(
-                1
-            )
-        );
-
-        UpdateCard(
-            p2Secondary,
-            game.WorldUiSecondaryCardText55(
-                1
-            )
-        );
+        UpdateCard(p1Primary, game.WorldUiPrimaryCardText55(0));
+        UpdateCard(p1Secondary, game.WorldUiSecondaryCardText55(0));
+        UpdateCard(p2Primary, game.WorldUiPrimaryCardText55(1));
+        UpdateCard(p2Secondary, game.WorldUiSecondaryCardText55(1));
     }
 
     private void BuildCards()
@@ -118,488 +69,187 @@ public sealed class WarboardV55MissionCardsWorld :
         if (p1Primary != null)
             return;
 
-        // Match BattlefieldWorldUI scoreboard exactly:
-        // scoreboard centre = (0, 5.0, BoardDepth/2 + 4.0)
-        float z =
-            GameController.BoardDepth *
-                0.5f +
-            4.0f;
+        // BattlefieldWorldUI scoreboard is centred at:
+        // (0, 5, BoardDepth/2 + 4), width 15.5, height 5.2.
+        // Cards deliberately use that exact Y/Z and height.
+        float z = GameController.BoardDepth * 0.5f + 4.0f;
+        float y = 5.0f;
 
-        float y =
-            5.0f;
+        p1Primary = CreateCard(
+            "Player 1 Primary Card",
+            new Vector3(-16.20f, y, z),
+            new Color(0.24f, 0.48f, 0.62f),
+            "PRIMARY");
 
-        // Existing scoreboard width is 15.5 (edges at +/-7.75).
-        // These card centres create one continuous row with a small gap.
-        p1Primary =
-            CreateCard(
-                "Player 1 Primary Card",
-                new Vector3(
-                    -13.72f,
-                    y,
-                    z
-                ),
-                new Color(
-                    0.24f,
-                    0.48f,
-                    0.62f
-                )
-            );
+        p1Secondary = CreateCard(
+            "Player 1 Secondary Card",
+            new Vector3(-10.65f, y, z),
+            new Color(0.48f, 0.34f, 0.62f),
+            "SECONDARY");
 
-        p1Secondary =
-            CreateCard(
-                "Player 1 Secondary Card",
-                new Vector3(
-                    -9.82f,
-                    y,
-                    z
-                ),
-                new Color(
-                    0.48f,
-                    0.34f,
-                    0.62f
-                )
-            );
+        p2Primary = CreateCard(
+            "Player 2 Primary Card",
+            new Vector3(10.65f, y, z),
+            new Color(0.24f, 0.48f, 0.62f),
+            "PRIMARY");
 
-        p2Primary =
-            CreateCard(
-                "Player 2 Primary Card",
-                new Vector3(
-                    9.82f,
-                    y,
-                    z
-                ),
-                new Color(
-                    0.24f,
-                    0.48f,
-                    0.62f
-                )
-            );
-
-        p2Secondary =
-            CreateCard(
-                "Player 2 Secondary Card",
-                new Vector3(
-                    13.72f,
-                    y,
-                    z
-                ),
-                new Color(
-                    0.48f,
-                    0.34f,
-                    0.62f
-                )
-            );
+        p2Secondary = CreateCard(
+            "Player 2 Secondary Card",
+            new Vector3(16.20f, y, z),
+            new Color(0.48f, 0.34f, 0.62f),
+            "SECONDARY");
     }
 
     private Card CreateCard(
         string name,
         Vector3 position,
-        Color accent)
+        Color accent,
+        string typeLabel)
     {
-        Card card =
-            new Card();
+        Card card = new Card();
 
-        card.Root =
-            new GameObject(name);
+        card.Root = new GameObject(name);
+        card.Root.transform.position = position;
 
-        card.Root.transform.position =
-            position;
+        // Match the scoreboard's camera-facing presentation exactly.
+        card.Root.AddComponent<WoundDisplayBillboard>();
 
-        // Same camera-facing behaviour as the scoreboard so all five
-        // information panels stay visually aligned as one row.
-        card.Root.AddComponent<
-            WoundDisplayBillboard
-        >();
-
-        GameObject woodBack =
-            GameObject.CreatePrimitive(
-                PrimitiveType.Cube
-            );
-
-        woodBack.name =
-            name +
-            " Wood Frame";
-
-        woodBack.transform.SetParent(
+        CreateBlock(
             card.Root.transform,
-            false
-        );
+            name + " Wood Frame",
+            new Vector3(0f, 0f, 0.08f),
+            new Vector3(5.18f, 5.38f, 0.13f),
+            new Color(0.30f, 0.18f, 0.085f, 1f));
 
-        woodBack.transform.localPosition =
-            new Vector3(
-                0f,
-                0f,
-                0.08f
-            );
-
-        woodBack.transform.localScale =
-            new Vector3(
-                3.82f,
-                4.48f,
-                0.10f
-            );
-
-        Collider woodCollider =
-            woodBack.GetComponent<
-                Collider
-            >();
-
-        if (woodCollider != null)
-            Object.Destroy(
-                woodCollider
-            );
-
-        Renderer woodRenderer =
-            woodBack.GetComponent<
-                Renderer
-            >();
-
-        if (woodRenderer != null)
-        {
-            woodRenderer.material.color =
-                new Color(
-                    0.30f,
-                    0.18f,
-                    0.085f,
-                    1f
-                );
-        }
-
-        GameObject background =
-            GameObject.CreatePrimitive(
-                PrimitiveType.Cube
-            );
-
-        background.name =
-            name +
-            " Background";
-
-        background.transform.SetParent(
+        CreateBlock(
             card.Root.transform,
-            false
-        );
+            name + " Background",
+            Vector3.zero,
+            new Vector3(4.90f, 5.12f, 0.13f),
+            new Color(0.050f, 0.052f, 0.058f, 1f));
 
-        background.transform.localScale =
-            new Vector3(
-                3.55f,
-                4.15f,
-                0.12f
-            );
+        CreateBlock(
+            card.Root.transform,
+            name + " Accent",
+            new Vector3(0f, 2.43f, -0.10f),
+            new Vector3(4.78f, 0.13f, 0.055f),
+            accent);
 
-        Collider collider =
-            background.GetComponent<
-                Collider
-            >();
+        CreateBlock(
+            card.Root.transform,
+            name + " Wooden Ledge",
+            new Vector3(0f, -2.67f, -0.04f),
+            new Vector3(5.30f, 0.22f, 0.34f),
+            new Color(0.37f, 0.22f, 0.105f, 1f));
 
-        if (collider != null)
-            Object.Destroy(
-                collider
-            );
-
-        card.Background =
-            background.GetComponent<
-                Renderer
-            >();
-
-        if (card.Background != null)
-        {
-            card.Background.material.color =
-                new Color(
-                    0.050f,
-                    0.052f,
-                    0.058f,
-                    1f
-                );
-        }
-
-        CreateCardTrim(
+        CreateTypeLabel(
             card.Root.transform,
             name,
-            accent
-        );
+            typeLabel,
+            accent);
 
-        GameObject textObject =
-            new GameObject(
-                name +
-                " Text"
-            );
+        GameObject textObject = new GameObject(name + " Text");
+        textObject.transform.SetParent(card.Root.transform, false);
+        textObject.transform.localPosition = new Vector3(0f, 2.07f, -0.12f);
 
-        textObject.transform.SetParent(
-            card.Root.transform,
-            false
-        );
+        card.Text = textObject.AddComponent<TextMesh>();
+        ApplyFont(card.Text, textObject);
 
-        textObject.transform.localPosition =
-            new Vector3(
-                0f,
-                1.70f,
-                -0.078f
-            );
-
-        card.Text =
-            textObject.AddComponent<
-                TextMesh
-            >();
-
-        Font font =
-            Resources.GetBuiltinResource<
-                Font
-            >(
-                "LegacyRuntime.ttf"
-            );
-
-        if (font != null)
-        {
-            card.Text.font =
-                font;
-
-            MeshRenderer renderer =
-                textObject.GetComponent<
-                    MeshRenderer
-                >();
-
-            if (renderer != null)
-            {
-                renderer.sharedMaterial =
-                    font.material;
-            }
-        }
-
-        card.Text.anchor =
-            TextAnchor.UpperCenter;
-
-        card.Text.alignment =
-            TextAlignment.Center;
-
-        card.Text.fontSize =
-            34;
-
-        card.Text.characterSize =
-            0.033f;
-
-        card.Text.color =
-            new Color(
-                0.94f,
-                0.95f,
-                0.97f,
-                1f
-            );
-
-        GameObject ledge =
-            GameObject.CreatePrimitive(
-                PrimitiveType.Cube
-            );
-
-        ledge.name =
-            name +
-            " Wooden Ledge";
-
-        ledge.transform.SetParent(
-            card.Root.transform,
-            false
-        );
-
-        ledge.transform.localPosition =
-            new Vector3(
-                0f,
-                -2.25f,
-                -0.03f
-            );
-
-        ledge.transform.localScale =
-            new Vector3(
-                3.92f,
-                0.22f,
-                0.34f
-            );
-
-        Collider ledgeCollider =
-            ledge.GetComponent<
-                Collider
-            >();
-
-        if (ledgeCollider != null)
-            Object.Destroy(
-                ledgeCollider
-            );
-
-        Renderer ledgeRenderer =
-            ledge.GetComponent<
-                Renderer
-            >();
-
-        if (ledgeRenderer != null)
-        {
-            ledgeRenderer.material.color =
-                new Color(
-                    0.36f,
-                    0.22f,
-                    0.11f,
-                    1f
-                );
-        }
+        card.Text.anchor = TextAnchor.UpperCenter;
+        card.Text.alignment = TextAlignment.Center;
+        card.Text.fontSize = 36;
+        card.Text.characterSize = 0.033f;
+        card.Text.lineSpacing = 0.88f;
+        card.Text.color = new Color(0.94f, 0.95f, 0.97f, 1f);
 
         return card;
     }
 
-    private void CreateCardTrim(
-        Transform root,
+    private void CreateTypeLabel(
+        Transform parent,
         string name,
+        string typeLabel,
         Color accent)
     {
-        CreateCardTrimPiece(
-            root,
-            name + " Accent",
-            new Vector3(
-                0f,
-                2.02f,
-                -0.080f
-            ),
-            new Vector3(
-                3.55f,
-                0.12f,
-                0.05f
-            ),
-            accent
-        );
+        GameObject labelObject = new GameObject(name + " Type");
+        labelObject.transform.SetParent(parent, false);
+        labelObject.transform.localPosition = new Vector3(-2.20f, 2.28f, -0.13f);
 
-        Color border =
-            new Color(
-                0.34f,
-                0.23f,
-                0.12f,
-                1f
-            );
+        TextMesh label = labelObject.AddComponent<TextMesh>();
+        ApplyFont(label, labelObject);
 
-        CreateCardTrimPiece(
-            root,
-            name + " Left Trim",
-            new Vector3(
-                -1.80f,
-                0f,
-                -0.070f
-            ),
-            new Vector3(
-                0.10f,
-                4.22f,
-                0.07f
-            ),
-            border
-        );
-
-        CreateCardTrimPiece(
-            root,
-            name + " Right Trim",
-            new Vector3(
-                1.80f,
-                0f,
-                -0.070f
-            ),
-            new Vector3(
-                0.10f,
-                4.22f,
-                0.07f
-            ),
-            border
-        );
-
-        CreateCardTrimPiece(
-            root,
-            name + " Bottom Trim",
-            new Vector3(
-                0f,
-                -2.08f,
-                -0.070f
-            ),
-            new Vector3(
-                3.68f,
-                0.10f,
-                0.07f
-            ),
-            border
-        );
+        label.anchor = TextAnchor.UpperLeft;
+        label.alignment = TextAlignment.Left;
+        label.fontSize = 32;
+        label.characterSize = 0.027f;
+        label.color = accent;
+        label.text = typeLabel;
     }
 
-    private void CreateCardTrimPiece(
-        Transform root,
+    private GameObject CreateBlock(
+        Transform parent,
         string name,
         Vector3 localPosition,
         Vector3 localScale,
         Color colour)
     {
-        GameObject piece =
-            GameObject.CreatePrimitive(
-                PrimitiveType.Cube
-            );
+        GameObject block = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        block.name = name;
+        block.transform.SetParent(parent, false);
+        block.transform.localPosition = localPosition;
+        block.transform.localScale = localScale;
 
-        piece.name =
-            name;
-
-        piece.transform.SetParent(
-            root,
-            false
-        );
-
-        piece.transform.localPosition =
-            localPosition;
-
-        piece.transform.localScale =
-            localScale;
-
-        Collider collider =
-            piece.GetComponent<Collider>();
-
+        Collider collider = block.GetComponent<Collider>();
         if (collider != null)
-            Object.Destroy(
-                collider
-            );
+            Object.Destroy(collider);
 
-        Renderer renderer =
-            piece.GetComponent<Renderer>();
-
+        Renderer renderer = block.GetComponent<Renderer>();
         if (renderer != null)
-            renderer.material.color =
-                colour;
+            renderer.material.color = colour;
+
+        return block;
     }
 
-    private void UpdateCard(
-        Card card,
-        string text)
+    private void ApplyFont(TextMesh text, GameObject objectWithRenderer)
     {
-        if (card == null ||
-            card.Text == null)
-        {
+        Font font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        if (font == null)
             return;
-        }
 
-        text =
-            text ?? "";
+        text.font = font;
+
+        MeshRenderer renderer = objectWithRenderer.GetComponent<MeshRenderer>();
+        if (renderer != null)
+            renderer.sharedMaterial = font.material;
+    }
+
+    private void UpdateCard(Card card, string text)
+    {
+        if (card == null || card.Text == null)
+            return;
+
+        text = text ?? "";
 
         if (card.LastText == text)
             return;
 
-        card.LastText =
-            text;
+        card.LastText = text;
+        card.Text.text = text;
+        FitText(card.Text, text);
+    }
 
-        card.Text.text =
-            text;
-
+    private void FitText(TextMesh textMesh, string value)
+    {
         int lines = 1;
-        int longest = 0;
         int current = 0;
+        int maxLine = 0;
 
-        for (int i = 0;
-             i < text.Length;
-             i++)
+        foreach (char character in value)
         {
-            if (text[i] == '\n')
+            if (character == '\n')
             {
                 lines++;
-                longest =
-                    Mathf.Max(
-                        longest,
-                        current
-                    );
+                maxLine = Mathf.Max(maxLine, current);
                 current = 0;
             }
             else
@@ -608,71 +258,44 @@ public sealed class WarboardV55MissionCardsWorld :
             }
         }
 
-        longest =
-            Mathf.Max(
-                longest,
-                current
-            );
+        maxLine = Mathf.Max(maxLine, current);
 
-        if (lines >= 12 ||
-            longest >= 42)
+        if (lines >= 13 || maxLine >= 52)
         {
-            card.Text.characterSize =
-                0.023f;
+            textMesh.fontSize = 29;
+            textMesh.characterSize = 0.021f;
         }
-        else if (lines >= 9 ||
-                 longest >= 34)
+        else if (lines >= 10 || maxLine >= 42)
         {
-            card.Text.characterSize =
-                0.026f;
+            textMesh.fontSize = 31;
+            textMesh.characterSize = 0.024f;
+        }
+        else if (lines >= 8 || maxLine >= 34)
+        {
+            textMesh.fontSize = 34;
+            textMesh.characterSize = 0.028f;
         }
         else
         {
-            card.Text.characterSize =
-                0.030f;
+            textMesh.fontSize = 36;
+            textMesh.characterSize = 0.033f;
         }
     }
 
-    private void SetVisible(
-        bool visible)
+    private void SetVisible(bool visible)
     {
-        SetCardVisible(
-            p1Primary,
-            visible
-        );
-
-        SetCardVisible(
-            p1Secondary,
-            visible
-        );
-
-        SetCardVisible(
-            p2Primary,
-            visible
-        );
-
-        SetCardVisible(
-            p2Secondary,
-            visible
-        );
+        SetCardVisible(p1Primary, visible);
+        SetCardVisible(p1Secondary, visible);
+        SetCardVisible(p2Primary, visible);
+        SetCardVisible(p2Secondary, visible);
     }
 
-    private void SetCardVisible(
-        Card card,
-        bool visible)
+    private void SetCardVisible(Card card, bool visible)
     {
-        if (card == null ||
-            card.Root == null)
-        {
+        if (card == null || card.Root == null)
             return;
-        }
 
-        if (card.Root.activeSelf !=
-            visible)
-        {
-            card.Root.SetActive(
-                visible
-            );
-        }
+        if (card.Root.activeSelf != visible)
+            card.Root.SetActive(visible);
     }
 }
